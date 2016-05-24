@@ -90,8 +90,6 @@
             height:521px;
             float:left;
 
-
-
         }
 
         .shead {
@@ -108,9 +106,6 @@
             padding:9px 12px;
             margin-top:0px;
             height:29px;
-
-        }
-        .ttext {
 
         }
 
@@ -147,7 +142,56 @@
             padding:3px;
             margin-bottom: 12px;
         }
+        .prechkbox {
 
+        }
+
+        .location {
+            display: inline-block;
+            margin-top: 5px;
+            margin-bottom: 18px;
+        }
+        .col1 {
+            float:left;
+            margin-right:20px
+        }
+        .col2 {
+            display: inline-block;
+        }
+        .col2 p {
+            padding:1px;
+            margin-bottom: 5px;
+        }
+        .col2 input[type=text]{
+            padding:3px;
+            margin-bottom: 12px;
+        }
+        .form2 {
+            display: inline-block;
+                                        }
+        .col3 {
+            display: inline-block;
+            float:left;
+                    }
+        .col3 p {
+            padding:1px;
+            margin-bottom: 5px;
+                }
+        .col3 input[type=text]{
+            padding: 3px;
+            margin-bottom: 12px;
+        }
+        .col4 {
+            display: inline-block;
+                   }
+        .col4 p{
+            padding:3px;
+            margin-bottom: 5px;
+        }
+       .col4 input[type=text]{
+            padding: 3px;
+            margin-bottom: 12px;
+        }
     </style>
 
 
@@ -212,19 +256,17 @@
     </div>
     </div>
 
-
-
-
 <div >
 
     <p class="chead"> Patron Information </p>
 
 </div>
     <div class="main">
+
     <div>
     <p class="cname"> Name</p>
         </div>
-
+<div class="col1">
 <div class="form1">
 
       <p><label for="fname">FirstName</label></p>
@@ -233,14 +275,57 @@
     <p><label for="lname">LastName</label></p>
       <p><input type="text" id="lname" size=50></p>
 
-    <p class="prechkbo">
-    <input type="checkbox" id="prefname">
-
+    <p><label>sss</label></p>
+    <p class="prechkbox"><input type="checkbox" id="prefname" style="zoom:1.5;">
     <label for="prefname"> Use preferred name </label></p>
-    <div>
 
+</div>
+        </div>
+<div class="col2">
+    <div>
+<p><label for="mname">Middle Name</label></p>
+    <p><input type="text" id="mname" size=50></p>
+    <p><label for="pname">Prefered Name</label></p>
+    <p><input type="text" id="pname" size=50></p>
+    <p><label for="title">Title</label></p>
+    <p><input type="text" id="title" size=50></p>
     </div>
+</div>
+
+
+<div class="form2">
+    <div>
+    <label> Barcodes </label>
+        </div>
+    <div class="col3">
+
+        <p><label for="altid"> Alt ID</label></p>
+        <p><input type="text" id="altid" size=50></p>
+     </div>
+
+    <div class="col4">
+        <label for="groupid"> Group ID </label>
+        <p><input type="text" id="groupid" size=50></p>
+  </div>
     </div>
+  <!--  <div class="form3">
+    <div>
+        <label class="location"> Location </label>
+        <p><label for="library"> Library </label></p>
+        <p>
+        <select id="library" style="width:100%; height:28px;">
+        <option>Main Branch</option>
+        <option>Branch1</option>
+        <option>Branch2</option>
+        </select>
+        </p>
+    </div>
+    </div> -->
+
+
+
+
+
 
 </div>
 
