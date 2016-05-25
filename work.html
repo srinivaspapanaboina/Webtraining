@@ -111,10 +111,12 @@
 
          .chead {
              float:left;
+             display: inline-block;
              width:72%;
-             height:30px;
-             padding:8px;
-             border:1px solid black;
+             height:25px;
+             padding:12px 10px;
+
+             border:1px solid rgba(0, 0, 0,0.2);
              background-color:#E9E9EA;
              margin-left:15px;
              color:#5F9BBF;
@@ -124,7 +126,7 @@
             float:left;
             width:72%;
             margin-left:15px;
-            margin-top:30px;
+            margin-top:-5x;
         }
         .cname {
             display: inline-block;
@@ -199,8 +201,10 @@
             margin-top: 8px;
             margin-bottom:5px;
         }
-
-
+        .main {
+             border:1px solid rgba(0, 0, 0,0.2);
+            padding:30px 10px;
+        }
 
     </style>
 
@@ -211,7 +215,8 @@
     <div class="header">
         <div class="wrapper">
 
-    <div class="nav1">
+<nav>
+<div class="nav1">
         <ul>
             <li><a href="#">Staff</a></li>
             <li><a href="#">Admin</a></li>
@@ -231,6 +236,7 @@
             <li><a href="#">John Doe</a></li>
         </ul>
     </div>
+</nav>
    </div>
     </div>
 <div class="breadcom">
@@ -269,8 +275,10 @@
 <div >
 
     <p class="chead"> Patron Information </p>
+    <div class="chead" style="background-color:#BEBEBD;  border:1px solid rgba(0, 0, 0,0.2);"> </div>
 
 </div>
+
     <div class="main">
 
 <div>  <label class="cname"> Name</label> </div>
@@ -333,20 +341,7 @@
     </div>
   </form3>
 
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
-
 
     </div>
     </body>
