@@ -19,36 +19,34 @@
                 border-radius: 5px;
 
             }
-            img {
-                width:10%;
-                height:25%
 
-            }
             h1{
                 float:left;
                 padding-left: 20px;
                 padding-top:8px;
                 color:#fff;
+                text-shadow: 2px 1px #000;
             }
             h2{
                 float:right;
                 padding-right:20px;
                  padding-top:8px;
                 color:#fff;
+                text-shadow: 2px 1px #000;
             }
             nav {
 
                 color:#fff;
                 background-color: #4188A2;
                 margin-top: 8px;
-               padding:10px;
+                padding:10px;
                 box-shadow: 1px 1px 1px 1px;
                 border-radius: 5px;
             }
 
             nav a {
                  margin-left:35px;
-                padding-right:10px;
+                 padding-right:10px;
             }
 
             .navright {
@@ -57,9 +55,12 @@
 
             }
             .form {
-                width:50%;
+
                 margin: 0 auto;
-               /* border:1px solid black;*/
+                border:1px solid black;
+                padding:10px;
+                background-color: #F2F2F2;
+
             }
 
             .form input[type=text],select{
@@ -68,14 +69,72 @@
                 padding:8px;
                 margin-top:10px;
                 margin-bottom:10px;
+                border-radius: 3px;
             }
             .form input[type=radio]{
                 width:3%;
 
             }
+            .form checkbox{
+                display: inline;
+                padding: 2px !important;
+            }
+
+            .form input[type=button] {
+                margin-top: 25px;
+                width:100%;
+                height:40px;
+                background:#4CAF50;
+                border-radius: 5px;
+            }
+            .happy {
+
+                text-align: center;
+                font-weight:bold;
+                text-shadow: 1px .1px #000;
+              }
+
+           section {
+               width:50%;
+                border:1px solid black;
+                background-color: #fff;
+                margin:0 auto;
+               padding:15px;
+               margin-top: 40px;
+            }
+
+            input[type=text]:focus {
+                  border-color:red;
+                  width:120% !important;
+            }
+
+            .form input[type=button]:hover{
+                background-color:cadetblue
+
+            }
+            a:hover{
+                cursor: pointer;
+                color:black;
+
+            }
+            footer {
+                background-color: #4188A2;
+                text-align: center;
+                color:#fff;
+                padding:10px;
+            }
+            .img {
+                float:right;
+                width:50px;
+                height:50px;
+                border-radius: 2px;
+                opacity: 1px;
+            }
+            .wrapper {
+                background-color: #dddddd;
 
 
-
+            }
 
         </style>
 
@@ -84,11 +143,10 @@
         <div>
         <header>
         <h1>Prokarma</h1>
-            <h2> PKommunicate</h2>
-            <!-- <img src="img/shout.jpg">        -->
+        <img class="img" src="img/shout.jpg">
+             <h2> PKommunicate</h2>
         </header>
              </div>
- <div>
 
     <nav>
         <a>Home</a>
@@ -98,41 +156,45 @@
     <div class="navright">
 
         <a>Logout</a>
+        </div>
         </nav>
 
-        </div>
+    <div class="wrapper">
 
-  <div class="form">
+<div class="main">
 
-<div>
+<section>
+
+<p class="happy"> Go Head And Happy Posting</p>
+<div class="form">
     <label for="fname">Firstname</label>
-    <input type="text" id="fname" value="firstname"> </div>
+    <input type="text" id="fname">
 
- <div>
+
       <label for="lname">Lastname</label>
-      <input type="text" id="lname" value="lastname"> </div>
- <div>
-      <label for="age"> Age:</label>
-      <input type="text" id="age" value="age"></div>
+      <input type="text" id="lname" >
 
-      <div style="margin-top:10px;">
+      <label for="age"> Age:</label>
+      <input type="text" id="age" >
+
+
       <label for="gender"> Gender:</label>
 
        <input type="radio"  name="gender" value="Female">Female
 
       <input type="radio"   name="gender" value="Male">Male
-          </div>
 
-      <div style="margin-top:10px;">
+
+
       <label for="State"> State </label>
       <select id="state" value="state">
+          <option></option>
           <option name="state" value="Australia">Australia</option>
           <option  name="state" value="America">America</option>
           <option  name="state" value="Russia">Russia</option>
       </select>
-           </div>
 
-      <div class="multiselect">
+
       <label for="multisel"> Multi Select Box</label>
       <select id="multisel" value="multiselect" multiple="multiple">
           <option value="Bombay">Bombay</option>
@@ -146,21 +208,27 @@
           <option value="Kolkata">Kolkata</option>
           <option value="Gujarat">Gujarat</option>
        </select>
-</div>
-
-    <div>
-     <input type="search" placeholder="search...">
-      </div>
-     <div>  <label for="genre">Please Select your favorite Genre:</label>
-      <input type="checkbox" id="genre" value="Rock">Rock
-      <input type="checkbox" id="genre" value="Pop">Pop
-      <input type="checkbox" id="genre" value="Jazz">Jazz </div>
-<div>
-      <input type="submit" value="Submit"> </div>
-
-      </div>
 
 
+      <input type="text" placeholder="search..." style="width:50%;">
+
+   <div style="margin-bottom:10px;"> <label for="genre">Please Select your favorite Genre:</label> </div>
+      <div>
+      <input type="checkbox" id="genre" value="Rock"><span > Rock </span>
+      <input type="checkbox" id="genre" value="Pop"><label  style="padding-right:20px;">Pop</label>
+      <input type="checkbox" id="genre" value="Jazz"><label  style="padding-right:20px;">Jazz</label>
+          </div>
+
+
+     <div> <input type="button" value="Submit"> </div>
+
+      </section>
+
+    <footer>
+    <div>@2015 Prokarma. All Rights Reserved</div>
+    </footer>
+ </div>
+         </div>
     </body>
 
 
