@@ -1,0 +1,149 @@
+<doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+        <style>
+            *{
+                margin: 0;
+                padding:0;
+            }
+            body {
+                font-family: Helvetica, Arial;
+                 margin:10px;
+            }
+            header {
+                width:100%;
+                height:50px;
+                background-color:#4188A2;
+                box-shadow: 1px 1px 1px 1px;
+                border-radius: 5px;
+
+            }
+            img {
+                width:10%;
+                height:25%
+
+            }
+            h1{
+                float:left;
+                padding-left: 20px;
+                padding-top:8px;
+                color:#fff;
+            }
+            h2{
+                float:right;
+                padding-right:20px;
+                 padding-top:8px;
+                color:#fff;
+            }
+            nav {
+
+                color:#fff;
+                background-color: #4188A2;
+                margin-top: 8px;
+               padding:10px;
+                box-shadow: 1px 1px 1px 1px;
+                border-radius: 5px;
+            }
+
+            nav a {
+                 margin-left:35px;
+                padding-right:10px;
+            }
+
+            .navright {
+                float:right;
+                padding-right:10px;
+
+            }
+            .form {
+                width:50%;
+                margin: 0 auto;
+               /* border:1px solid black;*/
+            }
+             .form  {
+                width:100%;
+                }
+            .form input[type=text]{
+                width:100%;
+                display: inline-block;
+                padding:8px;
+                margin-top:10px;
+                 margin-bottom:10px;
+            }
+            .form input[type=radio]{
+                width:100%;
+                display:inline-block;
+            }
+         .form input[type=select]{
+                width:100%;
+                display: inline-block;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div>
+        <header>
+        <h1>Prokarma</h1>
+            <h2> PKommunicate</h2>
+            <!-- <img src="img/shout.jpg">        -->
+        </header>
+             </div>
+ <div>
+
+    <nav>
+        <a>Home</a>
+        <a>Post</a>
+        <a>Search</a>
+        <a>Admin</a>
+    <div class="navright">
+
+        <a>Logout</a>
+        </nav>
+
+        </div>
+
+  <div class="form">
+
+
+    <label for="fname">Firstname</label>
+    <input type="text" id="fname" value="firstname">
+
+      <label for="lname">Lastname</label>
+      <input type="text" id="lname" value="lastname">
+    <label for="age"> Age:</label>
+      <input type="text" id="age" value="age">
+      <label for="gender"> Gender:</label>
+      <input type="radio" id="gender" value="Female">Female
+      <input type="radio" id="gender" value="Male">Male
+      <label for="State"> State </label>
+      <select id="state" value="state">
+          <option name="state" value="Australia">Australia</option>
+          <option  name="state" value="America">America</option>
+          <option  name="state" value="Russia">Russia</option>
+      </select>
+      <label for="multisel"> Multi Select Box</label>
+      <select id="multisel" value="multiselect" multiple="multiple">
+          <option value="Bombay">Bombay</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Gujarat">Gujarat</option>
+       </select>
+     <input type="search" placeholder="search...">
+      <label for="genre">Please Select your favorite Genre:</label>
+      <input type="checkbox" id="genre" value="Rock">Rock
+      <input type="checkbox" id="genre" value="Pop">Pop
+      <input type="checkbox" id="genre" value="Jazz">Jazz
+
+      <input type="submit" value="Submit">
+
+      </div>
+
+
+    </body>
+
+
+    </html>
