@@ -61,24 +61,21 @@
                 margin: 0 auto;
                /* border:1px solid black;*/
             }
-             .form  {
-                width:100%;
-                }
-            .form input[type=text]{
+
+            .form input[type=text],select{
                 width:100%;
                 display: inline-block;
                 padding:8px;
                 margin-top:10px;
-                 margin-bottom:10px;
+                margin-bottom:10px;
             }
             .form input[type=radio]{
-                width:100%;
-                display:inline-block;
+                width:3%;
+
             }
-         .form input[type=select]{
-                width:100%;
-                display: inline-block;
-            }
+
+
+
 
         </style>
 
@@ -107,23 +104,35 @@
 
   <div class="form">
 
-
+<div>
     <label for="fname">Firstname</label>
-    <input type="text" id="fname" value="firstname">
+    <input type="text" id="fname" value="firstname"> </div>
 
+ <div>
       <label for="lname">Lastname</label>
-      <input type="text" id="lname" value="lastname">
-    <label for="age"> Age:</label>
-      <input type="text" id="age" value="age">
+      <input type="text" id="lname" value="lastname"> </div>
+ <div>
+      <label for="age"> Age:</label>
+      <input type="text" id="age" value="age"></div>
+
+      <div style="margin-top:10px;">
       <label for="gender"> Gender:</label>
-      <input type="radio" id="gender" value="Female">Female
-      <input type="radio" id="gender" value="Male">Male
+
+       <input type="radio"  name="gender" value="Female">Female
+
+      <input type="radio"   name="gender" value="Male">Male
+          </div>
+
+      <div style="margin-top:10px;">
       <label for="State"> State </label>
       <select id="state" value="state">
           <option name="state" value="Australia">Australia</option>
           <option  name="state" value="America">America</option>
           <option  name="state" value="Russia">Russia</option>
       </select>
+           </div>
+
+      <div class="multiselect">
       <label for="multisel"> Multi Select Box</label>
       <select id="multisel" value="multiselect" multiple="multiple">
           <option value="Bombay">Bombay</option>
@@ -131,14 +140,23 @@
           <option value="Delhi">Delhi</option>
           <option value="Kolkata">Kolkata</option>
           <option value="Gujarat">Gujarat</option>
+          <option value="Bombay">Bombay</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Gujarat">Gujarat</option>
        </select>
+</div>
+
+    <div>
      <input type="search" placeholder="search...">
-      <label for="genre">Please Select your favorite Genre:</label>
+      </div>
+     <div>  <label for="genre">Please Select your favorite Genre:</label>
       <input type="checkbox" id="genre" value="Rock">Rock
       <input type="checkbox" id="genre" value="Pop">Pop
-      <input type="checkbox" id="genre" value="Jazz">Jazz
-
-      <input type="submit" value="Submit">
+      <input type="checkbox" id="genre" value="Jazz">Jazz </div>
+<div>
+      <input type="submit" value="Submit"> </div>
 
       </div>
 
