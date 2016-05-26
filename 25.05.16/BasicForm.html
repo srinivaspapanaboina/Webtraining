@@ -142,6 +142,7 @@
                 border-radius: 2px;
                 padding:5px;
                 float:right;
+                margin-right:1px;
             }
             .visible {
                 visibility: visible;
@@ -153,10 +154,14 @@
             var y=document.getElementById("fnamevalid");
             var alpha=/^[a-zA-Z]+$/;
            if(x.length<1) {
+               //true block
+      //     } else if (x.match(alpha)){
 
-            y.innerHTML = "Please enter Alpha only"
+            y.innerHTML = "Please enter Alphabets only"
 
                addClass(y,"visible");
+               document.getElementById("fname").style.borderColor="red";
+               x.focus();
 
                  return false;
 
