@@ -133,10 +133,63 @@
             .wrapper {
                 background-color: #dddddd;
 
+        }
 
+            .hidden{
+                visibility: hidden;
+                background-color: red;
+                color:white;
+                border-radius: 2px;
+                padding:5px;
+                float:right;
             }
-
+            .visible {
+                visibility: visible;
+            }
         </style>
+        <script>
+        function fnameval() {
+            var x=document.getElementById("fname").value;
+            var y=document.getElementById("fnamevalid");
+            var alpha=/^[a-zA-Z]+$/;
+           if(x.length<1) {
+
+            y.innerHTML = "Please enter Alpha only"
+
+               addClass(y,"visible");
+
+                 return false;
+
+           }
+        }
+
+
+
+            function hasClass(el, className) {
+  if (el.classList)
+    return el.classList.contains(className)
+  else
+    return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))
+}
+
+function addClass(el, className) {
+  if (el.classList)
+    el.classList.add(className)
+  else if (!hasClass(el, className)) el.className += " " + className
+}
+
+function removeClass(el, className) {
+  if (el.classList)
+    el.classList.remove(className)
+  else if (hasClass(el, className)) {
+    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+    el.className=el.className.replace(reg, ' ')
+  }
+}
+
+
+
+        </script>
 
     </head>
     <body>
@@ -166,9 +219,10 @@
 <section>
 
 <p class="happy"> Go Head And Happy Posting</p>
-<div class="form">
+<form class="form" name="myform" method="post">
     <label for="fname">Firstname</label>
     <input type="text" id="fname">
+    <div><span class="hidden" id="fnamevalid">firstnameval</span></div>
 
 
       <label for="lname">Lastname</label>
@@ -186,7 +240,7 @@
 
 
 
-      <label for="State"> State </label>
+    <div <label for="State"> State </label></div>
       <select id="state" value="state">
           <option></option>
           <option name="state" value="Australia">Australia</option>
@@ -220,14 +274,14 @@
           </div>
 
 
-     <div> <input type="button" value="Submit"> </div>
+     <div> <input type="button" value="Submit" onclick="fnameval()"> </div>
 
       </section>
 
     <footer>
     <div>@2015 Prokarma. All Rights Reserved</div>
     </footer>
- </div>
+ </form>
          </div>
     </body>
 
