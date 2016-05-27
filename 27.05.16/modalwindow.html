@@ -21,6 +21,7 @@
                    }
 
         .mcontent{
+
             max-width: 39%;
             min-width:20%;
             max-height: 150px;
@@ -28,7 +29,8 @@
             margin:auto;
             text-align: center;
             border-radius: 2px;
-            box-shadow: 2px 4px 10px 2px;;
+            box-shadow: 2px 4px 10px 2px;
+
                 }
         h1 {
             font-size: 48px;
@@ -76,6 +78,11 @@
             background-color: #000;
             font-size:20px;
             color:#e8580c;
+                    }
+        #mybtn:hover{
+            cursor:pointer;
+            color:#fff;
+            background-color:dimgrey;
         }
 
         </style>
@@ -85,11 +92,14 @@
     <!-- Modal Window button -->
         <button id="mybtn" name="mybtn" style="width:10%; height:30Px;"> Click Me</button>
     <!-- Modal Window Content-->
+
+
+
         <div class="mymodal" id="modalwin">
       <!--  <div class="mheader">
             Modal Window Header
             </div> -->
-         <div class="mcontent">
+            <div class="mcontent">
               <span class="close">X</span>
              <h1>Welcome  Guys...</h1>
             <div class="cline"><p>Hai How are you...?? </p></div>
@@ -108,14 +118,20 @@
             var span=document.getElementsByClassName("close")[0];
                 span.onclick=function(){
                 modal.style.display="none";
+                    btn.disabled=false;
+                    btn.style.cursor="pointer";
                 }
             //User can get Modal Window on clik button
             btn.onclick =function() {
                  modal.style.display="block";
+                btn.disabled=true;
+                btn.style.cursor="not-allowed";
                         }
         window.onclick=function(event) {
             if(event.target==modal){
             modal.style.display="none";
+                 btn.disabled=false;
+                 btn.style.cursor="pointer";
         }
         }
 
