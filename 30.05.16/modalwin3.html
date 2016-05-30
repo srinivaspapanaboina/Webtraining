@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            font-family: helvetica, Arial;
+        }
+        .main {
+
+            display: none;
+             max-width:40%;
+             height:90px;
+             margin:0 auto;
+            border:1px solid grey;
+            background-color: grey;
+            padding:5px;
+            margin-top: 100px !important;
+            position: absolute;
+            margin-left:300px;
+        }
+        .child{
+            max-width:100%;
+            margin:0;
+            padding:0;
+           border:1px solid #808080;
+            height: 20px;
+            box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,1);
+            /* (or)  box-shadow: inset 0 -1px 1px #000000, inset 0 1px 1px #ffffff; */
+        }
+        .child p {
+            margin:0;
+            padding:2px;;
+        }
+        .head {
+            padding: 1px;
+            color:#fff;
+            text-align: center;
+        }
+        .content {
+            background-color: #fff;
+            text-align:center;
+        }
+
+        .btn {
+            position:relative;
+            margin: 0;
+        }
+    </style>
+
+    </head>
+<body>
+    <div class="main" id="main">
+
+    <div class="child">
+        <div class="head"> Welcome to Prokarma </div>
+        <div class="content"> <p> HTML </p>
+
+        <p> CSS3 </p>
+        <p> JAVA SCRIPT</p>
+       </div>
+        </div>
+        </div>
+    <div class="btn">
+    <input type="button" id="btn" value="Click Me">
+    </div>
+
+    <script>
+
+    var modal=document.getElementById("main");
+    var mybtn=document.getElementById("btn");
+
+
+
+        mybtn.onclick= function() {
+            modal.style.display="block";
+        }
+
+
+    </script>
+
+    </body>
+
+</html>
