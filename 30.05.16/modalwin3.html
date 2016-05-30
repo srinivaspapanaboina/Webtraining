@@ -45,6 +45,14 @@
             position:relative;
             margin: 0;
         }
+        .close {
+            color:#fff;
+            padding:2px 3px 0 0 ;
+            float:right;
+        }
+        .close:hover {
+            cursor: pointer;
+        }
     </style>
 
     </head>
@@ -52,7 +60,7 @@
     <div class="main" id="main">
 
     <div class="child">
-        <div class="head"> Welcome to Prokarma </div>
+        <div class="head"> Welcome to Prokarma <span class="close">X</span> </div>
         <div class="content"> <p> HTML </p>
 
         <p> CSS3 </p>
@@ -68,11 +76,13 @@
 
     var modal=document.getElementById("main");
     var mybtn=document.getElementById("btn");
-
-
-
+    var close=document.getElementsByClassName("close")[0];
         mybtn.onclick= function() {
             modal.style.display="block";
+        }
+
+        close.onclick=function(){
+            modal.style.display="none";
         }
 
 
