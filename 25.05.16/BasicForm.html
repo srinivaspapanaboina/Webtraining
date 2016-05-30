@@ -147,6 +147,20 @@
             .visible {
                 visibility: visible;
             }
+            .search {
+                display: inline-block;
+                width:50% !important;
+                background-image: url('img/search.png');
+                background-repeat:no-repeat;
+                padding:12px 20px 12px 40px !important;
+                background-position: 5px 5px;
+                outline:none;
+                         }
+            .search:focus {
+               transition: 0.8s;
+                -web-transition:0.8s;
+
+            }
         </style>
         <script>
         function fnameval() {
@@ -269,7 +283,7 @@ function removeClass(el, className) {
        </select>
 
 
-      <input type="text" placeholder="search..." style="width:50%;">
+      <input type="text" class="search" placeholder="Search...">
 
    <div style="margin-bottom:10px;"> <label for="genre">Please Select your favorite Genre:</label> </div>
       <div>
