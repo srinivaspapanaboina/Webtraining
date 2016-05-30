@@ -51,8 +51,8 @@
            position: fixed; 
            width:40%;
             z-index:1; 
-            left:370px;;
-            top:150px;
+           left: 442px;
+            top: 219px;
             padding:10px; 
             background-color:antiquewhite;
            border-radius:5px;
@@ -92,12 +92,13 @@
             padding:0;
             text-align: center;
         }
+       
         
     </style>
     </head>    
     <body>
          
-    <form>
+    <form id="myform">
 <label for="uid">User Name</label>
         <input type="text" id="uid" name="uname">
         <label for="pwd">Password</label>
@@ -116,6 +117,7 @@
     </div>
 <!--    <button id="mybtn" value="Sign">Sign</button> -->
     <script>
+        var form=document.getElementById("myform");
         //get modalwindow
        var modal=document.getElementById("modalwindow");
         //get button
@@ -125,6 +127,7 @@
             modal.style.display="block";
             mybtn.disabled=true;
             mybtn.style.cursor="not-allowed";
+            myform.style.display="none";
         }
         var span=document.getElementsByClassName("close")[0];
         
@@ -132,6 +135,7 @@
             modal.style.display="none";
             document.getElementById("btn").disabled=false;
             mybtn.style.cursor="auto";
+            myform.style.display="block";
         }
         
         window.onclick=function() {
@@ -139,6 +143,7 @@
                 modal.style.display="none";
                 mybtn.disabled=false;
                 mybtn.style.cursor="auto";
+                myform.style.display="block";
             }
         }
         </script>    
