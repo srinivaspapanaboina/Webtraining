@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+           // background: #3B434E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica;
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            //position: relative;
+            top: 0;
+            margin: 0 auto;
+            background: #ECAC00;
+        }
+
+        .footer {
+            width: 100%;
+            height: 30px;
+            position: fixed;
+            bottom: 0;
+            margin: 0 auto;
+        }
+
+        .fcontent {
+            color: #fff;
+            text-align: center;
+        }
+
+        .multiselect {
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .selectbox {
+            position: relative;
+        }
+
+        .selectbox select {
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .overselect {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        #checkbox {
+            display: none;
+            border: 1px solid #dadada
+        }
+
+        #checkbox label {
+            display: block;
+        }
+
+        #checkboxes label:hover {
+            background-color: #1e90ff;
+        }
+    </style>
+<script>
+     var expand=false;
+    function showcheckbox(){
+        var checkbox=document.getElementById("checkbox");
+        if(!expand){
+            checkbox.style.display="block";
+            expand=true;
+        }else {
+            checkbox.style.display="none";
+            expand=false;
+        }
+
+    }
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Header Began -->
+    <div class="header">
+
+    </div>
+    <!-- Header Closing-->
+
+    <div class="multiselect">
+        <div class="selectbox" onclick="showcheckbox()">
+            <select name="color">
+                <option>Select an Option</option>
+
+            </select>
+
+        </div>
+
+        <div id="checkbox">
+            <label for="red">
+                <input type="checkbox" id="red">Red</label>
+            <label for="green">
+                <input type="checkbox" id="red">Green</label>
+            <label for="blue">
+                <input type="checkbox" id="red">Blue</label>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Footer Began -->
+    <div class="footer">
+
+        <div class="fcontent">&copy;Copyright 2016 </div>
+
+    </div>
+
+    <!-- Footer Ending -->
+
+</body>
+
+</html>
