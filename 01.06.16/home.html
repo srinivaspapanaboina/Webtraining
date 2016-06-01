@@ -4,16 +4,22 @@
 <head>
 
     <style>
-    * {
+        body {
+            background: #3B434E;
+        }
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             font-family: Arial, Helvetica;
+            overflow: hidden;
         }
 
         .header {
             width: 100%;
             height: 60px;
-           /* position: fixed; */
+            position: relative;
             top: 0;
             margin: 0 auto;
             background: #ECAC00;
@@ -36,6 +42,7 @@
             border-radius: 9px;
             float: right;
             margin-right: 305px;
+            overflow: hidden;
         }
 
         .nav a {
@@ -43,12 +50,47 @@
             text-decoration: none;
             color: #fff;
             padding: 10px;
+            overflow: hidden;
         }
+
+        .content {
+            width: 100%;
+        }
+
         .select {
-
-
+            height: 28px;
+            border-radius: 4px;
         }
 
+        .opt {
+            padding-top: 5px;
+            float: right;
+            overflow: hidden;
+        }
+
+        .data {
+            width: 50%;
+            height: 164px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid #fff;
+            color: #fff;
+            background: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .data1 {
+            width: 50%;
+            height: 39px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #3B434E;
+            color: #fff;
+            font-size: 22px;
+            padding: 5px;
+            box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 1);
+        }
     </style>
 
 
@@ -57,7 +99,7 @@
 
 <body>
 
-   <!-- Header Began -->
+    <!-- Header Began -->
     <div class="header">
         <div class="headercontent">
 
@@ -75,21 +117,42 @@
     <!-- Header Closing-->
 
 
+    <div class="content">
 
-
-
-        <div class="select">
-        <select name="equip">
-            <option>Coherence NetControl EquipmentClust</option>
-            <option>option1</option>
-            <option>option2</option>
-            <option>option3</option>
+        <!-- Option Button Began -->
+        <div class="opt">
+            <select class="select" name="equip">
+                <option>Coherence NetControl EquipmentClust</option>
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
             </select>
+        </div>
+        <!-- Option Button closeing -->
 
 
-            </div>
+        <div style="clear:both;"> </div>
 
 
+        <div class="data1">Coherence NetControl ClusterDEV</div>
+
+        <div class="data">
+
+
+
+
+            <h1> Welcome to Coherence </h1>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
 
     <div class="footer">
 
