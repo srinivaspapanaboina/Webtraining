@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             background: #3B434E;
@@ -13,12 +14,11 @@
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica;
-            overflow: hidden;
         }
 
         .header {
             width: 100%;
-            height: 60px;
+            height: 80px;
             position: relative;
             top: 0;
             margin: 0 auto;
@@ -31,13 +31,12 @@
             position: fixed;
             bottom: 0;
             margin: 0 auto;
-            background: #ECAC00;
         }
 
         .nav {
             width: 30%;
-            height: 39px;
-            margin-top: 12px;
+            height:39px;
+            margin-top: 28px;
             background: #B03F21;
             border-radius: 9px;
             float: right;
@@ -52,7 +51,9 @@
             padding: 10px;
             overflow: hidden;
         }
-
+        .nav a:hover {
+            cursor:pointer;
+        }
         .content {
             width: 100%;
         }
@@ -63,37 +64,73 @@
         }
 
         .opt {
-            padding-top: 5px;
+            padding-top: 12px;
             float: right;
             overflow: hidden;
+            margin-right: 307px;
         }
 
         .data {
             width: 50%;
             height: 164px;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: 309px;
             border: 3px solid #fff;
             color: #fff;
             background: #000;
             text-align: center;
             padding: 10px;
+            margin-top: -1px;
         }
 
         .data1 {
             width: 50%;
             height: 39px;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: 309px;
+            margin-top: 17px;
+            border-radius: 3px;
             background: #3B434E;
             color: #fff;
             font-size: 22px;
             padding: 5px;
             box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 1);
         }
+
+        .data2 {
+            width: 50%;
+            height: 39px;
+            margin-top: 15px;
+            margin-left: auto;
+            margin-right: 309px;
+            border-radius: 3px;
+            background: #DFF0D8;
+            font-size: 22px;
+            padding: 5px;
+            box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 1);
+        }
+
+        .rowdata {
+            width: 50%;
+            height: 100px;
+            margin-left: auto;
+            margin-right: 309px;
+            margin-top: -1px;
+            color: #fff;
+            background: #5D6573;
+        }
+
+        .rowdata li {
+            list-style-position: inside;
+            float: left;
+            padding: 20px 60px 20px 40px;
+        }
+
+        .fcontent {
+            color: #fff;
+            text-align: center;
+        }
     </style>
-
-
 
 </head>
 
@@ -116,7 +153,7 @@
     </div>
     <!-- Header Closing-->
 
-
+    <!-- Content began -->
     <div class="content">
 
         <!-- Option Button Began -->
@@ -130,7 +167,7 @@
         </div>
         <!-- Option Button closeing -->
 
-
+        <!-- center display board1 began -->
         <div style="clear:both;"> </div>
 
 
@@ -138,44 +175,37 @@
 
         <div class="data">
 
-
-
-
             <h1> Welcome to Coherence </h1>
 
-
-
         </div>
 
+        <!-- center display board1 ending -->
 
+        <!-- center display board2 began -->
 
+        <div class="data2">Results found for Caches </div>
 
+        <div class="rowdata">
 
+            <ol>
+                <li>Sandbox-idma054-person-Cache</li>
+                <li>Person-Cache</li>
+            </ol>
+        </div>
+        <!-- center display board1 ending -->
 
     </div>
+    <!-- content  ending -->
 
+    <!-- Footer Began -->
     <div class="footer">
 
-        <div class="fconent">
-
-
-        </div>
-
+        <div class="fcontent">&copy;Copyright 2016 </div>
 
     </div>
 
-
-
+    <!-- Footer Ending -->
 
 </body>
-
-
-
-
-
-
-
-
-
 
 </html>
