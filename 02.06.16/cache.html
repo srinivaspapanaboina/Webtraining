@@ -70,10 +70,13 @@
         span {
             color: grey !important;
         }
-        table {
-            width:50%;
-            margin-left: auto;
-            margin-right: auto;
+
+        table,th,td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        th.td {
+            padding:5px;
         }
     </style>
 
@@ -118,8 +121,13 @@
         </select>
     </div>
     <!-- cluster& cache row End Here -->
-    <table>
-    <th><tr>Details</tr></th>
+    <table style="width:60%;">
+        <col width="30">
+        <col width="20">
+        <col width="30">
+        <col width="20">
+
+    <th colspan="4"><tr>Details</tr></th>
         <tr>
             <td>Sync Queue Depth</td>
             <td>1</td>
