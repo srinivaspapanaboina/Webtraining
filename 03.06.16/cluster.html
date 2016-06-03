@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+            background: #363D47;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica;
+            box-sizing: border-box;
+        }
+
+        .headercontainer {
+            width: 100%;
+            position: relative;
+            height: 80px;
+            background: #ECAC00;
+            top: 0;
+        }
+
+        .footercontainer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+        }
+
+        .navcontainer {
+            background: #B03F21;
+            display: inline-block;
+            width: 30%;
+            height: 30px;
+            border-radius: 5px;
+            float: right;
+            margin: 40px 255px 0px 0px;
+            border-bottom: 3px solid black;
+        }
+
+        .navbar a {
+            color: #fff;
+            padding: 5px 12px 5px 10px;
+            display: inline-block;
+        }
+
+        .clusterrow {
+            width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        .opt1 {
+            float: right;
+            width: 258px;
+            height: 23px;
+        }
+
+        label {
+            color: #fff;
+        }
+
+        span {
+            color: grey !important;
+        }
+
+        table {
+            width: 65%;
+            margin-top: 20px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            clear: both;
+        }
+
+        th {
+            color: #fff;
+            border: 1px solid black;
+            text-align: left;
+            padding: 12px;
+            background: #444D5B;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 1);
+        }
+
+        td {
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: 7px;
+            font-size: 14px;
+        }
+        .theads {
+            font-weight: bold;
+        }
+        td:nth-child(1){
+            color:skyblue;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Header & navigation Bar Star Here -->
+    <div class="headercontainer">
+
+        <div class="navcontainer">
+
+            <nav class="navbar">
+                <a>Home</a>
+                <a>Caches</a>
+                <a>Clusters</a>
+                <a>Performance</a>
+                <a>Service</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Header & navigation Bar End Here -->
+
+    <!-- cluster& cache row start Here -->
+
+    <div class="clusterrow">
+        <label>Cluster - <span>Coherence NetControl Equipment Cluster TEST</span></label>
+        <select class="opt1">
+            <option>Coherence NetControl EquipmentClust</option>
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+        </select>
+    </div>
+
+
+
+    <table>
+
+            <th colspan="5">Hosts</th>
+
+        <tr class="theads">
+            <td style="color:#000;">Hosts</td>
+            <td>CPU%</td>
+            <td>Used Memory(GB)</td>
+            <td>Storage</td>
+            <td>Proxy</td>
+        </tr>
+        <tr>
+            <td>OMDX131D</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+    <tr>
+            <td>OMDX142F</td>
+            <td>0.14</td>
+            <td>16.015625</td>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+ <tr>
+            <td>OMDX191E</td>
+            <td>0.36</td>
+            <td>23.94043</td>
+            <td>0</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>OMDX1A4C</td>
+            <td>0</td>
+            <td>0</td>
+            <td>3</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>OMDX1B29</td>
+            <td>0.29</td>
+            <td>12.188477</td>
+            <td>3</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>OMDX1B2A</td>
+            <td>0.18</td>
+            <td>17.229492</td>
+            <td>9</td>
+            <td>0</td>
+        </tr>
+
+           <tr>
+            <td>OMHQ12CB</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>OMHQ1577</td>
+            <td>0.37</td>
+            <td>9.3046875</td>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>OMHQ1917</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>OMHQ1918</td>
+            <td>1.46</td>
+            <td>41.94336</td>
+            <td>4</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>OMHQ1B23</td>
+            <td>0.06</td>
+            <td>24.62207</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>OMHQ1B24</td>
+            <td>0.2</td>
+            <td>14.348633</td>
+            <td>3</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>OMHQ1B25</td>
+            <td>0.16</td>
+            <td>19.261719</td>
+            <td>9</td>
+            <td>0</td>
+        </tr>
+    </table>
+
+
+
+    <!-- Footer Start Here -->
+    <div class="footercontainer">
+        <div class="footer">&copy; Copyrights 2016</div>
+
+    </div>
+    <!-- Footer End Here-->
+
+</body>
+
+</html>
