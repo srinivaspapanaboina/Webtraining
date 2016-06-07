@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-    body {
+        body {
             background: #363D47;
         }
 
@@ -76,7 +76,6 @@
             border-collapse: collapse;
             margin-left: auto;
             margin-right: auto;
-
         }
 
         th {
@@ -95,15 +94,54 @@
             padding: 7px;
             font-size: 14px;
         }
+
         .theads {
             font-weight: bold;
         }
-        td:nth-child(1){
-            color:skyblue;
+
+        td:nth-child(1) {
+            color: skyblue;
         }
 
+        #modalwindow {
+            width: 500px;
+            height: 200px;
+            background-color: #fff;
+            position: absolute;
+            border: 1px solid black;
+            border-radius: 3px;
+            top: 130px;
+            left: 500px;
+            display: none;
+        }
 
+        .modalheader {
+            color: #fff;
+            border: 1px solid black;
+            text-align: left;
+            padding: 12px;
+            background: #444D5B;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 1);
+        }
 
+        .mlink:hover {
+            cursor: pointer;
+        }
+
+        .mlink {
+            color: #4398ba;
+        }
+
+        .close {
+            float: right;
+            color: #fff !important;
+            text-decoration: none;
+        }
+
+        .close:hover {
+            cursor: pointer;
+        }
     </style>
 
 </head>
@@ -141,7 +179,7 @@
 
     <table>
 
-            <th colspan="5">Hosts</th>
+        <th colspan="5">Hosts</th>
 
         <tr class="theads">
             <td style="color:#000;">Hosts</td>
@@ -154,96 +192,104 @@
             <td>OMDX131D</td>
             <td>0</td>
             <td>0</td>
-            <td>1</td>
+            <td class="mlink">1</td>
             <td>0</td>
         </tr>
-    <tr>
+        <tr>
             <td>OMDX142F</td>
             <td>0.14</td>
             <td>16.015625</td>
-            <td>0</td>
+            <td class="mlink">0</td>
             <td>3</td>
         </tr>
- <tr>
+        <tr>
             <td>OMDX191E</td>
             <td>0.36</td>
             <td>23.94043</td>
-            <td>0</td>
+            <td class="mlink">0</td>
             <td>12</td>
         </tr>
         <tr>
             <td>OMDX1A4C</td>
             <td>0</td>
             <td>0</td>
-            <td>3</td>
+            <td class="mlink">3</td>
             <td>0</td>
         </tr>
         <tr>
             <td>OMDX1B29</td>
             <td>0.29</td>
             <td>12.188477</td>
-            <td>3</td>
+            <td class="mlink">3</td>
             <td>0</td>
         </tr>
         <tr>
             <td>OMDX1B2A</td>
             <td>0.18</td>
             <td>17.229492</td>
-            <td>9</td>
+            <td class="mlink">9</td>
             <td>0</td>
         </tr>
 
-           <tr>
+        <tr>
             <td>OMHQ12CB</td>
             <td>0</td>
             <td>0</td>
-            <td>1</td>
+            <td class="mlink">1</td>
             <td>0</td>
         </tr>
         <tr>
             <td>OMHQ1577</td>
             <td>0.37</td>
             <td>9.3046875</td>
-            <td>0</td>
+            <td class="mlink">0</td>
             <td>3</td>
         </tr>
         <tr>
             <td>OMHQ1917</td>
             <td>0</td>
             <td>0</td>
-            <td>0</td>
+            <td class="mlink">0</td>
             <td>12</td>
         </tr>
         <tr>
             <td>OMHQ1918</td>
             <td>1.46</td>
             <td>41.94336</td>
-            <td>4</td>
+            <td class="mlink">4</td>
             <td>0</td>
         </tr>
         <tr>
             <td>OMHQ1B23</td>
             <td>0.06</td>
             <td>24.62207</td>
-            <td>1</td>
+            <td class="mlink">1</td>
             <td>0</td>
         </tr>
         <tr>
             <td>OMHQ1B24</td>
             <td>0.2</td>
             <td>14.348633</td>
-            <td>3</td>
+            <td class="mlink">3</td>
             <td>0</td>
         </tr>
         <tr>
             <td>OMHQ1B25</td>
             <td>0.16</td>
             <td>19.261719</td>
-            <td>9</td>
+            <td class="mlink">9</td>
             <td>0</td>
         </tr>
     </table>
 
+    <div id="modalwindow">
+        <div class="modalheader">User Alert<span class="close">X</span></div>
+        <pre>
+
+
+        </pre>
+
+    </div>
 
 
     <!-- Footer Start Here -->
@@ -252,6 +298,18 @@
 
     </div>
     <!-- Footer End Here-->
+    <script>
+        var modal = document.getElementById("modalwindow");
+        var link = document.getElementsByClassName("mlink")[0];
+        var close = document.getElementsByClassName("close")[0];
+        link.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        close.onclick = function () {
+            modal.style.display = "none";
+                  }
+    </script>
 
 </body>
 
