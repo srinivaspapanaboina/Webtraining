@@ -142,6 +142,14 @@
         .close:hover {
             cursor: pointer;
         }
+
+        .mcontent {
+            text-align: center;
+            font-weight: bold;
+            margin: 10px;
+            padding: 15px;
+            line-height: 30px;
+        }
     </style>
 
 </head>
@@ -284,10 +292,13 @@
 
     <div id="modalwindow">
         <div class="modalheader">User Alert<span class="close">X</span></div>
-        <pre>
+        <div class="mcontent">
+            <div>Welcome</div>
+            <div>To</div>
+            <div>Coherence Storage Details</div>
 
 
-        </pre>
+        </div>
 
     </div>
 
@@ -308,7 +319,7 @@
 
         close.onclick = function () {
             modal.style.display = "none";
-                  }
+        }
     </script>
 
 </body>
