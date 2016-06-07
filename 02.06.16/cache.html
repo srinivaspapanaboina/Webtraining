@@ -142,8 +142,43 @@
             border-radius: 3px;
             width: auto;
             display: inline-block;
-            padding:3px;
-                }
+            padding: 3px;
+        }
+
+        #myprogress {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            background: grey;
+            top: 14px;
+            border-radius: 10px;
+        }
+
+        #mybar {
+            position: absolute;
+            width: 10%;
+            height: 100%;
+            background-color: green;
+            border-radius: 10px;
+
+        }
+
+        .progress {
+            width: 65%;
+            margin: 0 auto;
+            top: 12px;
+        }
+
+        .btn {
+            padding: 5px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 23px;
+        }
+        #label {
+            text-align: center;
+            line-height: 30px;
+        }
 
     </style>
 
@@ -254,6 +289,17 @@
 
         </div>
     </div>
+    <div class="progress">
+        <div id="myprogress">
+            <div id="mybar">
+            <div id="label">10%</div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <button class="btn" onclick="move()">Progress Bar</button>
 
     <!-- Footer Start Here -->
     <div class="footercontainer">
@@ -261,6 +307,24 @@
 
     </div>
     <!-- Footer End Here-->
+    <script>
+        function move() {
+            var x = document.getElementById("mybar");
+            var width = 10;
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    x.style.width = width + '%';
+                    document.getElementById("label").innerHTML= width + '%';
+
+                }
+            }
+        }
+    </script>
 
 </body>
 
