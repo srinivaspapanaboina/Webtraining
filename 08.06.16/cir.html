@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <style>
         * {
             padding: 0;
@@ -54,7 +55,6 @@
         .side1 {
             border: 1px solid rgba(0, 0, 0, 0.2);
             margin-left: 62px;
-            margin-top: 35px;
             height: 271px;
             overflow: auto;
             background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255));
@@ -143,6 +143,7 @@
             padding: 10px 0 0 0px;
             margin-left: 7px;
             display: inline-block;
+            font-size: 13px;
         }
 
         .col1 input[type=text],
@@ -179,7 +180,6 @@
 
         .main {
             width: 74%;
-            margin-top: 36px;
             float: left;
             background-color: #BEBEBD;
             border: 1px solid grey;
@@ -212,6 +212,7 @@
 
         .content {
             margin-right: 10px;
+            margin-top: 10px;
         }
 
         .vbox {
@@ -220,6 +221,26 @@
             height: 39px;
             width: 10px;
             color: #1B6C99;
+        }
+
+        .fa {
+            padding: 0 11px 0px 4px;
+            width: 30px;
+            color: grey;
+        }
+
+        .breadcrumb {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 8px 0px 0px 0px;
+        }
+
+        .breadcrumb .fa {
+            width: 10px;
+        }
+
+        .breadcrumb a {
+            color: #0d84ce;
         }
     </style>
 </head>
@@ -233,12 +254,21 @@
             <a>Developers</a>
             <span class="navcenter"><a>Circulation</a></span>
             <span class="navright">
-      <a>Main Branch</a>
-          <a>John Doe</a>
+      <a style="padding-right:0px;">Main Branch</a><i class="fa fa-chevron-down" aria-hidden="true"  style="color:#fff; font-size:11px;"></i>
+         <i class="fa fa-user" aria-hidden="true" style="color:#fff;"></i><a style="padding-right:0px;">John Doe</a><i class="fa fa-chevron-down" aria-hidden="true"  style="color:#fff;font-size:11px;"></i>
         </span>
         </nav>
-
     </header>
+    <nav class="breadcrumb">
+        <a style="color:#000;">Staff<i class="fa fa-chevron-right" aria-hidden="true"  style="color:#000; font-size:11px;"></i></a>
+        <a class="crumb">Circulation<i class="fa fa-chevron-right" aria-hidden="true"style="color:#000; font-size:11px;"></i></a>
+        <a class="crumb">Wesley Crusher<i class="fa fa-chevron-right" aria-hidden="true"style="color:#000; font-size:11px;"></i></a>
+        <a class="crumb">Patron Information<i class="fa fa-chevron-right" aria-hidden="true"style="color:#000; font-size:11px;"></i></a>
+        <span style="float:right;">
+        <a><i class="fa fa-folder-open-o" aria-hidden="true" style="padding-right:25px;"></i></a>
+        <a><i class="fa fa-sign-out" aria-hidden="true"style="padding-right:25px;"></i></a>
+        </span>
+    </nav>
     <!-- Header End here-->
 
     <!-- Side bars bega here -->
@@ -252,11 +282,11 @@
                     <p><span class="cbold"> Patron Type:</span> Adult</p>
                     <p><span class="cbold"> Barcode:</span> 104785923</p>
                     <p><span class="cbold"> Standing:</span> Good</p>
-                    <p>Main Branch</p>
-                    <p>The Crusher Family</p>
-                    <p>No address has been added</p>
-                    <p>(801)544-3455</p>
-                    <p>wesleycrusher@gmail.com</p>
+                    <div><i class="fa fa-university" aria-hidden="true"></i><span class="icon">Main Branch</span></div>
+                    <div><i class="fa fa-users" aria-hidden="true" style="color:#000;"></i><span class="icon">The Crusher Family</span></div>
+                    <div><i class="fa fa-map-marker" aria-hidden="true"></i><span class="icon"><i>No address has been added</i></span></div>
+                    <div><i class="fa fa-phone" aria-hidden="true"></i><span>(801)544-3455</span></div>
+                    <div><i class="fa fa-envelope-o" aria-hidden="true"></i><span>wesleycrusher@gmail.com</span></div>
                 </div>
             </div>
             <div class="side2">
