@@ -1,37 +1,95 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1>
-<style>
-*{
-padding:0;
-margin:0;
-box-sizing=border-box;
-}
-header{
-background-color:pink;
-width:100%;
-height:70px;
-position:fixed;
-border:1px solid black;
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Airal, Helvetica;
+        }
+
+        #logo {
+            background: url(./img/respond.png)no-repeat center;
+            margin-left: 20px;
+            margin-top: 10px;
+            width: 210px;
+            height: 40px;
+            float: left;
+        }
+
+        header {
+            width: 100%;
+            height: 70px;
+            top: 0;
+            left: 0;
+            position: fixed;
+            border-bottom: 4px solid #4C9CF1;
+        }
+
+        nav {
+            float: right;
+            margin-top: 25px;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #4C9CF1;
+            font-size: 16px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .current {
+            color: blue;
+        }
+
+        li a:hover {
+            color: #000;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width:320px) {
+            li {
+                display: inline-block;
+            }
+            nav li a {
+                font-size: 13px;
+                position: relative;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header>
-<a href="#" id="logo">Hello</a>
-<!--
-<nav>
-<a href="#" id="menu-icon"></a>
-<ul>
-<li><a href="#" class="current">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Work</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Contact</a></li>
-</nav>
--->
-</header>
+    <header>
+        <a href="#" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+        </nav>
+    </header>
 </body>
+
 </html>
