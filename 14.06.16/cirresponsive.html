@@ -24,7 +24,7 @@
             background: #1C72A3;
             width: 100%;
             height: 28px;
-            position: fixed;
+            position: relative;
         }
 
         nav {
@@ -94,11 +94,12 @@
         /*            Header Ending Here*/
 
         #sidebar {
-            position: fixed;
+            position: relative;
             width: 17%;
-            margin-top: 59px;
+            /*            margin-top: 59px;*/
             margin-left: 55px;
             float: left;
+            margin-right: 10px;
         }
 
         .side1 {
@@ -163,7 +164,7 @@
             padding: 9px 0px 9px 13px;
             line-height: 18px;
             border: 1px solid rgba(0, 0, 0, 0.2);
-            font-size:1.2em;
+            font-size: 1.2em;
         }
 
         .sbadge {
@@ -175,19 +176,19 @@
             color: grey;
         }
         /*media Query for Laptop*/
-        @media (max-width:1024px){
-            #sidebar {
-                width:23%;
-                position: fixed;
 
+        @media (max-width:1024px) {
+            #sidebar {
+                width: 23%;
+                position: fixed;
             }
         }
-
         /*Media Query for Tablet*/
-         @media (max-width:768px){
+
+        @media (max-width:768px) {
             #sidebar {
-                width:25%;
-                position: fixed;
+                width: 25%;
+                /*                position: fixed;*/
                 font-size: 0.8em;
                 height: auto;
                 margin-top: 40px;
@@ -195,32 +196,147 @@
             }
         }
         /*Media Query for Mobile*/
-         @media (max-width:320px){
-        #sidebar{
-            width:60%;
-            margin-top:95px;
-            margin-left: auto;
-            margin-right: auto;
-            position: absolute;
-            z-index: -1;
-        }
-        }
 
-         .main {
+        @media (max-width:320px) {
+            #sidebar {
+                width: 60%;
+                margin-top: 95px;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+        /***/
+
+        Sidebar Ending Here
+        /**/
+
+        .main {
             width: 74%;
             float: left;
             background-color: #BEBEBD;
             border: 1px solid grey;
         }
-         .chead {
+
+        .chead {
             border-color: transparent;
             color: #3890C9;
             padding: 10px;
             background: #fff;
             height: 40px;
+            font-size: 1.4em;
             font-weight: bold;
         }
 
+        .col1,
+        .col3,
+        .col5 {
+            width: 49%;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .col2,
+        .col4,
+        .col6 {
+            width: 49%;
+            float: left;
+        }
+
+        form label {
+            padding: 10px 0 0 0px;
+            margin-left: 7px;
+            display: inline-block;
+            font-size: 1.3em
+        }
+
+        .col1 input[type=text],
+        .col2 input[type=text],
+        .col3 input[type=text],
+        .col4 input[type=text],
+        .col6 input[type=text] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0px 5px 5px;
+        }
+
+        .col1 input[type=checkbox] {
+            margin: 37px 0 0 8px;
+        }
+
+        .listbox {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0px 5px 5px;
+        }
+
+        .mandatory {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .colhead {
+            margin-top: 19px;
+            display: inline-block;
+            font-weight: bold;
+            margin-left: 5px;
+            font-size: 1.4em;
+        }
+
+        .content {
+            margin-right: 10px;
+            margin-top: 15px;
+        }
+
+        .main {
+            width: 74%;
+            float: left;
+            background-color: #BEBEBD;
+            border: 1px solid grey;
+        }
+
+        form {
+            border-color: transparent;
+            padding: 0 15px 12px 15px;
+            background: #fff;
+            float: left;
+        }
+
+        .tabgroup {
+            padding: 10px 0 20px 33px;
+            text-decoration: none;
+        }
+
+        .tabgroup a {
+            padding: 6px 15px 4px 15px;
+            background: #F1F1F1;
+            text-align: center;
+            border-radius: 3px;
+            cursor: pointer;
+            color: #000 !important;
+        }
+
+        .tabgroup a:hover {
+            background: #fff;
+            padding-bottom: 11px;
+        }
+
+        .breadcrumb {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 8px 0px 15px 0px;
+        }
+
+        .breadcrumb .fa {
+            width: 3px;
+            padding:1px 1px 15px 1px;
+            font-size: 0.8em;
+        }
+
+        .breadcrumb a {
+            color: #0d84ce;
+        }
     </style>
 </head>
 
@@ -240,101 +356,113 @@
             <span class="navicon"><i class="fa fa-user" aria-hidden="true"></i></span><a href="#" style="padding-left:0 !important;">John Doe<span class="chevrondown"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a></a>
         </nav>
     </header>
+    <nav class="breadcrumb">
+        <a style="color:#000;">Staff<i class="fa fa-chevron-right" aria-hidden="true"  style="color:#000;"></i></a>
+        <a class="crumb">Circulation<i class="fa fa-chevron-right" aria-hidden="true"style="color:#000;"></i></a>
+        <a class="crumb">Wesley Crusher<i class="fa fa-chevron-right" aria-hidden="true"style="color:#000;"></i></a>
+        <a class="crumb">Patron Information</a>
+        <span style="float:right;">
+        <a><i class="fa fa-folder-open-o" aria-hidden="true" style="padding-right:25px; font-size:1.3em;"></i></a>
+        <a><i class="fa fa-sign-out" aria-hidden="true"style="padding-right:25px;font-size:1.3em;"></i></a>
+        </span>
+    </nav>
     <!--/***** Header Ending Here***/-->
 
 
-<!--//*****SideBar Began Here****//-->
-    <div id="sidebar">
-        <div class="side1">
-            <div class="side1head">Wesley Crusher</div>
+    <!--//*****SideBar Began Here****//-->
+    <div class="content">
+        <div id="sidebar">
+            <div class="side1">
+                <div class="side1head">Wesley Crusher</div>
 
-            <img class="image" src="img/david.png">
-            <div class="side1content">
-                <p><span class="cbold"> Patron Type:</span> Adult</p>
-                <p><span class="cbold"> Barcode:</span> 104785923</p>
-                <p><span class="cbold"> Standing:</span> Good</p>
-                <div id="sicon"><i class="fa fa-university" aria-hidden="true"></i><span class="icon">Main Branch</span></div>
-                <div id="sicon"><i class="fa fa-users" aria-hidden="true" style="color:#000;"></i><span class="icon">The Crusher Family</span></div>
-                <div id="sicon"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="icon"><i>No address has been added</i></span></div>
-                <div id="sicon"><i class="fa fa-phone" aria-hidden="true"></i><span>(801)544-3455</span></div>
-                <div id="sicon"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>wesleycrusher@gmail.com</span></div>
+                <img class="image" src="img/david.png">
+                <div class="side1content">
+                    <p><span class="cbold"> Patron Type:</span> Adult</p>
+                    <p><span class="cbold"> Barcode:</span> 104785923</p>
+                    <p><span class="cbold"> Standing:</span> Good</p>
+                    <div id="sicon"><i class="fa fa-university" aria-hidden="true"></i><span class="icon">Main Branch</span></div>
+                    <div id="sicon"><i class="fa fa-users" aria-hidden="true" style="color:#000;"></i><span class="icon">The Crusher Family</span></div>
+                    <div id="sicon"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="icon"><i>No address has been added</i></span></div>
+                    <div id="sicon"><i class="fa fa-phone" aria-hidden="true"></i><span>(801)544-3455</span></div>
+                    <div id="sicon"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>wesleycrusher@gmail.com</span></div>
+                </div>
             </div>
-        </div>
-        <div class="side2">
-            <span class="vbox">1</span>
-            <div class="side2head">Patron Information</div>
-            <div class="side2content">
-                <p>Check Out <span class="sbadge">0</span></p>
-                <p>Items<span class="sbadge">0</span></p>
-                <p>Fines <span class="sbadge">0</span></p>
-                <p>Holds <span class="sbadge">0</span></p>
-                <p>Circulation History <span class="sbadge">0</span></p>
+            <div class="side2">
+                <span class="vbox">1</span>
+                <div class="side2head">Patron Information</div>
+                <div class="side2content">
+                    <p>Check Out <span class="sbadge">0</span></p>
+                    <p>Items<span class="sbadge">0</span></p>
+                    <p>Fines <span class="sbadge">0</span></p>
+                    <p>Holds <span class="sbadge">0</span></p>
+                    <p>Circulation History <span class="sbadge">0</span></p>
 
+                </div>
             </div>
+
         </div>
+    </div>
+    <!--//****Sidebar Ending Here****//-->
+    <div class="main">
+
+        <div class="chead">Patron Information</div>
+        <nav class="tabgroup">
+            <a>Patron</a>
+            <a>Demographics</a>
+            <a>Privilege</a>
+            <a>Contact</a>
+            <a>Statistics</a>
+            <a>Notes</a>
+            <a>User Groups</a>
+        </nav>
+
+        <form>
+            <div><span class="colhead">Name</span></div>
+
+            <div class="col1">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname">
+                <label for="lname">Last Name <span class="mandatory">*</span></label>
+                <input type="text" id="lname" name="lastname">
+                <input type="checkbox" id="use">
+                <label for="use">Use preferred name</label>
+            </div>
+
+            <div class="col2">
+                <label for="mname">Middle Name</label>
+                <input type="text" id="mname" name="middlename">
+                <label for="pname">Preferred Name</label>
+                <input type="text" id="pname" name="preferredname">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div><span class="colhead">Barcodes</span></div>
+            <div class="col3">
+                <label for="altid">Alt ID</label>
+                <input type="text" id="altid" name="altid">
+            </div>
+            <div class="col4">
+                <label for="grpid">Group ID</label>
+                <input type="text" id="grpid" name="groupid">
+            </div>
+            <div><span class="colhead">Location</span></div>
+            <div class="col5">
+                <label for="library">Library<span class="mandatory"> *</span></label>
+                <select id="library" class="listbox">
+                    <option>Main Branch</option>
+                    <option>Branch-1</option>
+                    <option>Branch-2</option>
+                </select>
+            </div>
+
+            <div class="col6">
+                <label for="dept">Department/HomeRoom</label>
+                <input type="text" id="dept" name="department">
+            </div>
+        </form>
 
     </div>
-<!--//****Sidebar Ending Here****//-->
 
-<div class="main">
-
-            <div class="chead">Patron Information</div>
-            <!--<nav class="tabgroup">
-                <a>Patron</a>
-                <a>Demographics</a>
-                <a>Privilege</a>
-                <a>Contact</a>
-                <a>Statistics</a>
-                <a>Notes</a>
-                <a>User Groups</a>
-            </nav>
-
-            <form>
-                <div><span class="colhead">Name</span></div>
-
-                <div class="col1">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname">
-                    <label for="lname">Last Name <span class="mandatory">*</span></label>
-                    <input type="text" id="lname" name="lastname">
-                    <input type="checkbox" id="use">
-                    <label for="use">Use preferred name</label>
-                </div>
-
-                <div class="col2">
-                    <label for="mname">Middle Name</label>
-                    <input type="text" id="mname" name="middlename">
-                    <label for="pname">Preferred Name</label>
-                    <input type="text" id="pname" name="preferredname">
-                    <label for="title">Title</label>
-                    <input type="text" id="title" name="title">
-                </div>
-                <div><span class="colhead">Barcodes</span></div>
-                <div class="col3">
-                    <label for="altid">Alt ID</label>
-                    <input type="text" id="altid" name="altid">
-                </div>
-                <div class="col4">
-                    <label for="grpid">Group ID</label>
-                    <input type="text" id="grpid" name="groupid">
-                </div>
-                <div><span class="colhead">Location</span></div>
-                <div class="col5">
-                    <label for="library">Library<span class="mandatory"> *</span></label>
-                    <select id="library" class="listbox">
-                        <option>Main Branch</option>
-                        <option>Branch-1</option>
-                        <option>Branch-2</option>
-                    </select>
-                </div>
-
-                <div class="col6">
-                    <label for="dept">Department/HomeRoom</label>
-                    <input type="text" id="dept" name="department">
-                </div>
-            </form>-->
-
-        </div>
 </body>
 
 </html>
