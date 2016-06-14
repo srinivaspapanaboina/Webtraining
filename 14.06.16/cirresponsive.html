@@ -187,20 +187,19 @@
 
         @media (max-width:768px) {
             #sidebar {
-                width: 25%;
+                width: 26%;
                 /*                position: fixed;*/
                 font-size: 0.8em;
                 height: auto;
-                margin-top: 40px;
                 margin-left: 10px;
+                line-height: 7px;
             }
         }
         /*Media Query for Mobile*/
 
         @media (max-width:320px) {
             #sidebar {
-                width: 60%;
-                margin-top: 95px;
+                width: 65%;
                 margin-left: auto;
                 margin-right: auto;
 /*                position: absolute;*/
@@ -336,6 +335,32 @@
 
         .breadcrumb a {
             color: #0d84ce;
+        }
+
+/*    ***form media query for laptop***    */
+        @media (max-width:1024px){
+            .main {
+                width:65%;
+            }
+        }
+/*        ***form media query for tablet***/
+         @media (max-width:768px){
+             .main {
+                 width: 70%;
+                 font-size:0.9em;
+             }
+             .tabgroup {
+                 padding-bottom: 15px;
+                              }
+             .tabgroup a {
+                  font-size:1em;
+             }
+        }
+/*        ***Media query for mobile***/
+        @media (max-width:320px){
+            .main {
+                width: 95%;
+            }
         }
     </style>
 </head>
