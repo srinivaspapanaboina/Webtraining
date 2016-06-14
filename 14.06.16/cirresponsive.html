@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica;
+        }
+
+        body {
+            font-size: 62.50%;
+            /*62.50%=10px=0.6250em*/
+            background: rgba(8, 8, 8, 0.1);
+        }
+        /*Header Starting Here        */
+
+        header {
+            background: #1C72A3;
+            width: 100%;
+            height: 28px;
+            position: fixed;
+        }
+
+        nav {
+            height: 20px;
+            overflow: hidden;
+            top: 0;
+            bottom: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0px 0px 0px 20px;
+            width: 20px;
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        .lnav,
+        .cnav,
+        .rnav {
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .rnav:last-child {
+            /*border-right: 1px solid #fff;*/
+        }
+
+        nav .chevrondown {
+            font-size: 0.7em;
+            padding-left: 5px;
+        }
+
+        .lnav {
+            float: left;
+        }
+
+        .rnav {
+            float: right;
+            margin-right: 25px;
+        }
+
+        .cnav {
+            margin-left: 28%;
+        }
+
+        .navicon {
+            color: #fff;
+            padding: 5px 8px 0px 10px;
+            font-size: 1.3em;
+        }
+
+        nav a:hover {
+            cursor: pointer;
+        }
+
+        @media (max-width:767px) {
+            header {
+                width: auto;
+                height: auto;
+            }
+            .rnav {
+                float: none;
+            }
+        }
+        /*            Header Ending Here*/
+
+        #sidebar {
+            position: fixed;
+            width: 17%;
+            margin-top: 59px;
+            margin-left: 55px;
+            float: left;
+        }
+
+        .side1 {
+            font-size: 1.4em;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            overflow: auto;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+        }
+
+        .image {
+            float: left;
+            padding: 5px 5px 2px 5px;
+        }
+
+        .side1head {
+            font-size: 1.2em;
+            color: #0d84ce;
+            padding: 10px;
+            background: linear-gradient(to right, rgba(51, 46, 46, 0), rgba(49, 49, 49, 0));
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+
+        .side1content {
+            padding: 10px;
+            line-height: 26px;
+        }
+
+        .cbold {
+            font-weight: bold;
+        }
+
+        #sicon .fa {
+            padding-left: 1px;
+            width: 30px;
+            color: grey;
+        }
+
+        .side2 {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+        }
+
+        .vbox {
+            background-color: #1B6C99;
+            position: absolute;
+            height: 36px;
+            width: 10px;
+            color: #1B6C99;
+        }
+
+        .side2head {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 0 10px 16px;
+            background: #B6D2E0;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .side2content p {
+            padding: 9px 0px 9px 13px;
+            line-height: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            font-size:1.2em;
+        }
+
+        .sbadge {
+            float: right;
+            padding: 1px 6px 1px 6px;
+            border-radius: 4px;
+            border: 1px solid grey;
+            margin-right: 11px;
+            color: grey;
+        }
+        /*media Query for Laptop*/
+        @media (max-width:1024px){
+            #sidebar {
+                width:23%;
+                position: fixed;
+
+            }
+        }
+
+        /*Media Query for Tablet*/
+         @media (max-width:768px){
+            #sidebar {
+                width:25%;
+                position: fixed;
+                font-size: 0.8em;
+                height: auto;
+                margin-top: 40px;
+                margin-left: 10px;
+            }
+        }
+        /*Media Query for Mobile*/
+         @media (max-width:320px){
+        #sidebar{
+            width:60%;
+            margin-top:95px;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            z-index: -1;
+        }
+        }
+
+         .main {
+            width: 74%;
+            float: left;
+            background-color: #BEBEBD;
+            border: 1px solid grey;
+        }
+         .chead {
+            border-color: transparent;
+            color: #3890C9;
+            padding: 10px;
+            background: #fff;
+            height: 40px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--    Header Starting Here-->
+    <header>
+        <nav class="lnav">
+            <a href="#">Staff<span class="chevrondown"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+            <a href="#">Admin<span class="chevrondown"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a></a>
+            <a href="#">Developers<span class="chevrondown"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a></a>
+        </nav>
+        <nav class="cnav">
+            <a href="#">Circulation</a>
+        </nav>
+        <nav class="rnav">
+            <a href="#">Main Branch<span class="chevrondown"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a></a>
+            <span class="navicon"><i class="fa fa-user" aria-hidden="true"></i></span><a href="#" style="padding-left:0 !important;">John Doe<span class="chevrondown"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a></a>
+        </nav>
+    </header>
+    <!--/***** Header Ending Here***/-->
+
+
+<!--//*****SideBar Began Here****//-->
+    <div id="sidebar">
+        <div class="side1">
+            <div class="side1head">Wesley Crusher</div>
+
+            <img class="image" src="img/david.png">
+            <div class="side1content">
+                <p><span class="cbold"> Patron Type:</span> Adult</p>
+                <p><span class="cbold"> Barcode:</span> 104785923</p>
+                <p><span class="cbold"> Standing:</span> Good</p>
+                <div id="sicon"><i class="fa fa-university" aria-hidden="true"></i><span class="icon">Main Branch</span></div>
+                <div id="sicon"><i class="fa fa-users" aria-hidden="true" style="color:#000;"></i><span class="icon">The Crusher Family</span></div>
+                <div id="sicon"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="icon"><i>No address has been added</i></span></div>
+                <div id="sicon"><i class="fa fa-phone" aria-hidden="true"></i><span>(801)544-3455</span></div>
+                <div id="sicon"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>wesleycrusher@gmail.com</span></div>
+            </div>
+        </div>
+        <div class="side2">
+            <span class="vbox">1</span>
+            <div class="side2head">Patron Information</div>
+            <div class="side2content">
+                <p>Check Out <span class="sbadge">0</span></p>
+                <p>Items<span class="sbadge">0</span></p>
+                <p>Fines <span class="sbadge">0</span></p>
+                <p>Holds <span class="sbadge">0</span></p>
+                <p>Circulation History <span class="sbadge">0</span></p>
+
+            </div>
+        </div>
+
+    </div>
+<!--//****Sidebar Ending Here****//-->
+
+<div class="main">
+
+            <div class="chead">Patron Information</div>
+            <!--<nav class="tabgroup">
+                <a>Patron</a>
+                <a>Demographics</a>
+                <a>Privilege</a>
+                <a>Contact</a>
+                <a>Statistics</a>
+                <a>Notes</a>
+                <a>User Groups</a>
+            </nav>
+
+            <form>
+                <div><span class="colhead">Name</span></div>
+
+                <div class="col1">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname">
+                    <label for="lname">Last Name <span class="mandatory">*</span></label>
+                    <input type="text" id="lname" name="lastname">
+                    <input type="checkbox" id="use">
+                    <label for="use">Use preferred name</label>
+                </div>
+
+                <div class="col2">
+                    <label for="mname">Middle Name</label>
+                    <input type="text" id="mname" name="middlename">
+                    <label for="pname">Preferred Name</label>
+                    <input type="text" id="pname" name="preferredname">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div><span class="colhead">Barcodes</span></div>
+                <div class="col3">
+                    <label for="altid">Alt ID</label>
+                    <input type="text" id="altid" name="altid">
+                </div>
+                <div class="col4">
+                    <label for="grpid">Group ID</label>
+                    <input type="text" id="grpid" name="groupid">
+                </div>
+                <div><span class="colhead">Location</span></div>
+                <div class="col5">
+                    <label for="library">Library<span class="mandatory"> *</span></label>
+                    <select id="library" class="listbox">
+                        <option>Main Branch</option>
+                        <option>Branch-1</option>
+                        <option>Branch-2</option>
+                    </select>
+                </div>
+
+                <div class="col6">
+                    <label for="dept">Department/HomeRoom</label>
+                    <input type="text" id="dept" name="department">
+                </div>
+            </form>-->
+
+        </div>
+</body>
+
+</html>
