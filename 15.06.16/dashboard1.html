@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 62.5%;
+            /**62.5%=10px=1em**/
+            background: #edf0f5;
+        }
+
+        .main {
+            margin-top: 40px;
+        }
+
+        #row1,
+        #row2,
+        #row3,
+        #row4 {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .views,
+        .active {
+            width: 45%;
+            background: #fff;
+            border: 1px solid #fff;
+            font-size: 1.5em;
+            float: left;
+            padding: 10px;
+            line-height: 35px;
+        }
+
+        .views {
+            margin-right: 20px;
+        }
+
+        .pullright {
+            float: right;
+            font-size: 1.3em;
+            margin-top: -34px;
+        }
+
+        small {
+            color: grey;
+        }
+
+        .loads {
+            clear: both;
+        }
+
+        .loads,
+        .pending,
+        .close,
+        .pending2 {
+            width: 22%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            border: 1px solid #fff;
+            font-size: 1.7em;
+            float: left;
+            line-height: 35px;
+            color: #2E9AFE;
+        }
+
+        .loadfooter,
+        .pendingfooter,
+        .closefooter,
+        .pending2footer {
+            background: #2E9AFE;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            padding: 5px;
+            font-size: 0.9em;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .smallchart {
+            float: right;
+            font-size: 1.5em;
+        }
+
+        .pending {
+            margin-left: 12px;
+            margin-right: 19px;
+        }
+
+        .close {
+            margin-right: 12px;
+        }
+
+        .row2icons {
+            float: right;
+            color: #D8D8D8;
+            font-size: 1.8em;
+            margin-top: -19px;
+            padding-right: 5px;
+        }
+
+        .sale {
+            width: 45%;
+            font-size: 1.4em;
+            text-align: justify;
+            line-height: 25px;
+            padding: 10px;
+            border: 1px solid #fff;
+            color: grey;
+            font-family: helvetica;
+            background: #fff;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .sale h2 {
+            color: #2E9AFE;
+            padding: 10px;
+        }
+
+        .graph {
+            width: 46%;
+            height: 167px;
+            border: 1px solid #fff;
+            float: left;
+            background: #fff;
+        }
+
+        .row4header1 {
+            font-size: 1.2em;
+            padding: 10px 0 10px 20px;
+        }
+
+        .row4col1 {
+            width: 55%;
+            background: #fff;
+            float: left;
+            margin-right: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+            text-align: center;
+            line-height: 35px;
+            font-size: 1.2em;
+            color: grey;
+        }
+
+        .todo {
+            width: 35%;
+            float: left;
+            background: #fff;
+        }
+
+        .row4header2 {
+            font-size: 1.9em;
+            padding: 10px 0 10px 20px;
+        }
+
+        .row4-2content {
+            padding: 20px;
+            font-size: 1.6em;
+            line-height: 31px;
+            color: grey;
+        }
+        .todolabel {
+            padding-left: 10px;
+        }
+        .row4-2content h4{
+            font-size:0.8em;
+            padding-bottom: 0px;
+        }
+
+        .row4btn {
+            display: inline-block;
+            width: 57px;
+            height: 34px;
+            margin-left:15px;
+            border-radius: 4px;
+            background: #fff;
+        }
+        .row4col2footer{
+            clear: both;
+            width:35%;
+            display: inline-block;
+            height:65px;
+        }
+        .r4fcontent{
+            padding: 15px;
+        }
+        footer {
+            font-size:1.5em;
+            text-align: center;
+            color: grey;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div id="row1">
+            <div class="views">
+                <h3>Welcome to Infinity</h3><span class="pullright">102</span>
+                <small>Number of Views</small>
+            </div>
+
+            <div class="active">
+                <h3>Active</h3><span class="pullright">325</span>
+                <small>Loads / Contact</small>
+            </div>
+        </div>
+
+        <div id="row2" style="clear:both;">
+            <div class="loads">
+                <div class="content">
+                    <h3>66.136k</h3>
+                    <small>Total loads</small>
+                    <span class="row2icons"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
+                </div>
+                <footer class="loadfooter">
+                    <span>% Charge</span>
+                    <span class="smallchart"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                </footer>
+            </div>
+
+            <div class="pending">
+                <div class="content">
+                    <h3 style="color:#FA5858;">3.490k</h3>
+                    <small>Total Pending</small>
+                    <span class="row2icons"><i class="fa fa-ban" aria-hidden="true"></i></span>
+                </div>
+                <footer class="pendingfooter" style="background:#FA5858;">
+                    <span>% Charge</span>
+                    <span class="smallchart"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                </footer>
+            </div>
+
+
+            <div class="close">
+                <div class="content">
+                    <h3 style="color:#10c469;">8.378k</h3>
+                    <small>Case Close</small>
+                    <span class="row2icons"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                </div>
+                <footer class="closefooter" style="background:#10c469;">
+                    <span>% Charge</span>
+                    <span class="smallchart"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                </footer>
+            </div>
+
+            <div class="pending2">
+                <div class="content">
+                    <h3 style="color:#FFBF00;">3.490k</h3>
+                    <small>Total Pending</small>
+                    <span class="row2icons"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+                </div>
+                <footer class="pending2footer" style="background:#FFBF00;">
+                    <span>% Charge</span>
+                    <span class="smallchart"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                </footer>
+            </div>
+        </div>
+
+
+        <div id="row3" style="clear:both;">
+            <div class="sale">
+                <h2>Sales in 2014</h2>
+                <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum alias est vitae, obcaecati?</p>
+            </div>
+            <div class="graph">
+            </div>
+        </div>
+        <div id="row4" style="clear:both;">
+            <div class="row4col1">
+                <div class="row4header1">
+                    <h2>Active Leads</h2></div>
+                <hr class="headerspliter">
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Lead Name</th>
+                        <th>Views</th>
+                        <th>Favorites</th>
+                        <th>Last Visit</th>
+                        <th>Last Action</th>
+                    </tr>
+                    <tr>
+                        <td>Buyer</td>
+                        <td>Denise Ann</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>9:23AM</td>
+                        <td>11/9/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Buyer</td>
+                        <td>Denise Ann</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>9:23AM</td>
+                        <td>11/9/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Landlord</td>
+                        <td>Denise Ann</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>9:23AM</td>
+                        <td>11/9/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Buyer</td>
+                        <td>Denise Ann</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>9:23AM</td>
+                        <td>11/9/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Seller</td>
+                        <td>Denise Ann</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>9:23AM</td>
+                        <td>11/9/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Buyer</td>
+                        <td>Denise Ann</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>9:23AM</td>
+                        <td>11/9/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Buyer</td>
+                        <td>Denise Ann</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>9:23AM</td>
+                        <td>11/9/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Buyer</td>
+                        <td>Denise Ann</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>9:23AM</td>
+                        <td>11/9/2015</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="todo">
+                <div class="row4header2"> Todo List </div>
+                <hr class="headerspliter">
+                <div class="row4-2content">
+                    <div>
+                        <input type="checkbox">
+                        <label class="todolabel">Record The First Episode of HTml Tutorial</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label class="todolabel">Prepare The Conference Schedule</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label class="todolabel">Decide The Live Discussion Time</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label class="todolabel">Prepare For The Next Project</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label class="todolabel">Finish Up AngularJs Tutorial</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label class="todolabel">Finish Infinity Project</label>
+                    </div>
+                    <hr class="headerspliter">
+                    <h4 style="color:grey;">Add New Task</h4>
+                </div>
+                 </div>
+                <div class="row4col2footer">
+                    <div class="r4fcontent">
+                    <button type="button" value="All" class="row4btn" style="background:#74DF00; color:#fff;">All</button>
+                    <button type="button" value="Archive" class="row4btn">Archive</button>
+                    <button type="button" value="clear" class="row4btn" style="width:115px;  margin-right: 5px; float:right;">Clear Completed</button>
+                        </div>
+                </div>
+        </div>
+        <footer>
+   &copy; Copyrights 2016
+        </footer>
+    </div>
+
+</body>
+
+
+</html>
