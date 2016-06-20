@@ -1,0 +1,113 @@
+<html>
+<head>
+<style>
+*{
+padding:0;
+margin:0;
+}
+    .form {
+        width: 50%;
+    }
+    label {
+        text-align: right;
+        width: 150px;
+        font-size:18px;
+        font-weight: bold;
+        float: left;
+    }
+    input{
+        width:78%;
+        margin-bottom: 15px;
+        padding: 5px;
+        margin-right: 5px;
+        border:1px solid #ccc;
+        }
+    .required {
+        color: red;
+    }
+    .fhead {
+        background: blue;
+        color: #fff;
+        font-size:20px;
+        margin-bottom: 5px;
+        height: 30px;
+        text-align: center;
+    }
+   /* .inp {
+        display: block;
+        overflow: hidden;
+        padding-left: 5px;
+    }*/
+    .form {
+        border: 1px solid black;
+        margin: 0 auto;
+        background: lightyellow;
+    }
+    .table {
+        display: table;
+        width: 50%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+    .table-row {
+        display: table-row;
+    }
+    .table-cell, .table-head{
+        display: table-cell;
+        padding:0.5rem;
+        border:#f0f0f0 1px solid;
+    }
+    .table-head{
+        font-weight: bold;
+        text-align: center;
+
+    }
+    </style>
+    </head>
+    <body>
+<div class="form">
+<div class="fhead">Shipping Address</div>
+    <div>
+    <label for="name"><span class="required">*</span>Name:</label>
+        <span class="inp"><input type="text" id="name"></span>
+    </div>
+    <div>
+    <label for="address"><span class="required">*</span>Address:</label>
+        <input type="text" id="address">
+    </div>
+    <div>
+    <label for="address1">Address:</label>
+        <input type="text" id="address1">
+    </div>
+    <div>
+    <label for="city"><span class="required">*</span>City:</label>
+        <input type="text" id="city">
+    </div>
+    <div>
+    <label for="State"><span class="required">*</span>State:</label>
+        <input type="text" id="state">
+    </div>
+    <div>
+    <label for="zip"><span class="required">*</span>Zip:</label>
+        <input type="text" id="zip">
+    </div>
+        </div>
+        <div class="table">
+        <div class="table-row">
+            <div class="table-head">Slno</div>
+            <div class="table-head">Student Name</div>
+            <div class="table-head">Roll No</div>
+            </div>
+            <div class="table-row">
+            <div class="table-cell">1</div>
+                <div class="table-cell">Srinivas</div>
+                <div class="table-cell">319804</div>
+                        </div>
+            <div class="table-row">
+            <div class="table-cell">2</div>
+                <div class="table-cell">Srinivas</div>
+                <div class="table-cell">3324</div>
+                        </div>
+        </div>
+</body>
+</html>
