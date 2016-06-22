@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body,
+        html {
+            font-family: Arial, Helvetica;
+            background: #ddd;
+        }
+        .wrapper {
+            width: 100%;
+            margin-left: 1%;
+            margin-right: 1%;
+            max-width: 98%;
+        }
+        .box {
+            margin-bottom: 20px;
+        }
+        .span6 {
+            width: 48%;
+            border: 1px solid black;
+            background: rgba(62, 134, 217, 0.35);
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        
+        .box-head {
+            background: rgba(124, 200, 248, 0.99);
+            height: 35px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            /*            color: #333;*/
+            color: #fff;
+            box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 1);
+        }
+        
+        .label-control {
+            text-align: right;
+            width: 150px;
+            margin-right: 20px;
+            float: left;
+            padding-top: 5px;
+        }
+        
+        input {
+            width: 70%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 2px;
+            color: #333;
+        }
+        
+        .message {
+            width: 70%;
+            height: 60px;
+        }
+        
+        .control-group {
+            border-bottom: 1px solid #ccc;
+            padding-top: 8px;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            display: inline-block;
+            border-right: 1px solid #fff;
+            padding: 6px 10px 7px 5px;
+            margin-left: 7px;
+        }
+        button {
+            display: block;
+            width: 70px;
+            height: 30px;
+            background: #2e8e2e;
+            color: #fff;
+            border:none;
+            margin: 0 auto;
+            font-size: 19px;
+            border-radius: 2px;
+                   }
+        .form-action {
+            padding: 15px;
+            background: rgba(0, 96, 128, 0.87);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper"> 
+    <div class="box span6">
+        <div class="box-head"><span class="icon"><i class="fa fa-align-justify" aria-hidden="true"></i></span>Personal Info</div>
+        <div class="box-content">
+            <div class="control-group">
+                <label class="label-control" for="fname">First Name:</label>
+                <div class="form-control">
+                    <input type="text" id="fname" placeholder="First name">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="lname">Last Name:</label>
+                <div class="form-control">
+                    <input type="text" id="lname" placeholder="Last name">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="password">Password input:</label>
+                <div class="form-control">
+                    <input type="text" id="password" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="company">Company info:</label>
+                <div class="form-control">
+                    <input type="text" id="company" placeholder="Company name">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="description">Description field:</label>
+                <div class="form-control">
+                    <input type="text" id="description">
+                </div>
+                <span style="text-align:center; display:block; color:#333;">Description field</span>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="message">Message</label>
+                <div class="form-control">
+                    <textarea id="message" class="message"></textarea>
+                </div>
+            </div>
+            <div class="form-action"><button type="button">Save</div>
+        </div>
+    </div>
+        
+        
+        <!--<div class="box span6">
+        <div class="box-head"><span class="icon"><i class="fa fa-align-justify" aria-hidden="true"></i></span>Personal Info</div>
+        <div class="box-content">
+            <div class="control-group">
+                <label class="label-control" for="fname">First Name:</label>
+                <div class="form-control">
+                    <input type="text" id="fname" placeholder="First name">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="lname">Last Name:</label>
+                <div class="form-control">
+                    <input type="text" id="lname" placeholder="Last name">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="password">Password input:</label>
+                <div class="form-control">
+                    <input type="text" id="password" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="company">Company info:</label>
+                <div class="form-control">
+                    <input type="text" id="company" placeholder="Company name">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="description">Description field:</label>
+                <div class="form-control">
+                    <input type="text" id="description">
+                </div>
+                <span style="text-align:center; display:block; color:#333;">Description field</span>
+            </div>
+            <div class="control-group">
+                <label class="label-control" for="message">Message</label>
+                <div class="form-control">
+                    <textarea id="message" class="message"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>-->
+        
+        
+        
+        </div> <!--wrapper-->
+
+</body>
+
+</html>

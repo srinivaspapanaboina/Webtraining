@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: verdana, Arial, Helvetica;
+            font-size: 62.5%;
+            /*            1rem=10px;*/
+            background: #71B9D1;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .logo {
+            background: url(./img/logo.jpg) no-repeat center;
+            top: 0;
+            width: 10rem;
+            height: 7.5rem;
+            float: left;
+            margin-right: 2rem;
+            margin-left: 3rem;
+        }
+
+        .bgimage {
+            background: url(img/loginbg.jpg) no-repeat;
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin-top: -18px;
+            height: 55rem;
+            float: left;
+            opacity: 0.7;
+            border: none;
+            z-index: -1;
+            /*            border-radius: 25rem 0rem 0rem 0rem;*/
+        }
+
+        .header h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            padding-top: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .main {
+            margin-top: -80px !important;
+        }
+
+        .content {
+            top: 15rem;
+            left: 18%;
+            position: absolute;
+            width: 22%;
+            height: inherit;
+            line-height: 2rem;
+            text-align: justify;
+        }
+
+        .content span {
+            font-size: 1.2rem;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .labelcontrol {
+            float: left;
+            width: 9rem;
+            font-size: 1.6rem;
+            padding-top: 0.3rem;
+        }
+
+        .loginform {
+            width: 30%;
+/*            padding: 1rem 0.5rem 1rem 1rem;*/
+            margin-top: 42rem;
+            position: absolute;
+            border: 1px solid #eee;
+            margin-left: 4rem;
+        }
+
+        input {
+            padding: 0.7rem;
+            width: 60%;
+            max-width: 55%;
+            border-radius: 0.3rem;
+            border: none;
+        }
+        .control-group {
+            padding: 2rem;
+        }
+        .userlogin h3{
+            font-size:1.7rem;
+        }
+        .loginicon{
+            background: url(img/loginlogo.png);
+            width: 100%;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <a href="#" class="logo"></a>
+        <div class="header">
+            <h2>Managed Software Solutions</h2>
+            <span class="tagline">for the Hospitality Industry</span>
+        </div>
+        <div class="main">
+            <div class="bgimage"></div>
+            <div class="content">
+                <h3>M3 Offers Continuing Professional Education Program for Accountants</h3>
+                <span> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,<span><a>content here </a></span>, making it look like readable English.</span>
+            </div>
+        </div>
+        <div class="loginform clear">
+           <div class="userlogin">
+            <span><a href="#" class="loginicon"></a></span>    <h3>User Login</h3></div>
+            <div class="control-group">
+                <label class="labelcontrol" for="loginid">Login Id:</label>
+                <input type="text" id="loginid" name="loginid">
+            </div>
+            <div class="control-group">
+                <label class="labelcontrol" for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <!--Wrapper Closing Div-->
+</body>
+
+</html>
