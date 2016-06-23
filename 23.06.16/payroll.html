@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: verdana, Arial, Helvetica;
+            font-size: 62.5%;
+            /**62.5%=10px=1em=1rem**/
+            background: #fff;
+        }
+
+        .sidenav {
+            width: 15%;
+            position: fixed;
+            height: 100%;
+            border: 1px solid black;
+            background: #ddd;
+            float: left;
+        }
+
+        .col-head h3 {
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            margin-left: 16%;
+        }
+
+        .color {
+            color: darkorange;
+        }
+
+        .formlabel {
+            font-size: 1.4rem;
+            float: left;
+            width: 30%;
+        }
+
+        .rfloat {
+            float: right;
+            margin-right: 0.5rem;
+        }
+
+        .row1 input,
+        select {
+            width: 57%;
+            padding: 0.3rem;
+            margin-bottom: 0.3rem;
+            margin-left: 1rem;
+        }
+
+        .col1 {
+            width: 40%;
+            max-width: 40%;
+            border: 1px solid black;
+            float: left;
+            margin-left: 16%;
+            padding: 0.4rem;
+            margin-right: 1rem;
+        }
+
+        .col2 {
+            width: 40%;
+            max-width: 40%;
+            border: 1px solid black;
+            float: left;
+            padding: 0.4rem;
+        }
+
+        .smallinput {
+            width: 37% !important;
+        }
+
+        .calicon {
+            font-size: 1.3rem;
+            padding: 0.5rem;
+        }
+
+
+        .row2 {
+            margin-left: 16%;
+            width: 80.9%;
+            display: inline-block;
+        }
+
+        .row2 input[type="text"] {
+            width: 16%;
+            padding: 0.3rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .pinlabel {
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
+
+        .checkfloat {
+            float: right;
+            font-size: 1.3rem;
+            margin-top: -31px;
+            margin-right: 15rem;
+            padding-top: 0.3rem;
+        }
+        .checklabel{
+            margin-right: 10rem;
+            padding-top: 0;
+        }
+
+        .row3-col1{
+             margin-left: 16%;
+            width: 40%;
+            font-size: 1.1rem;
+        }
+        .r3formlabel{
+            display: inline;
+            padding-left: 15px;
+            text-indent: -15px;
+            margin-right: 8rem;
+            font-size: 1.4rem;
+
+        }
+        .r3checkbox{
+            width: 13px;
+            height: 13px;
+            padding: 0;
+            margin: 0;
+            vertical-align: bottom;
+            position: relative;
+            top:-1px;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*       Media Query 1024 resolution */
+
+        @media (max-width:1024px) {
+            .formlabel {
+                width: 34%!important;
+            }
+            select {
+                width: 63% !important;
+                font-size: 1.3rem;
+            }
+            .rfloat {
+                padding: 0;
+                margin: 0;
+            }
+            .smallinput {
+                width: 44%!important;
+            }
+        }
+        /*       Media Query 768 resolution */
+
+        @media (max-width:768px) {
+            .formlabel {
+                width: 38%!important;
+                font-size: 1.19rem;
+                margin-top: 0.20rem;
+            }
+            select {
+                width: 58% !important;
+                margin-top: 0.3rem;
+                margin-bottom: 0.2rem;
+            }
+            .rfloat {
+                padding: 0;
+                margin: 0;
+            }
+            .smallinput {
+                width: 44%!important;
+            }
+        }
+        /*       Media Query 320 resolution */
+
+        @media (max-width:320px) {
+            .col1,
+            .col2 {
+                width: 100%;
+                max-width: 80%!important;
+            }
+            .col2 {
+                clear: both;
+                margin-left: 16% !important;
+                margin-top: 0.5rem;
+            }
+            .formlabel {
+                width: 44% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+
+    </div>
+    <div class="form">
+        <div class="row1">
+            <div class="col-head color">
+                <h3>Employee Details</h3></div>
+            <div class="col1 span4">
+                <div class="form-group">
+                    <lable class="formlabel" for="badge">Badge Number<span class="rfloat">:</span></lable>
+                    <input type="text" id="badge" name="badgeno" class="smallinput">
+                </div>
+                <div class="form-group">
+                    <lable class="formlabel" for="empstatus">Employee Status<span class="rfloat">:</span></lable>
+                    <select>
+                        <option selected>Select..</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <lable class="formlabel" for="workpolicy">Work Policy<span class="rfloat">:</span></lable>
+                    <select id="workpolicy">
+                        <option selected>Select..</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <lable class="formlabel" for="unioncode">Union Code<span class="rfloat">:</span></lable>
+                    <select>
+                        <option selecteds>Select..</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <lable class="formlabel" for="paygroup">Pay Group<span class="rfloat">:</span></lable>
+                    <select>
+                        <option selected>Select..</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                    </select>
+                </div>
+            </div>
+            <!--        </div>col1 ending -->
+
+
+            <div class="col2 span4">
+                <div class="form-group">
+                    <lable class="formlabel" for="effectivedate">Effective Date<span class="rfloat">:</span></lable>
+                    <input type="text" id="effectivedate" name="effectivedate" class="smallinput"><span class="calicon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="form-group">
+                    <lable class="formlabel" for="dateemployed">Date Employed<span class="rfloat">:</span></lable>
+                    <input type="text" id="dateemployed" name="dateemployed" class="smallinput"><span class="calicon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="form-group">
+                    <lable class="formlabel" for="dateterminated">Date Terminated<span class="rfloat">:</span></lable>
+                    <input type="text" id="dateterminated" name="dateterminated" class="smallinput"><span class="calicon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="form-group">
+                    <lable class="formlabel" for="terminationcode">Termination Code<span class="rfloat">:</span></lable>
+                    <select>
+                        <option selected>Select..</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <lable class="formlabel" for="schpriority">Schedule Priority<span class="rfloat">:</span></lable>
+                    <select>
+                        <option selected>Do Not Schedule..</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                    </select>
+                </div>
+            </div>
+            <!--col2 ending -->
+        </div>
+        <div class="row2">
+            <fieldset>
+                <legend class="color"><h3>Check Information</h3></legend>
+                <div>
+                    <label class="pinlabel" for="pinno">Pin Number:</label>
+                    <input type="text" id="pin" name="pinno"> </div>
+                <div class="checkfloat">
+                    <input type="checkbox" id="supervisor" name="supervisor">
+                    <label for="supervisor" class="checklabel">Supervisor</label>
+                    <input type="checkbox" id="phone" name="phone">
+                    <label for="phone" class="checklabel">Phone</label>
+                </div>
+            </fieldset>
+        </div><!-- row2 ending-->
+        <div class="row3-col1">
+        <fieldset>
+            <legend class="color"><h3>Eligibility</h3></legend>
+            <div>
+                <div>
+            <label class="r3formlabel"><input type="checkbox" class="r3checkbox">Shift Pay</label>
+                <label  class="r3formlabel"><input type="checkbox" class="r3checkbox">Allocation</label>
+                <label  class="r3formlabel"><input type="checkbox" class="r3checkbox">Tipped</label>
+                    </div>
+
+                <div>
+                <label  class="r3formlabel"><input type="checkbox" class="r3checkbox">Probationary</label>
+                <label  class="r3formlabel"><input type="checkbox" class="r3checkbox">Wave Meal Break</label>
+                    </div>
+
+            </div>
+
+
+
+            </fieldset>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
