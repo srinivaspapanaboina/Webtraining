@@ -88,57 +88,47 @@
         .row2 {
             margin-left: 16%;
             width: 80.9%;
-            display: inline-block;
         }
 
         .row2 input[type="text"] {
-            width: 16%;
             padding: 0.3rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
             display: inline-block;
+            margin-right: 20rem;
+        }
+        .group legend {
+            margin-left: 2rem;
+             color: darkorange;
         }
 
         .pinlabel {
             font-size: 1.5rem;
             padding: 0.5rem;
         }
-
-        .checkfloat {
-            float: right;
-            font-size: 1.3rem;
-            margin-top: -31px;
-            margin-right: 15rem;
-            padding-top: 0.3rem;
-        }
-        .checklabel{
-            margin-right: 10rem;
-            padding-top: 0;
-        }
-
-        .row3-col1{
-             margin-left: 16%;
-            width: 40%;
-            font-size: 1.1rem;
-        }
-        .r3formlabel{
-            display: inline;
-            padding-left: 15px;
-            text-indent: -15px;
-            margin-right: 8rem;
-            font-size: 1.4rem;
-
-        }
-        .r3checkbox{
-            width: 13px;
-            height: 13px;
-            padding: 0;
+        .check {
+            list-style: none;
             margin: 0;
-            vertical-align: bottom;
-            position: relative;
-            top:-1px;
+             font-size: 1.2rem;
+            margin-top: 1rem;
+            line-height: 4rem;
+        }
+        .check li {
+            display: inline;
+            margin-left: 0.48rem;
+            padding-right: 10rem;
 
         }
+        .row3-col1 {
+            margin-left: 16%;
+            width: 40%;
+        }
+        .breakcb {
+            margin-left: -2rem!important;
+        }
+
+
+
 
 
 
@@ -294,39 +284,34 @@
             <!--col2 ending -->
         </div>
         <div class="row2">
-            <fieldset>
-                <legend class="color"><h3>Check Information</h3></legend>
-                <div>
+            <fieldset class="group">
+                <legend><h3>Check Information</h3></legend>
+                <div style="float:left">
                     <label class="pinlabel" for="pinno">Pin Number:</label>
                     <input type="text" id="pin" name="pinno"> </div>
-                <div class="checkfloat">
-                    <input type="checkbox" id="supervisor" name="supervisor">
-                    <label for="supervisor" class="checklabel">Supervisor</label>
-                    <input type="checkbox" id="phone" name="phone">
-                    <label for="phone" class="checklabel">Phone</label>
-                </div>
+                <ul class="check">
+                <li><input type="checkbox" id="cb1" value="supervisor" name="supervisor"><label for="cb1">Supervisor</label></li>
+                     <li><input type="checkbox" id="cb2" value="phone" name="phone"><label for="cb2">eTime Phone</label></li>
+                </ul>
             </fieldset>
         </div><!-- row2 ending-->
         <div class="row3-col1">
-        <fieldset>
-            <legend class="color"><h3>Eligibility</h3></legend>
-            <div>
-                <div>
-            <label class="r3formlabel"><input type="checkbox" class="r3checkbox">Shift Pay</label>
-                <label  class="r3formlabel"><input type="checkbox" class="r3checkbox">Allocation</label>
-                <label  class="r3formlabel"><input type="checkbox" class="r3checkbox">Tipped</label>
-                    </div>
-
-                <div>
-                <label  class="r3formlabel"><input type="checkbox" class="r3checkbox">Probationary</label>
-                <label  class="r3formlabel"><input type="checkbox" class="r3checkbox">Wave Meal Break</label>
-                    </div>
-
-            </div>
+        <fieldset class="group">
+            <legend><h3>Eligibility</h3></legend>
+        <ul class="check">
+            <li><input type="checkbox" id="cb1" value="shiftpay" name="shifpay"><label for="cb1">Shift Pay</label></li>
+            <li><input type="checkbox" id="cb2" value="allocation" name="allocation"><label for="cb2">
+                Allocation</label></li>
+            <li><input type="checkbox" id="cb3" value="tipped" name="tipped"><label for="cb3">Tipped</label></li>
+            <li><input type="checkbox" id="cb4" value="probationary" name="probationary"><label for="cb4">Probationary</label></li>
+            <li class="breakcb"><input type="checkbox" id="cb5" value="mealbreak" name="mealbreak"><label for="cb5">Wave Meal Break</label></li>
 
 
 
-            </fieldset>
+            </ul>
+
+
+        </fieldset>
 
 
         </div>
