@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica;
+        }
+
+        body {
+            font-size: 15px;
+            background: rgba(8, 8, 8, 0.1);
+            /*            font-size: 62.5%;*/
+        }
+
+        header {
+            width: 100%;
+            height: 30px;
+            background: #1C74A7;
+        }
+
+        .headnav {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px;
+            margin-left: 86px;
+        }
+
+        .headnav a {
+            padding-right: 50px;
+            cursor: pointer;
+        }
+
+        .navright {
+            float: right;
+            padding-left: 10px;
+        }
+
+        .navcenter {
+            margin-left: 303px;
+        }
+
+        .sidebar {
+            width: 25%;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .side1 {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin-left: 62px;
+            height: 271px;
+            overflow: auto;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+        }
+
+        .side1head {
+            color: #0d84ce;
+            padding: 10px;
+            background: linear-gradient(to right, rgba(51, 46, 46, 0), rgba(49, 49, 49, 0));
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .image {
+            float: left;
+            padding: 10px 15px 7px 10px;
+        }
+
+        .side1content {
+            padding: 10px;
+            line-height: 26px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .cbold {
+            font-weight: bold;
+        }
+
+        .side2 {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin-left: 62px;
+            margin-top: 10px;
+            height: 270px;
+            overflow: auto;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+        }
+
+        .side2head {
+            padding: 10px 0 10px 16px;
+            background: #B6D2E0;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            font-size: 15px;
+        }
+
+        .side2content p {
+            padding: 9px 0px 9px 13px;
+            line-height: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .sbadge {
+            float: right;
+            padding: 1px 6px 1px 6px;
+            border-radius: 4px;
+            border: 1px solid grey;
+            margin-right: 11px;
+            color: grey;
+        }
+
+        .chead {
+            border-color: transparent;
+            color: #3890C9;
+            padding: 10px;
+            background: #fff;
+            height: 40px;
+            font-weight: bold;
+        }
+
+        .col1,
+        .col3,
+        .col5 {
+            width: 49%;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .col2,
+        .col4,
+        .col6 {
+            width: 49%;
+            float: left;
+        }
+
+        form label {
+            padding: 10px 0 0 0px;
+            margin-left: 7px;
+            display: inline-block;
+            font-size: 13px;
+        }
+
+        .col1 input[type=text],
+        .col2 input[type=text],
+        .col3 input[type=text],
+        .col4 input[type=text],
+        .col6 input[type=text] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0px 5px 5px;
+        }
+
+        .col1 input[type=checkbox] {
+            margin: 37px 0 0 8px;
+        }
+
+        .listbox {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0px 5px 5px;
+        }
+
+        .mandatory {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .colhead {
+            margin-top: 19px;
+            display: inline-block;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .main {
+            width: 74%;
+            float: left;
+            background-color: #BEBEBD;
+            border: 1px solid grey;
+        }
+
+        form {
+            border-color: transparent;
+            padding: 0 15px 34px 15px;
+            background: #fff;
+            float: left;
+        }
+
+        .tabgroup {
+            padding: 24px 0 5px 33px;
+            text-decoration: none;
+        }
+
+        .tabgroup a {
+            padding: 6px 15px 4px 15px;
+            background: #F1F1F1;
+            text-align: center;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .tabgroup a:hover {
+            background: #fff;
+            padding-bottom: 11px;
+        }
+
+        .content {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .vbox {
+            background-color: #1B6C99;
+            position: absolute;
+            height: 39px;
+            width: 10px;
+            color: #1B6C99;
+        }
+
+        .fa {
+            padding: 0 11px 0px 4px;
+            width: 30px;
+            color: grey;
+        }
+
+        .breadcrumb {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 8px 0px 0px 0px;
+        }
+
+        .breadcrumb .fa {
+            width: 10px;
+        }
+
+        .breadcrumb a {
+            color: #0d84ce;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header began here-->
+    <header>
+        <nav class="headnav">
+            <a>Staff</a>
+            <a>Admin</a>
+            <a>Developers</a>
+            <span class="navcenter"><a>Circulation</a></span>
+            <span class="navright">
+      <a style="padding-right:0px;">Main Branch</a><i class="fa fa-chevron-down" aria-hidden="true"  style="color:#fff; font-size:11px;"></i>
+         <i class="fa fa-user" aria-hidden="true" style="color:#fff;"></i><a style="padding-right:0px;">John Doe</a><i class="fa fa-chevron-down" aria-hidden="true"  style="color:#fff;font-size:11px;"></i>
+        </span>
+        </nav>
+    </header>
+    <nav class="breadcrumb">
+        <a style="color:#000;">Staff<i class="fa fa-chevron-right" aria-hidden="true"  style="color:#000; font-size:11px;"></i></a>
+        <a class="crumb">Circulation<i class="fa fa-chevron-right" aria-hidden="true"style="color:#000; font-size:11px;"></i></a>
+        <a class="crumb">Wesley Crusher<i class="fa fa-chevron-right" aria-hidden="true"style="color:#000; font-size:11px;"></i></a>
+        <a class="crumb">Patron Information<i class="fa fa-chevron-right" aria-hidden="true"style="color:#000; font-size:11px;"></i></a>
+        <span style="float:right;">
+        <a><i class="fa fa-folder-open-o" aria-hidden="true" style="padding-right:25px;font-size:16px;"></i></a>
+        <a><i class="fa fa-sign-out" aria-hidden="true"style="padding-right:25px;font-size:16px;"></i></a>
+        </span>
+    </nav>
+    <!-- Header End here-->
+
+    <!-- Side bars bega here -->
+    <div class="content">
+        <div class="sidebar">
+            <div class="side1">
+                <div class="side1head">Wesley Crusher</div>
+
+                <div><img class="image" src="img/david.png"></div>
+                <div class="side1content">
+                    <p><span class="cbold"> Patron Type:</span> Adult</p>
+                    <p><span class="cbold"> Barcode:</span> 104785923</p>
+                    <p><span class="cbold"> Standing:</span> Good</p>
+                    <div><i class="fa fa-university" aria-hidden="true"></i><span class="icon">Main Branch</span></div>
+                    <div><i class="fa fa-users" aria-hidden="true" style="color:#000;"></i><span class="icon">The Crusher Family</span></div>
+                    <div><i class="fa fa-map-marker" aria-hidden="true"></i><span class="icon"><i>No address has been added</i></span></div>
+                    <div><i class="fa fa-phone" aria-hidden="true"></i><span>(801)544-3455</span></div>
+                    <div><i class="fa fa-envelope-o" aria-hidden="true"></i><span>wesleycrusher@gmail.com</span></div>
+                </div>
+            </div>
+            <div class="side2">
+                <span class="vbox">1</span>
+                <div class="side2head">Patron Information</div>
+                <div class="side2content">
+                    <p>Check Out <span class="sbadge">0</span></p>
+                    <p>Items<span class="sbadge">0</span></p>
+                    <p>Fines <span class="sbadge">0</span></p>
+                    <p>Holds <span class="sbadge">0</span></p>
+                    <p>Circulation History <span class="sbadge">0</span></p>
+
+                </div>
+            </div>
+        </div>
+        <!-- Side bars bega here -->
+
+        <div class="main">
+
+            <div class="chead">Patron Information</div>
+            <nav class="tabgroup">
+                <a>Patron</a>
+                <a>Demographics</a>
+                <a>Privilege</a>
+                <a>Contact</a>
+                <a>Statistics</a>
+                <a>Notes</a>
+                <a>User Groups</a>
+            </nav>
+
+            <form>
+                <div><span class="colhead">Name</span></div>
+
+                <div class="col1">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname">
+                    <label for="lname">Last Name <span class="mandatory">*</span></label>
+                    <input type="text" id="lname" name="lastname">
+                    <input type="checkbox" id="use">
+                    <label for="use">Use preferred name</label>
+                </div>
+
+                <div class="col2">
+                    <label for="mname">Middle Name</label>
+                    <input type="text" id="mname" name="middlename">
+                    <label for="pname">Preferred Name</label>
+                    <input type="text" id="pname" name="preferredname">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div><span class="colhead">Barcodes</span></div>
+                <div class="col3">
+                    <label for="altid">Alt ID</label>
+                    <input type="text" id="altid" name="altid">
+                </div>
+                <div class="col4">
+                    <label for="grpid">Group ID</label>
+                    <input type="text" id="grpid" name="groupid">
+                </div>
+                <div><span class="colhead">Location</span></div>
+                <div class="col5">
+                    <label for="library">Library<span class="mandatory"> *</span></label>
+                    <select id="library" class="listbox">
+                        <option>Main Branch</option>
+                        <option>Branch-1</option>
+                        <option>Branch-2</option>
+                    </select>
+                </div>
+
+                <div class="col6">
+                    <label for="dept">Department/HomeRoom</label>
+                    <input type="text" id="dept" name="department">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
