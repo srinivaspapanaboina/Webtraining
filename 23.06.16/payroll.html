@@ -84,7 +84,6 @@
             padding: 0.5rem;
         }
 
-
         .row2 {
             margin-left: 16%;
             width: 80.9%;
@@ -97,79 +96,65 @@
             display: inline-block;
             margin-right: 20rem;
         }
+
         .group legend {
             margin-left: 2rem;
-             color: darkorange;
+            color: darkorange;
         }
 
         .pinlabel {
             font-size: 1.5rem;
             padding: 0.5rem;
         }
+
         .check {
             list-style: none;
             margin: 0;
-             font-size: 1.2rem;
+            font-size: 1.2rem;
             margin-top: 1rem;
             line-height: 4rem;
         }
+
         .check li {
             display: inline;
             margin-left: 0.48rem;
             padding-right: 10rem;
-
         }
-        .row3-col1, .row4-col1 {
+
+        .row3-col1,
+        .row4-col1 {
             margin-left: 16%;
             width: 40%;
             float: left;
             margin-right: 1rem;
         }
+
         .breakcb {
             margin-left: -2rem!important;
         }
+
         .row3-col2 {
-             width: 40%;
+            width: 40%;
             float: left;
         }
+
         .radio {
             list-style: none;
-              margin-top: 1rem;
-             font-size: 1.2rem;
-             line-height: 4rem;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            line-height: 4rem;
             padding-left: 12rem;
-
         }
-        .radio li{
+
+        .radio li {
             display: inline;
             margin-left: 0.48rem;
             padding-right: 10rem;
-
-        }
-        .fluctrb{
-             margin-left: -2.8rem!important;
-
-        }
-        .r4btn {
-            float: right;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        .fluctrb {
+            margin-left: -2.8rem!important;
+        }
         /*       Media Query 1024 resolution */
 
         @media (max-width:1024px) {
@@ -312,57 +297,122 @@
         </div>
         <div class="row2">
             <fieldset class="group">
-                <legend><h3>Check Information</h3></legend>
+                <legend>
+                    <h3>Check Information</h3></legend>
                 <div style="float:left">
                     <label class="pinlabel" for="pinno">Pin Number:</label>
                     <input type="text" id="pin" name="pinno"> </div>
                 <ul class="check">
-                <li><input type="checkbox" id="cb1" value="supervisor" name="supervisor"><label for="cb1">Supervisor</label></li>
-                     <li><input type="checkbox" id="cb2" value="phone" name="phone"><label for="cb2">eTime Phone</label></li>
+                    <li>
+                        <input type="checkbox" id="cb1" value="supervisor" name="supervisor">
+                        <label for="cb1">Supervisor</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cb2" value="phone" name="phone">
+                        <label for="cb2">eTime Phone</label>
+                    </li>
                 </ul>
             </fieldset>
-        </div><!-- row2 ending-->
+        </div>
+        <!-- row2 ending-->
         <div class="row3-col1">
-        <fieldset class="group">
-            <legend><h3>Eligibility</h3></legend>
-        <ul class="check">
-            <li><input type="checkbox" id="cb1" value="shiftpay" name="shiftpay"><label for="cb1">Shift Pay</label></li>
-            <li><input type="checkbox" id="cb2" value="allocation" name="allocation"><label for="cb2">
-                Allocation</label></li>
-            <li><input type="checkbox" id="cb3" value="tipped" name="tipped"><label for="cb3">Tipped</label></li>
-            <li><input type="checkbox" id="cb4" value="probationary" name="probationary"><label for="cb4">Probationary</label></li>
-            <li class="breakcb"><input type="checkbox" id="cb5" value="mealbreak" name="mealbreak"><label for="cb5">Wave Meal Break</label></li>
-            </ul>
-        </fieldset>
+            <fieldset class="group">
+                <legend>
+                    <h3>Eligibility</h3></legend>
+                <ul class="check">
+                    <li>
+                        <input type="checkbox" id="cb1" value="shiftpay" name="shiftpay">
+                        <label for="cb1">Shift Pay</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cb2" value="allocation" name="allocation">
+                        <label for="cb2">
+                            Allocation</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cb3" value="tipped" name="tipped">
+                        <label for="cb3">Tipped</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cb4" value="probationary" name="probationary">
+                        <label for="cb4">Probationary</label>
+                    </li>
+                    <li class="breakcb">
+                        <input type="checkbox" id="cb5" value="mealbreak" name="mealbreak">
+                        <label for="cb5">Wave Meal Break</label>
+                    </li>
+                </ul>
+            </fieldset>
         </div>
         <div class="row3-col2">
-        <fieldset class="group">
-            <legend><h3>Check Method Cards Using</h3></legend>
-        <ul class="radio">
-            <li><input type="radio" id="radio1" value="hourly" name="hourly"><label for="radio1">Hourly</label></li>
-            <li><input type="radio" id="radio2" value="salary" name="salary"><label for="radio2">
-                Sallaried</label></li>
-           <p> <li><input type="radio" id="radio3" value="nonexmpt" name="nonexempt"><label for="radio3">Non Exempt</label></li>
-            <li class="fluctrb"><input type="radio" id="radio4" value="fluctuating" name="fluctuating"><label for="radio4">Fluctuating</label></li></p>
-            </ul>
-        </fieldset>
+            <fieldset class="group">
+                <legend>
+                    <h3>Check Method Cards Using</h3></legend>
+                <ul class="radio">
+                    <li>
+                        <input type="radio" id="radio1" value="hourly" name="hourly">
+                        <label for="radio1">Hourly</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio2" value="salary" name="salary">
+                        <label for="radio2">
+                            Sallaried</label>
+                    </li>
+                    <p>
+                        <li>
+                            <input type="radio" id="radio3" value="nonexmpt" name="nonexempt">
+                            <label for="radio3">Non Exempt</label>
+                        </li>
+                        <li class="fluctrb">
+                            <input type="radio" id="radio4" value="fluctuating" name="fluctuating">
+                            <label for="radio4">Fluctuating</label>
+                        </li>
+                    </p>
+                </ul>
+            </fieldset>
         </div>
         <div class="row4-col1">
-        <fieldset class="group">
-            <legend><h3>Allocation Information</h3></legend>
-        <ul class="check">
-            <div>
-            <li><input type="checkbox" id="cb1" value="sunday" name="sunday"><label for="cb1">Sunday</label></li>
-            <li><input type="checkbox" id="cb2" value="monday" name="monday"><label for="cb2">
-                Monday</label></li>
-            <li><input type="checkbox" id="cb3" value="tuesday" name="tuesday"><label for="cb3">Tuesday</label></li></div><span class="r4btn"><button type="submit" value="clearall">Clear All</button></span>
-            <div>
-            <li><input type="checkbox" id="cb4" value="wednesday" name="wednesday"><label for="cb4">Wednesday</label></li>
-            <li class="breakcb"><input type="checkbox" id="thursday" value="thursday" name="thursday"><label for="cb5">Thursday</label></li>
-            <li class="breakcb"><input type="checkbox" id="friday" value="friday" name="friday"><label for="cb5">Friday</label></li><span class="r4btn"><button type="submit" value="selectall">Select All</button></span></div>
-            <div><li class="breakcb"><input type="checkbox" id="saturday" value="saturday" name="saturday"><label for="cb5">Saturday</label></li></div>
-            </ul>
-        </fieldset>
+            <fieldset class="group">
+                <legend>
+                    <h3>Allocation Information</h3></legend>
+                <ul class="check">
+
+                        <li>
+                            <input type="checkbox" id="cb1" value="sunday" name="sunday">
+                            <label for="cb1">Sunday</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="cb2" value="monday" name="monday">
+                            <label for="cb2">
+                                Monday</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="cb3" value="tuesday" name="tuesday">
+                            <label for="cb3">Tuesday</label>
+                        </li>
+
+
+                        <li>
+                            <input type="checkbox" id="cb4" value="wednesday" name="wednesday">
+                            <label for="cb4">Wednesday</label>
+                        </li>
+                        <li class="breakcb">
+                            <input type="checkbox" id="thursday" value="thursday" name="thursday">
+                            <label for="cb5">Thursday</label>
+                        </li>
+                        <li class="breakcb">
+                            <input type="checkbox" id="friday" value="friday" name="friday">
+                            <label for="cb5">Friday</label>
+                        </li>
+
+
+                        <li class="breakcb">
+                            <input type="checkbox" id="saturday" value="saturday" name="saturday">
+                            <label for="cb5">Saturday</label>
+                        </li>
+
+                </ul>
+            </fieldset>
         </div>
 
 
