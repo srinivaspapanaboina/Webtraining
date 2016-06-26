@@ -112,13 +112,14 @@
             margin: 0;
             font-size: 1.2rem;
             margin-top: 1rem;
-            line-height: 4rem;
+            /*            line-height: 4rem;*/
         }
 
         .check li {
-            display: inline;
-            margin-left: 0.48rem;
-            padding-right: 10rem;
+            display: inline-block;
+            float: left;
+            padding: 8px;
+            width: 32%;
         }
 
         .row3-col1,
@@ -150,6 +151,13 @@
             display: inline;
             margin-left: 0.48rem;
             padding-right: 10rem;
+        }
+
+        .check4 li {
+            display: inline;
+            float: left;
+            padding: 8px;
+            width: 25%;
         }
 
         .fluctrb {
@@ -375,42 +383,44 @@
             <fieldset class="group">
                 <legend>
                     <h3>Allocation Information</h3></legend>
-                <ul class="check">
+                <ul class="check4">
 
+                    <div>
                         <li>
-                            <input type="checkbox" id="cb1" value="sunday" name="sunday">
+                            <input type="checkbox" id="cb1" value="">
                             <label for="cb1">Sunday</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="cb2" value="monday" name="monday">
-                            <label for="cb2">
-                                Monday</label>
+                            <input type="checkbox" id="cb2" value="">
+                            <label for="cb2">Monday</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="cb3" value="tuesday" name="tuesday">
-                            <label for="cb3">Tuesday</label>
+                            <input type="checkbox" id="cb1" value="">
+                            <label for="cb1">Tuesday</label>
                         </li>
+                        <li>
+                            <input type="checkbox" id="cb2" value="">
+                            <label for="cb2">wednesday</label>
+                        </li>
+
 
 
                         <li>
-                            <input type="checkbox" id="cb4" value="wednesday" name="wednesday">
-                            <label for="cb4">Wednesday</label>
+                            <input type="checkbox" id="cb1" value="">
+                            <label for="cb1">thursday</label>
                         </li>
-                        <li class="breakcb">
-                            <input type="checkbox" id="thursday" value="thursday" name="thursday">
-                            <label for="cb5">Thursday</label>
-                        </li>
-                        <li class="breakcb">
-                            <input type="checkbox" id="friday" value="friday" name="friday">
-                            <label for="cb5">Friday</label>
-                        </li>
+                        <input type="button" value="clearall" style="float:right;">
 
 
-                        <li class="breakcb">
-                            <input type="checkbox" id="saturday" value="saturday" name="saturday">
-                            <label for="cb5">Saturday</label>
+                        <li>
+                            <input type="checkbox" id="cb2" value="">
+                            <label for="cb2">Friday</label>
                         </li>
-                    <li><label for="fluctuating">Fluctuating Hours</label><input type="text" id="fluctuating"></li>
+                        <li>
+                            <input type="checkbox" id="cb2" value="">
+                            <label for="cb2">Saturday</label>
+                        </li>
+                    </div>
                 </ul>
             </fieldset>
         </div>
