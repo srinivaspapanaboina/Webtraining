@@ -31,9 +31,14 @@
         .col-head h3 {
             font-size: 1.3rem;
             padding: 0.5rem;
-            margin-left: 16%;
         }
-
+        .form {
+             width: 80.9%;
+             margin-left: 16%;
+           padding: 0 1rem 3rem 1rem;
+            border:1px solid black;
+            margin-top: 1%;
+        }
         .color {
             color: darkorange;
         }
@@ -58,18 +63,21 @@
         }
 
         .col1 {
-            width: 40%;
-            max-width: 40%;
+            width: 45%;
+            max-width: 45%;
             border: 1px solid black;
             float: left;
-            margin-left: 16%;
             padding: 0.4rem;
             margin-right: 1rem;
         }
 
+        .clear {
+            clear: both;
+        }
+
         .col2 {
-            width: 40%;
-            max-width: 40%;
+            width: 45%;
+            max-width: 45%;
             border: 1px solid black;
             float: left;
             padding: 0.4rem;
@@ -85,8 +93,7 @@
         }
 
         .row2 {
-            margin-left: 16%;
-            width: 80.9%;
+            width: 91%;
         }
 
         .row2 input[type="text"] {
@@ -94,7 +101,7 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
             display: inline-block;
-            margin-right: 20rem;
+            margin-right: 10rem;
         }
 
         .group legend {
@@ -109,45 +116,70 @@
 
         .check {
             list-style: none;
-            margin: 0;
             font-size: 1.2rem;
-            margin-top: 1rem;
-            /*            line-height: 4rem;*/
         }
 
         .check li {
             display: inline-block;
             float: left;
-            line-height: 2rem;
             padding: 8px;
-            width: 28%;
+            width: 26%;
+            vertical-align: bottom;
         }
 
         .row3-col1,
         .row4-col1 {
-            margin-left: 16%;
-            width: 40%;
+             clear: both;
+            width: 45%;
             float: left;
             margin-right: 1rem;
         }
 
-        .row3-col2 {
-            width: 40%;
+        .row3-col2,
+        .row4-col2 {
+
+            width: 45%;
             float: left;
         }
 
         .radio {
             list-style: none;
-            margin-top: 1rem;
             font-size: 1.2rem;
-            line-height: 4rem;
-            padding-left: 12rem;
+            padding: 1rem;
+            line-height: 2.7rem;
         }
 
         .radio li {
             display: inline-block;
             float: left;
             width: 35%;
+        }
+
+        .fhours {
+            float: left;
+              margin-top: 0.4rem;
+            margin-left: 1rem;
+        }
+
+        .r4btn input {
+            float: right;
+            width: 9rem;
+            height: 2.6rem;
+            margin-right: 1rem;
+            border-radius: 1rem;
+            background: cornflowerblue;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .r4check {
+            list-style: none;
+            width: 45%;
+            font-size: 1.2rem;
+            display: inline-block;
+            float: left;
+            padding: 2rem;
+            margin-left: 12rem;
         }
         /*       Media Query 1024 resolution */
 
@@ -333,7 +365,7 @@
                     </li>
                     <li class="breakcb">
                         <input type="checkbox" id="cb5" value="mealbreak" name="mealbreak">
-                        <label for="cb5">Wave Meal Break</label>
+                        <label for="cb5">Wave MealBreak</label>
                     </li>
                 </ul>
             </fieldset>
@@ -388,16 +420,10 @@
                             <input type="checkbox" id="cb2" value="">
                             <label for="cb2">wednesday</label>
                         </li>
-
-
-
                         <li>
                             <input type="checkbox" id="cb1" value="">
                             <label for="cb1">thursday</label>
                         </li>
-                        <input type="button" value="clearall" style="float:right;">
-
-
                         <li>
                             <input type="checkbox" id="cb2" value="">
                             <label for="cb2">Friday</label>
@@ -406,12 +432,47 @@
                             <input type="checkbox" id="cb2" value="">
                             <label for="cb2">Saturday</label>
                         </li>
+                        <div class="fhours">
+                            <label for="fhours">Fluctuating Hours:</label>
+                            <input type="text" id="fhours" name="fluctuating hours" style="padding:0.3rem;"> </div>
+                    </div>
+                    <div class="r4btn clear">
+                        <input type="button" value="Clear All" style="margin-top:-9.5rem !important;">
+                    </div>
+                    <div class="r4btn clear">
+                        <input type="button" value="Select All" style="    margin-top: -5.7rem;">
                     </div>
                 </ul>
             </fieldset>
         </div>
 
 
+
+
+        <div class="row4-col2">
+            <fieldset class="group">
+                <legend>
+                    <h3>Makeup Pay</h3></legend>
+                <div class="form-group">
+                    <lable class="formlabel" for="profileid">Profile Id<span class="rfloat">:</span></lable>
+                    <select>
+                        <option selected>Select..</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                    </select>
+                </div>
+                <ul class="r4check">
+                    <li>
+                        <input type="checkbox" id="excludepay" value="">
+                        <label for="excludepay">Exclude from Makeup Pay</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+
+
+ <div class="r4btn clear"><input type="button" value="Save">
+        </div>
     </div>
 </body>
 
