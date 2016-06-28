@@ -11,14 +11,13 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body{
-            background:#114052;
-            font-family:Arial, Helvetica,verdana;
 
+        body {
+            background: #114052;
+            font-family: Arial, Helvetica, verdana;
         }
 
         html {
-
             font-size: 62.5%;
             /*            1rem=10px;*/
         }
@@ -33,17 +32,19 @@
         .logo {
             background: url(./img/logo.jpg) no-repeat center;
             top: 0;
-            width: 10rem;
-            height: 7.5rem;
+            width: 100px;
+            height: 89px;
             float: left;
-            margin-right: 2rem;
-            margin-left: 3rem;
+            margin-right: 24px;
+            margin-left: 26px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px #888888;
         }
 
         .bgimage {
             background: url(img/loginbg.jpg) no-repeat;
             background-size: 100% 100%;
-            position: relative;
+            /*        position: relative;*/
             width: 100%;
             max-width: 100%;
             margin-top: -18px;
@@ -80,8 +81,17 @@
             text-align: justify;
         }
 
+        .content h3 {
+            color: #7294a0;
+            font-size: 1.5rem;
+        }
+
         .content span {
-            font-size: 1.2rem;
+           font-size: 1.1rem;
+        }
+
+        .content span a {
+            text-decoration: none;
         }
 
         .clear {
@@ -101,8 +111,8 @@
             border: 1px solid #eee;
             border-radius: 1rem;
             margin-left: 11rem;
-            color: #fff;
-            background: #1995ad;
+            color: #64808e;
+            background: #fff;
         }
 
         input {
@@ -113,6 +123,9 @@
 
         .control-group {
             padding: 0.8rem;
+        }
+        .control-group input{
+            background-color:#d4e6f0;
         }
 
         .userlogin h3 {
@@ -130,7 +143,7 @@
         .signinbtn {
             width: 30%;
             height: 2.5rem;
-            background: #011A27;
+            background: #f69200;
             color: #fff;
             margin-left: 7.5rem;
             margin-top: 0.5rem;
@@ -241,7 +254,7 @@
             <div class="bgimage"></div>
             <div class="content">
                 <h3>M3 Offers Continuing Professional Education Program for Accountants</h3>
-                <span> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,<span><a>content here </a></span>, making it look like readable English.</span>
+                <span> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,<span><a href="#">Click here </a></span>, making it look like readable English.</span>
             </div>
         </div>
         <div class="loginform clear">
@@ -252,11 +265,11 @@
                 <input type="text" id="loginid" name="loginid">
             </div>
             <div class="control-group">
-                <label class="labelcontrol" for="password">Password:</label>
+                <label class="labelcontrol" for="password" style="position:">Password:</label>
                 <input type="password" id="password" name="password">
             </div>
             <button type="submit" class="signinbtn">Signin<i class="fa fa-sign-in" aria-hidden="true"></i></button>
-            <span class="forget">Forget Password</span>
+            <span class="forget"><a></a>Forget Password</span>
         </div>
         <footer class="clear">&copy;Copyrights 2016</footer>
 
