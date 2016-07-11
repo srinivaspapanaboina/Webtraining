@@ -1,3 +1,4 @@
+@charset 'utf-8';
 * {
     margin: 0;
     padding: 0;
@@ -93,7 +94,7 @@ section .container a {
     padding: 4px;
     background: #d4e6f0;
     margin-bottom: 4px;
-}
+	}
 
 .loginicon {
     background: url(../img/lock.png) no-repeat 3px 4px;
@@ -142,12 +143,19 @@ section .container a {
     margin-left: 8px;
     font-size: 10px;
 }
-
+.form:hover{
+	transform:scale(1.1);
+	/* -webkit-transform:scale(1.1); */
+}
 .formfooter li {
     display: inline-block;
     list-style: none;
     margin-right: -43px;
     margin-left: 51px;
+}
+.form input:focus{
+	background:#fff;
+	border:2px solid #ff75340;
 }
 
 footer {
