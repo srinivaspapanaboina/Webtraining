@@ -1,0 +1,358 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    font-family: Arial, Helvetica, verdana;
+    background-size: 100%;
+    font-size: 12px;
+	   }
+
+.container {
+    width: 100%;
+   /*  padding: 12px; */
+    margin: 0 auto;
+}
+header .container {
+	background:#e0e0e0;
+	    height: 68px;
+	}
+header  h2{
+	padding-left: 7px;
+    padding-top: 11px;
+    color: rgba(0, 0, 0, 0.77);
+    display: inline-block;
+    border-left: 2px solid #ccc;
+	margin-top: 23px;
+    font-size: 12px;
+}
+header .logo {
+	width: 170px;
+    background: url(../images/logo3.png)no-repeat 0px -3px;
+    background-size: 174px 60px;
+    height: 50px;
+    float: left;
+    margin-right: 11px;
+    
+}
+.user {
+	float:right;
+	padding-top:10px;
+	margin-top: 21px;
+}
+.user h5{
+	font-size: 13px;
+    margin-right: 40px;
+    float: left;
+}
+.fa{
+	padding-right: 7px;
+    font-size: 15px;
+}
+.nav{
+	width:100%;
+	background: #1F709B;
+    height: 32px;
+    overflow: hidden;
+}
+
+.nav ul li{
+   display:inline-block;
+    color: #fff;
+    list-style-type: none;
+    font-size: 13px;
+	position:relative;
+    text-align: center;
+    line-height: 15px;
+        padding-top: 5px;
+    border-right: 1px solid #fff;
+    margin-left: 5px;
+	cursor:pointer;
+	}
+	.nav ul li a:hover{
+		    background: #0b374e;
+			position:relative;
+			display:block;
+			clear:both;
+	}
+/* 	.nav ul li ul{
+		position:absolute;
+	}
+.nav ul li ul li{
+	width:150px;
+	position:absolute;
+	line-height:23px;
+} */
+
+
+ .rateicon{
+	background: url(../images/rates.png)no-repeat 7px 0px;
+    display: block;
+    height: 26px;
+    width: 100px;
+    background-size: 24%;
+	padding: 6px 0px;
+	}
+	
+.timeicon{
+	background: url(../images/time.png)no-repeat 0px -5px;
+    display: block;
+    height: 26px;
+    width: 118px;
+	padding: 6px 0px;
+   }
+
+.processicon{
+	    background: url(../images/process.png)no-repeat 1px -1px;
+    display: block;
+    height: 26px;
+    width: 118px;
+    background-size: 18%;
+   padding: 6px 0px;
+}
+.reporticon{
+	background: url(../images/reports.png)no-repeat 7px 0px;
+    display: block;
+    height: 26px;
+    width: 118px;
+    background-size: 19%;
+	padding: 6px 0px;
+}
+.adminicon{
+	background: url(../images/admin.png)no-repeat -4px 0px;
+    display: block;
+    height: 26px;
+    width: 118px;
+    background-size: 24%;
+    padding: 6px 0px 0px 12px;
+}
+.content-wrapper{
+	padding:15px;
+	background:#ccc;
+	}
+
+
+/*  section .container */
+ .closingform {
+    clear:both;
+    width:600px;
+    margin: 0 auto;
+    border: none;
+    background-color: #eef2f5;
+	padding: 5px;
+	}
+section h2{
+    font-size: 13px;
+    padding: 4px;
+    background: #257199;
+    color: #fff;
+    border-radius: 2px;
+   	}
+	#show-hide .container{
+		padding:5px;
+		background:#ccc;
+	}
+.form-group{
+   padding: 5px;
+}
+.form-group label{
+    display: inline-block;
+    font-size: 15px;
+    float: left;
+    width: 200px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 6px;
+	}
+.form-group input[type="text"]{
+    width: 200px;
+    padding: 6px;
+}
+section select{
+    width: 200px;
+	height: 30px;
+    margin-bottom: 9px;
+    padding: 5px;
+}
+section  button {
+	width: 100px;
+    padding: 6px;
+    margin: 0 auto;
+    display: block;
+    background: #1f709b;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+     box-shadow: 1px 3px 2px #ccc;
+	     margin-bottom: 5px;
+}
+.datagrid h2{
+    margin-left: 204px;
+       background: #257199;
+    color: #fff;
+    padding: 4px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    box-shadow: 3px 1px 2px #ccc;
+    border-radius: 2px;
+    font-size: 14px;
+    border: none;
+    display: inline-block;
+}
+.table {
+   display: table;
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 58px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.table-cell:last-child{
+	border-right:none;
+}
+.table-head:last-child{
+	border-right:none;
+}
+.table-row{
+    display: table-row;
+}
+.table-cell, .table-head{
+    display: table-cell;
+         border-right: 1px solid #ccc;
+       padding: 8px 0px 8px 6px;
+}
+
+.table-head{
+    font-weight: bold;
+    background:#257199;
+    color:#fff;
+    padding: 8px;
+}
+.table-row:nth-child(even){
+    background: #eef2f5;
+}
+
+/* section, .datagrid{
+    display:none;
+} */
+
+/* timecard css */
+
+.addcard{
+    color: #1f709b;
+    margin: 10px 0px -20px 58px;
+    font-size: 13px;
+}
+.content-wrapper h3{
+	    padding: 5px;
+    color: #1f709b;
+}
+.main {
+	width: 905px;
+    border: 1px solid #ccc;
+    padding: 10px 2px 47px 4px;
+    background: #eef2f5;
+}
+.form1 {
+	width: 470px;
+    margin: 0 auto;
+	float:left;
+	}
+.main  .label-control {
+    text-align: left;
+    width: 100px;
+    margin-right: 20px;
+    float: left;
+    padding: 6px 1px 1px 5px;
+    font-size: 13px;
+	color: #000;
+	        }
+.main input {
+        width: 300px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    padding: 6px;
+    border: 1px solid #ccc;
+        }
+.main .crewinput {
+    width: 69px;
+float:left;	
+}
+.main .datelabel{
+	width: 32px;
+	padding-left: 8px;
+}
+.main .dateinput{
+	width: 178px;
+}
+.main .select{
+	    width: 300px;
+    height: 30px;
+    margin-bottom: 9px;
+    padding: 5px;
+	
+}
+
+.form2 .label-control {
+    text-align: left;
+    width: 100px;
+    margin-right: 20px;
+    float: left;
+    padding: 8px 1px 1px 5px;
+    font-size: 13px;
+	   }
+ .main .comment{
+	width: 86%;
+    height: 90px;
+    resize: none;
+ }
+ .btncontrol{
+	display: inline-flex;
+    float: right;
+ }
+ .btn{
+	width: 81px;
+    height: 28px;
+    padding: 3px;
+    margin-right: 7px;
+    border: 1px solid #257199;
+    background: #fff;
+    color: #257199;
+    border-radius: 5px;
+	margin: 10px 5px;
+	font-size: 11px;
+	background: #d1d1d1;
+ }
+.save{
+	background:#246e9b;
+	color:#fff;
+	margin-right: 8px;
+}
+.cancle{
+	background:#fff;
+}
+.grid2 .table {
+	margin: 10px 0 0 0px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+footer{
+	clear: both;
+    width: 100%;
+    padding: 5px;
+    bottom: 0px;
+    border-radius: 3px;
+    background: #1f709b;
+    position: fixed;
+}
+footer .container{
+	text-align:center;
+	color:#fff;
+	    padding: 5px;
+}

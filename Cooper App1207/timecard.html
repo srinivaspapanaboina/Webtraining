@@ -1,0 +1,200 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/style1.css">
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="js/myscript.js"></script>
+
+</head>
+<body>
+<header>
+<div class="container">
+<div class="logo"></div>
+<h2>Source to Gross Payroll System</h2>
+<div class="user">
+<h5 ><i class="fa fa-user" aria-hidden="true"></i>cooper</h5>
+<h5 ><i class="fa fa-map-marker" aria-hidden="true"></i>Tupelo</h5>
+</div>
+</div>
+</header>
+<div class="nav">
+ <ul> 
+<li><a class="rateicon">Rates</a></li>
+    <li><a class="timeicon">Time Card</a></li>
+    <li><a class="processicon">Process</a></li>
+    <li><a class="reporticon">Reports</a></li>
+    <li><a class="adminicon">Administration</a></li>
+   </ul> 
+  </div>
+<section class="content-wrapper">
+<h3>Add New Time Card</h3>
+<div class="main">
+<div class="form1">
+<div class="control-group">
+                <label class="label-control" for="name">Name:</label>
+                <div class="form-control">
+                    <input type="text" id="name"  value="Cooper" disabled="disabled">
+                </div>
+            </div>
+<div class="control-group">
+                <label class="label-control crewlabel" for="crew">Crew:</label>
+                <div class="form-control">
+                    <input type="text" id="crew" value="B" class="crewinput">
+                </div>
+            </div>
+<div class="control-group">
+                <label class="label-control datelabel" for="date">Date:</label>
+                <div class="form-control">
+                    <input type="text" id="date" value="27-01-16" disabled="disabled" class="dateinput">
+                </div>
+            </div>
+<div class="control-group">
+                <label class="label-control" for="bonus">Bonus(Hr):</label>
+                <div class="form-control">
+                    <input type="text" id="date" value="None" disabled="disabled">
+                </div>
+            </div>	
+</div>
+
+<div class="form2">
+<div class="control-group">
+                <label class="label-control" for="dept">Dep.No:</label>
+                <div class="form-control">
+                    <select class="select">
+					<option>Select..</option>
+					</select>
+                </div>
+            </div>
+<div class="control-group">
+                <label class="label-control" for="function">Function:</label>
+                <div class="form-control">
+                    <select class="select" disabled="disabled">
+					<option>Select..</option>
+					</select>
+                </div>
+            </div>
+
+<div class="control-group">
+                <label class="label-control datelabel" for="pool">Hrs in Pool:</label>
+                <div class="form-control">
+                    <input type="text" id="pool"  disabled="disabled">
+                </div>
+            </div>
+</div>
+<div>
+                <label class="label-control commentlbl" for="comment">Comments</label>
+                <div class="form-control">
+                    <textarea id="comment" class="comment"></textarea>
+                </div>
+            </div>
+<div class="btncontrol">
+<button type="button" value="submit" class="btn cancle">Cancle</button>
+<button type="button" value="submit" class="btn save"">SAVE</button>
+</div>
+</div>
+<div class="datagrid grid2" id="datagrid">
+    <div class="table">
+    <div class="table-row">
+	<div class="table-head"></div>
+        <div class="table-head">Job No</div>
+        <div class="table-head">Acnt No</div>
+        <div class="table-head">Machine No</div>
+		<div class="table-head">Actual Hrs</div>
+		<div class="table-head">Earned Hrs</div>
+		<div class="table-head">Alternate Date</div>
+		<div class="table-head">Avg Earn code</div>
+		<div class="table-head">Charge Dept</div>
+		<div class="table-head">Last Card Amount</div>
+		
+    </div>
+    <div class="table-row">
+        <div class="table-cell"></div>
+		 <div class="table-cell">006</div>
+        <div class="table-cell">006345234</div>
+        <div class="table-cell">006345</div>
+		<div class="table-cell">22:45</div>
+        <div class="table-cell">22:45</div>
+        <div class="table-cell"></div>
+		<div class="table-cell">353435</div>
+        <div class="table-cell"></div>
+        <div class="table-cell">006</div>
+        </div>
+		<div class="table-row">
+        <div class="table-cell"></div>
+		 <div class="table-cell">006</div>
+        <div class="table-cell">006345234</div>
+        <div class="table-cell">006345</div>
+		<div class="table-cell">22:45</div>
+        <div class="table-cell">22:45</div>
+        <div class="table-cell"></div>
+		<div class="table-cell">353435</div>
+        <div class="table-cell"></div>
+        <div class="table-cell">006</div>
+        </div>
+		<div class="table-row">
+        <div class="table-cell"></div>
+		 <div class="table-cell">006</div>
+        <div class="table-cell">006345234</div>
+        <div class="table-cell">006345</div>
+		<div class="table-cell">22:45</div>
+        <div class="table-cell">22:45</div>
+        <div class="table-cell"></div>
+		<div class="table-cell">353435</div>
+        <div class="table-cell"></div>
+        <div class="table-cell">006</div>
+        </div>
+		<div class="table-row">
+        <div class="table-cell"></div>
+		 <div class="table-cell">006</div>
+        <div class="table-cell">006345234</div>
+        <div class="table-cell">006345</div>
+		<div class="table-cell">22:45</div>
+        <div class="table-cell">22:45</div>
+        <div class="table-cell"></div>
+		<div class="table-cell">353435</div>
+        <div class="table-cell"></div>
+        <div class="table-cell">006</div>
+        </div>
+		<div class="table-row">
+        <div class="table-cell"></div>
+		 <div class="table-cell">006</div>
+        <div class="table-cell">006345234</div>
+        <div class="table-cell">006345</div>
+		<div class="table-cell">22:45</div>
+        <div class="table-cell">22:45</div>
+        <div class="table-cell"></div>
+		<div class="table-cell">353435</div>
+        <div class="table-cell"></div>
+        <div class="table-cell">006</div>
+        </div>
+        
+        </div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<p>&copy; Copyrights 2016</p>
+
+</div>
+</footer>
+
+<!--
+    <script> 
+var form=document.getElementById('show-hide');
+var daily=document.getElementById('daily');
+daily.onclick=function(){
+    
+    form.style.display="block";
+}
+var processbtn=document.getElementById('process');
+        var datagrid=document.getElementById('datagrid');
+        processbtn.onclick=function(){
+            datagrid.style.display='block';
+        }
+</script>
+-->
+</body>
+</html>
