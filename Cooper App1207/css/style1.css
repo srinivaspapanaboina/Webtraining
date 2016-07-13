@@ -10,6 +10,7 @@ body {
     font-family: Arial, Helvetica, verdana;
     background-size: 100%;
     font-size: 12px;
+	background:#ccc;
 	   }
 
 .container {
@@ -62,7 +63,7 @@ header .logo {
 
 .nav ul li{
    display:inline-block;
-    color: #fff;
+    /* color: #fff; */
     list-style-type: none;
     font-size: 13px;
 	position:relative;
@@ -73,8 +74,27 @@ header .logo {
    cursor:pointer;
 	}
 .nav ul li:hover{background:#1c6786;}
-/* 	.nav ul li ul{
-		position:absolute;
+
+/* submenu */
+.nav ul  {
+	position:relative;
+	display:inline-block;
+}
+.nav ul li {
+	position:relative;
+	}
+.nav ul li ul {
+	position:absolute;
+	left:0;
+	top:100%;
+}
+.nav ul li ul li{
+	position:relative;
+	display:block;
+		}
+	.nav ul li:hover ul{ display:block;}
+/* .nav ul li ul{
+		position:relative;
 	}
 .nav ul li ul li{
 	width:150px;
@@ -127,6 +147,7 @@ header .logo {
 .content-wrapper{
 	padding:15px;
 	background:#ccc;
+	
 	}
 
 
@@ -134,11 +155,14 @@ header .logo {
  .closingform {
     clear:both;
     width:600px;
-    margin: 0 auto;
     border: none;
     background-color: #eef2f5;
 	padding: 5px;
-	}
+	margin-top:5px;
+		}
+section .wrapper{
+	margin-left:10px;
+}
 section h2{
     font-size: 13px;
     padding: 4px;
@@ -148,8 +172,7 @@ section h2{
    	}
 	#show-hide .container{
 		padding:5px;
-		background:#ccc;
-	}
+		}
 .form-group{
    padding: 5px;
 }
@@ -185,26 +208,18 @@ section  button {
      box-shadow: 1px 3px 2px #ccc;
 	     margin-bottom: 5px;
 }
-.datagrid h2{
-    margin-left: 204px;
-       background: #257199;
-    color: #fff;
-    padding: 4px;
-    margin-top: 20px;
-    margin-bottom: 4px;
-    box-shadow: 3px 1px 2px #ccc;
-    border-radius: 2px;
-    font-size: 14px;
-    border: none;
-    display: inline-block;
+.datagrid h3{
+   padding:4px;
+   display:inline-block;
+   margin-top:50px;
+  color: #1f709b;
 }
+
 .table {
    display: table;
-    width: 70%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    margin-bottom: 58px;
-    border-left: 1px solid #fff;
+    width: 100%;
+   border-collapse: collapse;
+       border-left: 1px solid #fff;
     border-right: 1px solid #fff;
 }
 .table-cell:last-child{
