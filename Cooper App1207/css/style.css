@@ -20,15 +20,24 @@ body {
     padding: 2px;
     margin: 0 auto;
 }
-header {
-	margin-top:131px;
-	
+.main-wrapp{
+	width: 370px;
+    height: 300px;
+    max-height: 300px;
+    padding: 10px;
+   	/* login form vertically and horizontally center code following */
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-185px; /* half width */
+	margin-top:-150px; /* half height */
 }
 
 header .logo {
-	height: 99px;
-    background: url(../images/logo.png) no-repeat center 23px;
-    background-size: 30%;
+	    height: 50px;
+    background: url(../images/logo.png) no-repeat center center;
+    background-size: 55%;
+    padding: 30px;
 	
 }
 section  {
