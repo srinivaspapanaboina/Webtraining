@@ -10,6 +10,7 @@ body {
     font-family: Arial, Helvetica, verdana;
     background-size: 100%;
     font-size: 12px;
+	background:#ccc;
 	   }
 
 .container {
@@ -127,6 +128,7 @@ header .logo {
     height: 26px;
     width: 118px;
     background-size: 19%;
+	margin-left: -5px;
 	padding: 6px 0px;
 }
 .adminicon{
@@ -135,6 +137,7 @@ header .logo {
     height: 26px;
     width: 118px;
     background-size: 24%;
+	    margin-left: 5px;
     padding: 6px 0px 0px 12px;
 }
 .content-wrapper{
@@ -150,6 +153,7 @@ header .logo {
     border: none;
     background-color: #eef2f5;
 	padding: 5px;
+
 	}
 section h2{
     font-size: 13px;
@@ -159,7 +163,7 @@ section h2{
     border-radius: 2px;
    	}
 	#show-hide .container{
-		background:#ccc;
+		margin-top: 6px;
 	
 	}
 .form-group{
