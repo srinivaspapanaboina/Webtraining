@@ -28,8 +28,8 @@
     <li><a class="adminicon">Administration</a></li>
    </ul> 
   </div>
-<body>
-<h2 class="addcard">Add New Time Card</h2>
+<section class="content-wrapper">
+<h3>Add New Time Card</h3>
 <div class="main">
 <div class="form1">
 <div class="control-group">
@@ -82,20 +82,19 @@
                     <input type="text" id="pool"  disabled="disabled">
                 </div>
             </div>
-</diV>
-<div class="control-group">
-                <label class="label-control" for="comment">Comments</label>
+</div>
+<div>
+                <label class="label-control commentlbl" for="comment">Comments</label>
                 <div class="form-control">
                     <textarea id="comment" class="comment"></textarea>
                 </div>
             </div>
-<footer>
-<button type="button" value="submit" class="btncancle">Cancle</button>
-<button type="button" value="submit" class="btnsave color">SAVE</button>
-</footer>
+<div class="btncontrol">
+<button type="button" value="submit" class="btn cancle">Cancle</button>
+<button type="button" value="submit" class="btn save"">SAVE</button>
+</div>
 </div>
 <div class="datagrid grid2" id="datagrid">
-<div class="container">
     <div class="table">
     <div class="table-row">
 	<div class="table-head"></div>
@@ -174,6 +173,13 @@
         </div>
 </div>
 </div>
+</section>
+<footer>
+<div class="container">
+<p>&copy; Copyrights 2016</p>
+
+</div>
+</footer>
 
 <!--
     <script> 

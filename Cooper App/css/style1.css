@@ -10,6 +10,7 @@ body {
     font-family: Arial, Helvetica, verdana;
     background-size: 100%;
     font-size: 12px;
+	background:#ccc;
 	   }
 
 .container {
@@ -56,12 +57,12 @@ header .logo {
 .nav{
 	width:100%;
 	background: #1F709B;
-    height: 34px;
-    overflow: hidden;
-}
+    height: 32px;
+   }
 
 .nav ul li{
-   display:inline-block;
+   display:block;
+   float:left;
     color: #fff;
     list-style-type: none;
     font-size: 13px;
@@ -70,18 +71,31 @@ header .logo {
     line-height: 15px;
     padding-top: 5px;
     border-right: 1px solid #fff;
-    margin-left: 5px;
-	cursor:pointer;
+    cursor:pointer;
 	}
-/* 	.nav ul li ul{
+.nav ul li:hover{ background-color:#1c6786;}
+.nav ul li ul{
+	display:none;
+	background:#1F709B;
+	top: 33px;
+	border:1px solid #fff;
+	}
+	.nav ul li:hover ul{
+		display:block;
 		position:absolute;
+			}
+.nav ul li  li{
+	padding:5px;
+	width:170px;
+		text-align:left!important;
+		border-top:1px solid #fff;
+		padding:10px;
 	}
-.nav ul li ul li{
-	width:150px;
-	position:absolute;
-	line-height:23px;
-} */
-
+	.nav ul li li a{
+		text-decoration:none;
+		color:#fff;
+				}
+	
 
  .rateicon{
 	background: url(../images/rates.png)no-repeat 7px 0px;
@@ -114,6 +128,7 @@ header .logo {
     height: 26px;
     width: 118px;
     background-size: 19%;
+	margin-left: -5px;
 	padding: 6px 0px;
 }
 .adminicon{
@@ -122,30 +137,37 @@ header .logo {
     height: 26px;
     width: 118px;
     background-size: 24%;
+	    margin-left: 5px;
     padding: 6px 0px 0px 12px;
 }
-
-
-section{
-    margin-top:60px;
+.content-wrapper{
+	padding:15px;
+	background:#ccc;
 	}
-section h2, section .container{
+
+
+/*  section .container */
+ .closingform {
     clear:both;
     width:600px;
-    margin: 0 auto;
-    border:1px solid #ccc;
-	    background-color: #eef2f5;
+    border: none;
+    background-color: #eef2f5;
+	padding: 5px;
+
 	}
 section h2{
-    font-size: 15px;
-    padding: 10px;
+    font-size: 13px;
+    padding: 4px;
     background: #257199;
     color: #fff;
     border-radius: 2px;
-    box-shadow: 1px 3px 2px #ccc;
+   	}
+	#show-hide .container{
+		margin-top: 6px;
+	
 	}
 .form-group{
-    padding:10px;
+   padding: 5px;
 }
 .form-group label{
     display: inline-block;
@@ -154,16 +176,17 @@ section h2{
     width: 200px;
     text-align: right;
     padding-right: 15px;
-    padding-top:2px;
-}
-.form-group input[type=date]{
+    padding-top: 6px;
+	}
+.form-group input[type="text"]{
     width: 200px;
-    height: 25px;
+    padding: 6px;
 }
 section select{
     width: 200px;
-	height: 28px;
-    margin-bottom: 20px;
+	height: 30px;
+    margin-bottom: 9px;
+    padding: 5px;
 }
 section  button {
 	width: 100px;
@@ -179,58 +202,84 @@ section  button {
 	     margin-bottom: 5px;
 }
 .datagrid h2{
-    width:200px;
-      margin-left: 204px;
-    background: #888;
-    color:#fff;
-    padding:5px;
-    margin-top:20px;
+    margin-left: 204px;
+      background: #257199;
+    color: #fff;
+    padding: 4px;
+    margin-top: 20px;
+    margin-bottom: 4px;
     box-shadow: 3px 1px 2px #ccc;
     border-radius: 2px;
-    tran
+    font-size: 14px;
+    border: none;
+    display: inline-block;
 }
 .table {
-    display: table;
-    width:70%;
-    margin:0 auto;
+   display: table;
+    width: 100%;
     border-collapse: collapse;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.table-cell:last-child{
+	border-right:none;
+}
+.table-head:last-child{
+	border-right:none;
 }
 .table-row{
     display: table-row;
 }
 .table-cell, .table-head{
     display: table-cell;
-     border:1px solid #ccc;
-    padding:10px;
+         border-right: 1px solid #ccc;
+       padding: 8px 0px 8px 6px;
 }
+
 .table-head{
-    height:20px;
     font-weight: bold;
     background:#257199;
     color:#fff;
-    padding:10px;
+    padding: 8px;
 }
 .table-row:nth-child(even){
     background: #eef2f5;
+}
+
+
+.container h3{
+	color: #246e9b;
+	padding:3px;
+	margin-top:10px;
+}
+.wrapper{
+	margin-left:10px;
+	height: 510px;
 }
 
 /* section, .datagrid{
     display:none;
 } */
 
+
+
+
 /* timecard css */
 
 .addcard{
-color: #1f709b;
- margin: 10px 0px -20px 58px;
+    color: #1f709b;
+    margin: 10px 0px -20px 58px;
+    font-size: 13px;
+}
+.content-wrapper h3{
+	    padding: 5px;
+    color: #1f709b;
 }
 .main {
-	width: 950px;
+	width: 905px;
     border: 1px solid #ccc;
-    margin-left: 53px;
-       margin-top: 24px;
-    padding: 20px 20px 47px 20px;
-	background: #eef2f5;
+    padding: 10px 2px 47px 4px;
+    background: #eef2f5;
 }
 .form1 {
 	width: 470px;
@@ -242,16 +291,15 @@ color: #1f709b;
     width: 100px;
     margin-right: 20px;
     float: left;
-    padding: 12px 1px 1px 5px;
+    padding: 6px 1px 1px 5px;
     font-size: 13px;
-	color:#8f9394;
-	font-weight:bold;
-        }
+	color: #000;
+	        }
 .main input {
-    width: 300px;
+        width: 300px;
     margin-bottom: 10px;
     border-radius: 0px;
-    padding: 11px;
+    padding: 6px;
     border: 1px solid #ccc;
         }
 .main .crewinput {
@@ -266,9 +314,10 @@ float:left;
 	width: 178px;
 }
 .main .select{
-	width: 296px;
-    height: 40px;
+	    width: 300px;
+    height: 30px;
     margin-bottom: 9px;
+    padding: 5px;
 	
 }
 
@@ -277,18 +326,19 @@ float:left;
     width: 100px;
     margin-right: 20px;
     float: left;
-   padding: 12px 1px 1px 5px;
+    padding: 8px 1px 1px 5px;
     font-size: 13px;
-	color:#8f9394;
-   }
+	   }
  .main .comment{
 	width: 86%;
-    line-height: 55px;
+    height: 90px;
+    resize: none;
  }
- footer{
-	 float:right;
+ .btncontrol{
+	display: inline-flex;
+    float: right;
  }
- .btncancle, .btnsave{
+ .btn{
 	width: 81px;
     height: 28px;
     padding: 3px;
@@ -299,11 +349,71 @@ float:left;
     border-radius: 5px;
 	margin: 10px 5px;
 	font-size: 11px;
+	background: #d1d1d1;
  }
-.color{
+.save{
 	background:#246e9b;
 	color:#fff;
+	margin-right: 8px;
+}
+.cancle{
+	background:#fff;
 }
 .grid2 .table {
-	margin:10px 0 0 53px;
+	margin: 10px 0 0 0px;
+    width: 100%;
+    margin-bottom: 25px;
 }
+footer{
+	clear: both;
+    width: 100%;
+    padding: 5px;
+    bottom: 0px;
+    border-radius: 3px;
+    background: #1f709b;
+    position: fixed;
+}
+footer .container{
+	text-align:center;
+	color:#fff;
+	    padding: 5px;
+}
+/* Adhoc Report */
+.adhoc-wrapper{width:550px; margin-left:10px; margin-top:20px;padding:5px; height:100%; margin-bottom:3%;}
+.timecard-head h3{display:inline-block;}
+.timecard-head .addnew{float: right;padding: 5px 10px;background: #246e9b;
+  color: #fff; border-radius: 4px; border: none;margin-right: 21px;}
+.form-control li{display:inline-block; padding:10px;}
+.form-control label{display:inline-block; margin-left: 4px;font-size: 13px;}
+.checkbox{vertical-align: bottom; margin-right: 3px;}
+.private, .public, .other{width:500px; border:none;}
+.myreport{margin-bottom:5px!important;padding: 5px;background-color: #c4c4c5; border:1px solid #888; margin:0 auto;}
+.myreport h3, .timecard-head h3{ font-size: 13px; padding: 5px 0; color:#1f709b;}
+.myreport-table{border:1px solid #ccc!important;}
+
+/* AddNew form*/
+.addnew-wrapper{width:600px; margin-left:10px; margin-top:20px; /* border:1px solid #999; */}
+.form-addnew{border:1px solid #888; padding:6px 5px;}
+.form-addnew li{width:50%; display:inline-block; float:left; margin-bottom:13px;}
+.form-addnew label{margin-top:6px;display:inline-block; padding-right:9px;font-size:13px; }
+.form-addnew input[type="text"]{width:68%; border:1px solid #ccc; background:#fff; color:#000; padding:5px;}
+.form-addnew .reports-label{display:block; clear:both; padding:5px;}
+
+
+
+
+/*-------------OTHER-----------------*/
+
+.main-Wrapper{padding:10px; background:#ccc; min-height:360px;}
+.page-tile{color:#000; font-size:16px;line-height:24px; margin-bottom:25px;}
+.config ul {float:left; width:400px;padding:20px; background:#bdbdbd; display:none;}
+.config ul  li{ display:inline-block; width:100%; margin-bottom:10px;}
+.config label{margin-top:8px; float:left; width:40%; margin-right:2%; text-align:right;}
+.config input[type="text"]{width:55%;border:1px solid #ccc; background:#fff; color:#000;padding:5px;}
+
+.global ul{width:500px; float:left;}
+.global li{display:inline-block; margin-bottom:10px;}
+.global li:nth-child(odd){width:200px; margin-right:10px;}
+.global li:nth-child(even){width:280px;}
+.global li input[type="text"]{width:100%;border:1px solid #ccc; background:#fff; color:#000;padding:5px;}
+.global li  select{width:100%;border:1px solid #ccc; background:#fff; color:#000; padding:5px; line-height:5px;}
