@@ -42,11 +42,11 @@
             <div class="report-input">
                 <li>
                     <label for="reportname">Report Name</label>
-                    <input type="text" id="reportname">
+                    <input type="text" id="reportname" class="inputtext">
                 </li>
                 <li>
                     <label for="description">Description</label>
-                    <input type="text" id="description">
+                    <input type="text" id="description" class="inputtext">
                 </li>
             </div>
             <label for="public" class="reports-label">
@@ -55,25 +55,86 @@
                 <input type="checkbox" class="checkbox" id="frequent">Frequently Report</label>
         </div>
         <div class="form-default">
+            <h3>Time and Date</h3>
             <ul>
-                <li>Time and Date</li>
                 <li>From
-                    <input type="text">
+                    <input type="text" class="inputtext">
                 </li>
                 <li>To
-                    <input type="text">
+                    <input type="text" class="inputtext">
                 </li>
             </ul>
+            <ul class="shift-empid">
+                <label>Shift</label>
+                <li>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="shift-empid">
 
+                <label>Emp ID</label>
+                <li>
+                    <input type="text" class="inputtext">
+                </li>
+            </ul>
         </div>
+        <div class="form-costcontrol clearfix">
+            <div>
+                <h3>Cost Control ID</h3></div>
+
+            <ul>
+                <li>
+                    <select size="15" multiple="multiple">
+                        <option>1234</option>
+                        <option>5678</option>
+                        <option>11111</option>
+                        <option>12344</option>
+                        <option>12345</option>
+                        <option>1234</option>
+                        <option>5678</option>
+                        <option>11111</option>
+                        <option>12344</option>
+                        <option>12345</option>
+                        <option>1234</option>
+                        <option>5678</option>
+                        <option>11111</option>
+                        <option>12344</option>
+                        <option>12345</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <li class="arrow">></li>
+                <li class="arrow">
+                    <</li>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <select size="15" multiple="multiple">
+                        <option>1234</option>
+                        <option>5678</option>
+                        <option>11111</option>
+                        <option>12344</option>
+                        <option>12345</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+
     </div>
-    <div class="" <footer>
+    <footer>
         <div class="container">
             <p>&copy; Copyrights 2016</p>
 
         </div>
-        </footer>
-        <!--
+    </footer>
+    <!--
     <script> 
 var form=document.getElementById('show-hide');
 var daily=document.getElementById('daily');
