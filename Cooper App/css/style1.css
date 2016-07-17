@@ -494,7 +494,8 @@ footer .container {
 /* AddNew form*/
 
 .addnew-wrapper {
-    width: 600px;
+    width: 900px;
+    height: 600px;
     margin-left: 10px;
     margin-top: 20px;
     /* border:1px solid #999; */
@@ -537,6 +538,14 @@ footer .container {
     padding: 5px;
 }
 
+.form-default {
+    clear: both;
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px 0;
+    padding: 6px 5px;
+}
+
 .form-default li {
     display: inline-block
 }
@@ -554,18 +563,44 @@ footer .container {
     list-style-type: none;
 }
 
+.form-costcontrol {
+    border: 1px solid black;
+    float: left;
+    margin-right: 6px;
+    padding: 1px 4px;
+}
+
 .form-costcontrol select {
-    width: 80px;
+    width: 120px;
+    padding: 3px;
+}
+
+.form-costcontrol select option {
+    padding: 2px;
+}
+
+.form-costcontrol h3 {
+    text-align: center;
+    padding: 2px;
+    color: #1f709b;
+}
+
+.form-costcontrol .arrowgroup {
+    margin-top: 56px;
 }
 
 .form-costcontrol .arrow {
-    margin: 30px 20px;
+    margin: 30px 10px;
     background: #888;
     color: #fff;
     width: 20px;
     padding: 0px 4px;
     font-size: 20px;
     text-align: left;
+}
+
+.form-costcontrol .arrow:hover {
+    cursor: pointer;
 }
 
 
