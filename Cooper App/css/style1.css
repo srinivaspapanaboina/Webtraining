@@ -381,13 +381,14 @@ section button {
     height: 28px;
     padding: 3px;
     margin-right: 7px;
-    border: 1px solid #257199;
+	border: 1px solid #257199;
     background: #fff;
     color: #257199;
     border-radius: 5px;
     margin: 10px 5px;
     font-size: 11px;
     background: #d1d1d1;
+	
 }
 
 .save {
@@ -397,7 +398,7 @@ section button {
 }
 
 .cancle {
-    background: #fff;
+    background: #fff!important;
 }
 
 .grid2 .table {
@@ -438,7 +439,7 @@ footer .container {
     display: inline-block;
 }
 
-.timecard-head .addnew {
+.addnew {
     float: right;
     padding: 5px 10px;
     background: #246e9b;
@@ -446,8 +447,8 @@ footer .container {
     border-radius: 4px;
     border: none;
     margin-right: 21px;
+	cursor:pointer;
 }
-
 .form-control li {
     display: inline-block;
     padding: 10px;
@@ -476,7 +477,7 @@ footer .container {
     padding: 5px;
     background-color: #c4c4c5;
     border: 1px solid #888;
-    margin: 0 auto;
+   
 }
 
 .myreport h3,
@@ -495,15 +496,17 @@ footer .container {
 
 .addnew-wrapper {
     width: 900px;
-    height: 600px;
+    height: 910px;
     margin-left: 10px;
     margin-top: 20px;
     /* border:1px solid #999; */
 }
-
+.report-input{
+	margin-top:5px;
+}
 .form-addnew {
-    border: 1px solid #888;
     padding: 6px 5px;
+	    background-color: #eef2f5 !important;
 }
 
 .form-addnew li {
@@ -517,7 +520,7 @@ footer .container {
     margin-top: 6px;
     display: inline-block;
     padding-right: 9px;
-    font-size: 13px;
+       font-size: 14px;
 }
 
 .inputtext {
@@ -531,7 +534,15 @@ footer .container {
 .clearfix {
     clear: both;
 }
-
+.reportcontrols{
+	    background-color:#fff;
+		 /*    height: 195px; */
+}
+.sortsection{
+	margin-top:15px;
+	background:#fff;
+	    height: 200px;
+}
 .form-addnew .reports-label {
     display: block;
     clear: both;
@@ -540,22 +551,43 @@ footer .container {
 
 .form-default {
     clear: both;
-    border: 1px solid black;
     height: 100px;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     padding: 6px 5px;
+}
+.form-default label{
+	font-size:14px;
+	padding:0 5px 0 5px;
 }
 
 .form-default li {
     display: inline-block
 }
+.form-default h3{
+	    padding: 5px;
+}
 
 .form-default ul {
     float: left;
 }
-
+.addnewtime-group input{
+	border:1px solid #777;
+	
+	
+}
+.shift-empid{
+	margin:-3px 0 0 5px;
+}
 .shift-empid label {
     display: block;
+	margin-top: -23px;
+	padding:5px;
+	}
+.shift-empid select{
+	width: 225px;
+    padding: 4px;
+	border:1px solid #777;
+	margin:0 15px 0 5px
 }
 
 .form-costcontrol ul {
@@ -564,19 +596,22 @@ footer .container {
 }
 
 .form-costcontrol {
-    border: 1px solid black;
+  /*  border: 1px solid #888; */
     float: left;
-    margin-right: 6px;
+    margin: 0 10px 10px 0;
     padding: 1px 4px;
+	
 }
 
 .form-costcontrol select {
     width: 120px;
     padding: 3px;
-}
+	height:170px;
+	margin-bottom:5px;
+	}
 
 .form-costcontrol select option {
-    padding: 2px;
+   padding: 5px 2px;
 }
 
 .form-costcontrol h3 {
@@ -586,22 +621,90 @@ footer .container {
 }
 
 .form-costcontrol .arrowgroup {
-    margin-top: 56px;
+    margin-top: 16px;
 }
 
 .form-costcontrol .arrow {
     margin: 30px 10px;
-    background: #888;
+    background: #246e9b;
     color: #fff;
     width: 20px;
     padding: 0px 4px;
     font-size: 20px;
     text-align: left;
+	border-radius:3px;
 }
 
 .form-costcontrol .arrow:hover {
     cursor: pointer;
 }
+.form-sort{
+	list-style-type:none;
+	margin-left:60px;
+	
+	}
+.form-sort, .records h3 {
+    padding: 2px;
+    color: #1f709b;
+	display: inline-block;
+    margin-top: 4px;
+}
+.form-sort select{
+	width: 220px;
+    padding: 4px;
+	margin: 0 2px 5px 0;
+	}
+.form-sort span{
+	 font-size: 18px;
+   background: #246e9b;
+    color: #fff;
+    width: 20px;
+    padding: 0px 4px;
+	color: #fff;
+     margin-left:30px;
+    border-radius:3px;
+	cursor:pointer;
+   }
+ 
+.addnewtime-group{
+	      background-color: #fff!important;
+		      height: 300px;
+			  margin-bottom:5px;
+}
+ .btnbar {
+	list-style-type: none;
+    width: 40%;
+    float: right;
+	margin:-36px -65px 0 0;
+	border:none;
+	}
+.btnbar li{
+	display:inline-block;
+	}
+	.btnbar li .cancel{
+		background-color:#fff;
+		color: #257199;
+		border:1px solid #246e9b;
+	}
+.records table-cell{
+		border:1px solid #fff!important;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------------OTHER-----------------*/
