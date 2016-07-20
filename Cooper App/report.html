@@ -1,0 +1,95 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="js/myscript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"></div>
+            <h2>Source to Gross Payroll System</h2>
+            <div class="user">
+                <h5><i class="fa fa-user" aria-hidden="true"></i>cooper</h5>
+                <h5><i class="fa fa-map-marker" aria-hidden="true"></i>Tupelo</h5>
+            </div>
+        </div>
+    </header>
+    <div class="nav">
+        <ul>
+            <li><a class="rateicon">Rates</a></li>
+            <li><a class="timeicon">Time Card</a></li>
+            <li><a class="processicon">Process</a>
+                <ul>
+                    <li><a href="#">Define Calculation</a></li>
+                    <li><a href="#">Configure Calculation</a></li>
+                    <li id="daily"><a href="#">Daily Closing</a></li>
+                    <li><a href="#">Weekly Closing</a></li>
+                    <li><a href="#">Generate Gross Pay File</a></li>
+                </ul>
+            </li>
+            <li><a class="reporticon">Reports</a></li>
+            <li><a class="adminicon">Administration</a></li>
+        </ul>
+    </div>
+    <div class="addnew-wrapper">
+        
+        
+        <div class="myreport-table table records">
+            <ul>
+        <span class="excelicon"></span>
+        <span class="pdficon"></span>
+        </ul>
+                 <div class="table-row">
+                    <div class="table-head">Name</div>
+                    <div class="table-head">Emp ID</div>
+                    <div class="table-head">Description</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">John</div>
+                     <div class="table-cell">12345</div>
+                    <div class="table-cell">some text</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Mary</div>
+                    <div class="table-cell">56789</div>
+                    <div class="table-cell">some text</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Austin</div>
+                    <div class="table-cell">15678</div>
+                    <div class="table-cell">some text</div>
+                </div>
+            
+            </div>
+        <div class="backbtn"><input type="button" class="addnew" value="Back"></div>
+            </div>
+    <footer>
+        <div class="container">
+            <p>&copy; Copyrights 2016</p>
+
+        </div>
+    </footer>
+    <!--
+    <script> 
+var form=document.getElementById('show-hide');
+var daily=document.getElementById('daily');
+daily.onclick=function(){
+    
+    form.style.display="block";
+}
+var processbtn=document.getElementById('process');
+        var datagrid=document.getElementById('datagrid');
+        processbtn.onclick=function(){
+            datagrid.style.display='block';
+        }
+</script>
+-->
+</body>
+
+</html>

@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, verdana;
     background-size: 100%;
     font-size: 12px;
-    background: #ccc;
+    background: #fff;
 }
 
 .container {
@@ -110,46 +110,47 @@ header .logo {
 
 .rateicon {
     background: url(../images/rates.png)no-repeat 7px 0px;
+    background-size: 23px 25px;
     display: block;
     height: 26px;
     width: 100px;
-    background-size: 24%;
     padding: 6px 0px;
 }
 
 .timeicon {
-    background: url(../images/time.png)no-repeat 0px -5px;
+        background: url(../images/time.png)no-repeat 3px -4px;
+    background-size: 25px 30px;
     display: block;
     height: 26px;
     width: 118px;
-    padding: 6px 0px;
+    padding: 6px 0px;;
 }
 
 .processicon {
-    background: url(../images/process.png)no-repeat 1px -1px;
+    background: url(../images/process.png)no-repeat 3px 1px;
+    background-size: 20px 21px;
     display: block;
     height: 26px;
     width: 118px;
-    background-size: 18%;
     padding: 6px 0px;
 }
 
 .reporticon {
-    background: url(../images/reports.png)no-repeat 7px 0px;
+   background: url(../images/reports.png)no-repeat 6px -1px;
+    background-size: 25px 25px;
     display: block;
     height: 26px;
     width: 118px;
-    background-size: 19%;
     margin-left: -5px;
     padding: 6px 0px;
 }
 
 .adminicon {
-    background: url(../images/admin.png)no-repeat -4px 0px;
+   background: url(../images/admin.png)no-repeat -3px -1px;
+    background-size: 25px 25px;
     display: block;
     height: 26px;
     width: 118px;
-    background-size: 24%;
     margin-left: 5px;
     padding: 6px 0px 0px 12px;
 }
@@ -427,7 +428,7 @@ footer .container {
 /* Adhoc Report */
 
 .adhoc-wrapper {
-    width: 550px;
+    width: 510px;
     margin-left: 10px;
     margin-top: 20px;
     padding: 5px;
@@ -446,12 +447,11 @@ footer .container {
     color: #fff;
     border-radius: 4px;
     border: none;
-    margin-right: 21px;
-	cursor:pointer;
+    cursor:pointer;
 }
 .form-control li {
     display: inline-block;
-    padding: 10px;
+   padding: 10px 0 10px 0;
 }
 
 .form-control label {
@@ -473,7 +473,7 @@ footer .container {
 }
 
 .myreport {
-    margin-bottom: 5px!important;
+    margin-bottom: 25px;
     padding: 5px;
     background-color: #c4c4c5;
     border: 1px solid #888;
@@ -483,7 +483,7 @@ footer .container {
 .myreport h3,
 .timecard-head h3 {
     font-size: 13px;
-    padding: 5px 0;
+    padding: 5px 5px;
     color: #1f709b;
 }
 
@@ -496,7 +496,7 @@ footer .container {
 
 .addnew-wrapper {
     width: 900px;
-    height: 910px;
+        height: 720px;
     margin-left: 10px;
     margin-top: 20px;
     /* border:1px solid #999; */
@@ -506,47 +506,67 @@ footer .container {
 }
 .form-addnew {
     padding: 6px 5px;
-	    background-color: #eef2f5 !important;
+	background-color: #d7f2ec !important;
 }
 
 .form-addnew li {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     float: left;
     margin-bottom: 13px;
 }
 
-.form-addnew label {
+.form-addnew li label {
+	    width: 12%;
+    float: left;
     margin-top: 6px;
     display: inline-block;
     padding-right: 9px;
-       font-size: 14px;
+    padding-left: 6px;
+    font-size: 13px;
 }
-
-.inputtext {
-    width: 68%;
-    border: 1px solid #ccc;
+.inputtext-long {
+    width: 30%;
+     background: #fff;
+    color: #000;
+    padding: 5px;
+	float: left;
+}
+.form-addnew textarea{
+	resize:none;
+	float: left;
+}
+.calendarinput, .inputtext {
+	width: 135px;
+	
     background: #fff;
     color: #000;
     padding: 5px;
+	position:relative;
 }
-
+.calicon{
+	background: url("../images/calendar.png") no-repeat center;
+    background-size: 20px 20px;
+    background-position: 110px;
+	border: 1px solid #ccc;
+	cursor:pointer;
+}
 .clearfix {
     clear: both;
 }
 .reportcontrols{
 	    background-color:#fff;
-		 /*    height: 195px; */
-}
+		}
 .sortsection{
 	margin-top:15px;
 	background:#fff;
-	    height: 200px;
-}
+	height: 319px;
+	}
 .form-addnew .reports-label {
     display: block;
     clear: both;
     padding: 5px;
+	margin-left: 100px;
 }
 
 .form-default {
@@ -556,24 +576,19 @@ footer .container {
     padding: 6px 5px;
 }
 .form-default label{
-	font-size:14px;
-	padding:0 5px 0 5px;
+	font-size: 12px;
+	padding:0 5px 0 6px;
 }
 
 .form-default li {
     display: inline-block
 }
-.form-default h3{
-	    padding: 5px;
+.form-default h3 , h4{
+	    padding: 6px 5px
 }
 
 .form-default ul {
     float: left;
-}
-.addnewtime-group input{
-	border:1px solid #777;
-	
-	
 }
 .shift-empid{
 	margin:-3px 0 0 5px;
@@ -584,10 +599,9 @@ footer .container {
 	padding:5px;
 	}
 .shift-empid select{
-	width: 225px;
+	width: 100px;
     padding: 4px;
-	border:1px solid #777;
-	margin:0 15px 0 5px
+	margin: 1px 15px 0 5px;
 }
 
 .form-costcontrol ul {
@@ -596,9 +610,8 @@ footer .container {
 }
 
 .form-costcontrol {
-  /*  border: 1px solid #888; */
     float: left;
-    margin: 0 10px 10px 0;
+    margin: 0 6px 10px 0;
     padding: 1px 4px;
 	
 }
@@ -606,8 +619,8 @@ footer .container {
 .form-costcontrol select {
     width: 120px;
     padding: 3px;
-	height:170px;
-	margin-bottom:5px;
+	height: 130px;
+	    margin: 0 0 5px 4px;
 	}
 
 .form-costcontrol select option {
@@ -616,80 +629,136 @@ footer .container {
 
 .form-costcontrol h3 {
     text-align: center;
-    padding: 2px;
+    padding: 5px 2px;
     color: #1f709b;
+	font-size: 12px;
+}
+.form-sort h3 {
+    padding: 5px 58px;
+    color: #1f709b;
+	font-size: 12px;
 }
 
 .form-costcontrol .arrowgroup {
     margin-top: 16px;
 }
 
-.form-costcontrol .arrow {
-    margin: 30px 10px;
+.form-costcontrol .arrow-add {
+    margin: 7px 7px;
     background: #246e9b;
     color: #fff;
-    width: 20px;
-    padding: 0px 4px;
-    font-size: 20px;
+    width: 22px;
+    padding: 2px 6px;
+    font-size: 16px;
+    font-weight: bold;
     text-align: left;
-	border-radius:3px;
+    border-radius: 2px;
+    cursor: pointer;
 }
-
+.form-costcontrol .arrow-remove{
+	margin: 7px 7px;
+    background: #246e9b;
+    color: #fff;
+    width: 22px;
+    padding: 2px 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 2px;
+    cursor: pointer;
+	}
+.arrowsort{
+	    margin-top: 42px!important;
+}
 .form-costcontrol .arrow:hover {
     cursor: pointer;
 }
-.form-sort{
-	list-style-type:none;
-	margin-left:60px;
-	
+.form-sort ul{
+	list-style-type: none;
+    margin-left: 60px;
+    display: inline-block;
+    width: 300px;
 	}
 .form-sort, .records h3 {
     padding: 2px;
     color: #1f709b;
 	display: inline-block;
-    margin-top: 4px;
-}
+   }
 .form-sort select{
 	width: 220px;
     padding: 4px;
 	margin: 0 2px 5px 0;
+	float:left;
 	}
-.form-sort span{
-	 font-size: 18px;
-   background: #246e9b;
+	
+.form-sort .addicon{
+	background: #1f709b;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: bold;
     color: #fff;
-    width: 20px;
-    padding: 0px 4px;
-	color: #fff;
-     margin-left:30px;
-    border-radius:3px;
-	cursor:pointer;
+    cursor: pointer;
+    float: left;
    }
+ .form-sort  .deleteicon{
+	background: #1f709b url("../images/delete.png")no-repeat 4px 5px;
+    background-size: 16px 16px;
+    border-radius: 2px;
+    padding: 10px 12px;
+    cursor: pointer;
+    float: left;
+    height: 27px;
+    margin-left: 3px;
+	
+ }
+ 
  
 .addnewtime-group{
 	      background-color: #fff!important;
-		      height: 300px;
-			  margin-bottom:5px;
+		     
 }
  .btnbar {
 	list-style-type: none;
-    width: 40%;
-    float: right;
-	margin:-36px -65px 0 0;
-	border:none;
-	}
+    border:none;
+	position:absolute;
+	left: 50%;
+    margin: 5px 19px;
+		}
 .btnbar li{
 	display:inline-block;
+	float:none !important;
 	}
 	.btnbar li .cancel{
 		background-color:#fff;
 		color: #257199;
 		border:1px solid #246e9b;
-	}
+		}
 .records table-cell{
 		border:1px solid #fff!important;
 	}
-	
+.records {
+		border:1px solid #888!important;
+		margin:30px 0 5px 0;
+	}
+.records ul{
+	width:150px;
+	position: absolute;
+	left:63%;
+    top: 110px;
+	}
+.excelicon{
+	background: url("../images/excel.png")no-repeat center;
+	    background-size: 20px 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.pdficon{
+	background: url("../images/pdf.png")no-repeat center;
+	    background-size: 20px 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
 
 
 

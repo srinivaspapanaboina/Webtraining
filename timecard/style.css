@@ -1,0 +1,48 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, verdana;
+    font-size: 12px;
+    }
+.clearfix{
+	clear:both;
+}
+.timesheet ul {
+		width:900px;
+		float:left;
+		list-style-type:none;
+		margin:10px 0 10px 0;
+		padding:0 10px;
+			}
+.timesheet  li {
+	margin-bottom:10px;
+	display:inline-block;
+	}
+	.timesheet label{
+		float:left;
+		margin-top:14px;
+		margin-right:5px;
+	}
+	.timesheet  .longfield{
+		width:250px;
+		padding:5px;
+		border:none;
+		border-bottom:1px solid black!important;
+	}
+	.timesheet .inputfield{
+		width:95px;
+		border:none;
+		border-bottom:1px solid black!important;
+		padding:5px;
+	}
+	table{
+		width:100%;
+		border-collapse:collapse;
+		border:1px solid black;
+
+	}

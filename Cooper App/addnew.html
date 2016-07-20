@@ -43,11 +43,11 @@
             <div class="report-input">
                 <li>
                     <label for="reportname">Report Name</label>
-                    <input type="text" id="reportname" class="inputtext">
+                    <input type="text" id="reportname" class="inputtext-long">
                 </li>
                 <li>
                     <label for="description">Description</label>
-                    <input type="text" id="description" class="inputtext">
+                    <textarea id="description" rows="5" cols="35"></textarea>
                 </li>
             </div>
             <label for="public" class="reports-label">
@@ -57,13 +57,14 @@
             </div>
         <div class="addnewtime-group"> 
         <div class="form-default">
-            <h3>Time and Date</h3>
+            <h3>Default Values</h3>
+            <h4>Time and Date</h4>
             <ul>
                 <li><label>From</label>
-                    <input type="text" class="inputtext">
+                    <input type="text" class="calendarinput calicon">
                 </li>
                 <li><label>To</label>
-                    <input type="text" class="inputtext">
+                    <input type="text" class="calendarinput calicon">
                 </li>
             </ul>
             <ul class="shift-empid">
@@ -109,9 +110,9 @@
                 </li>
             </ul>
             <ul class="arrowgroup">
-                <li class="arrow">></li>
-                <li class="arrow">
-                    <</li>
+                <li class="arrow-add">></li>
+                <li class="arrow-remove"><
+                    </li>
                 </li>
             </ul>
             <ul>
@@ -151,9 +152,9 @@
                 </li>
             </ul>
             <ul class="arrowgroup">
-                <li class="arrow">></li>
-                <li class="arrow">
-                    <</li>
+                <li class="arrow-add">></li>
+                <li class="arrow-remove"><
+                    </li>
                 </li>
             </ul>
             <ul>
@@ -193,9 +194,9 @@
                 </li>
             </ul>
             <ul class="arrowgroup">
-                <li class="arrow">></li>
-                <li class="arrow">
-                    <</li>
+                <li class="arrow-add">></li>
+                <li class="arrow-remove"><
+                    </li>
                 </li>
             </ul>
             <ul>
@@ -211,7 +212,7 @@
             </ul>
         </div>
         </div>
-         </div>  
+        
           <div class="sortsection"> 
         <div class="form-costcontrol">
             <ul>
@@ -236,10 +237,10 @@
                     </select>
                 </li>
             </ul>
-            <ul class="arrowgroup">
-                <li class="arrow">></li>
-                <li class="arrow">
-                    <</li>
+           <ul class="arrowgroup arrowsort">
+                <li class="arrow-add">></li>
+                <li class="arrow-remove"><
+                    </li>
                 </li>
             </ul>
             <ul>
@@ -259,41 +260,42 @@
         
         <div class="form-sort">
         <h3>Sort Sequence</h3>
+            <ul> 
             <li><select>
                 <option>1</option>
                 <option>1</option>
                 <option>1</option>
                 </select>
-            <span>+</span>
-                 <span>x</span>
+           <span class="addicon">+</span>
             </li>
         <li><select>
                 <option>1</option>
                 <option>1</option>
                 <option>1</option>
                 </select>
-            <span>+</span>
-                 <span>x</span>
+          <span class="addicon">+</span>
+                 <span class="deleteicon"></span>
             </li>
             <li><select>
                 <option>1</option>
                 <option>1</option>
                 <option>1</option>
                 </select>
-            <span>+</span>
-                 <span>x</span>
+            <span class="addicon">+</span>
+                 <span class="deleteicon"></span>
             </li>
             <li><select>
                 <option>1</option>
                 <option>1</option>
                 <option>1</option>
                 </select>
-            <span>+</span>
-                 <span>x</span>
+           <span class="addicon">+</span>
+                 <span class="deleteicon"></span>
             </li>
-            
+            </ul>
         </div>
-                  
+    </div>
+</div>
         <ul class="btnbar clearfix">
         
         <li> <input type="button" class="addnew" value="New"></li>
@@ -301,8 +303,7 @@
             <li> <input type="button" class="addnew cancel" value="Cancel"></li>
             <li> <input type="button" class="addnew" value="Run"></li>
         </ul>
-         </div>
-             
+<!--
         <div class="myreport-table table records">
             <h3>No.Of Records</h3>
                 <div class="table-row">
@@ -330,6 +331,7 @@
         <div class="backbtn"><input type="button" class="addnew" value="Back"></div>
         <div class="pdfbtn"><input type="button" class="addnew" value="Pdf"></div>
         <div class="excelbtn"><input type="button" class="addnew" value="Excel"></div>
+-->
         
 
     </div>
