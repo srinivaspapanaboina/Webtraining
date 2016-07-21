@@ -12,37 +12,87 @@ body {
 .clearfix{
 	clear:both;
 }
-.timesheet ul {
-		width:900px;
-		float:left;
+.wrapper{
+	    width: 900px;
+    border: 1px solid black;
+    margin-left: 10px;
+	margin-top:10px;
+    /* padding: 0 10px; */
+    float: none;
+    height: 335px;
+}
+.datelbl {
+	float:right;
+		margin-top:14px;
+		margin-right:5px;
+}
+.datelbl input {
+	padding: 3px;
+    margin-left: 4px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.timesheet h3{
+	text-align: center;
+    font-size: 18px;
+    padding: 5px 0 0 0;
+}
+.timesheet .datelbl{
+	margin-top:0!important;
+}
+.wrapper ul {
+				float:left;
 		list-style-type:none;
-		margin:10px 0 10px 0;
-		padding:0 10px;
+		margin: 1px 0 10px 0;
+		padding:0 3px;
 			}
-.timesheet  li {
-	margin-bottom:10px;
+.wrapper  li {
+	 margin-bottom: 2px;
 	display:inline-block;
 	}
-	.timesheet label{
+	.wrapper label{
 		float:left;
+		font-size:13px;
+		display:block;
 		margin-top:14px;
 		margin-right:5px;
 	}
-	.timesheet  .longfield{
+	.wrapper  .longfield{
 		width:250px;
 		padding:5px;
 		border:none;
-		border-bottom:1px solid black!important;
+		border-bottom:1px solid black;
+
 	}
-	.timesheet .inputfield{
-		width:95px;
+	.wrapper .inputfield{
+		width:94px;
 		border:none;
-		border-bottom:1px solid black!important;
 		padding:5px;
+		border-bottom:1px solid black;
 	}
 	table{
 		width:100%;
 		border-collapse:collapse;
-		border:1px solid black;
-
+		margin-bottom:5px;
+			}
+	th{
+		text-transform:uppercase;
+		border-top:2px solid black !important;
 	}
+
+	tbody tr {
+		height:30px;
+	}
+	td ,th{
+		border:1px solid black;
+	}
+	tr :first-child{
+		border-left:none!important;
+	}
+	tr :last-child{
+		border-right:none!important;
+	}
+	.approval {
+		margin-left: 204px;
+		}
+
