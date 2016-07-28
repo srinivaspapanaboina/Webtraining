@@ -15,7 +15,7 @@ body {
 }
 .wrapper{
 	   width: 900px;
-    border: 1px solid black;
+   /*  border: 1px solid black; */
     margin-left: 10px;
     margin-top: 10px;
     float: left;
@@ -23,7 +23,7 @@ body {
 position:relative;
    }
 .timestamp{
-	width: 88%;
+	width: 100%;
 	    margin-left: 4%;
 }
 	table{
@@ -34,8 +34,8 @@ position:relative;
 	th{
 		text-transform:uppercase;
 		border-top:1px solid black !important;
+		padding:0 10px;
 	}
-	.lowercase{text-transform:none!important;}
 	tbody tr {
 		height:30px;
 	}
@@ -44,37 +44,11 @@ position:relative;
 line-height:24px;
 	}
 		.datatbl{
-		    margin-top: -6px;
+		    margin-top: -5px;
 	}
-.vtext{
-	transform: rotate(-90.0deg);
-    position: absolute;
-    left: -87px;
-    top: 155px;
-    font-size: 16px;
-    padding: 0 0 42px 0px;
-	}
-.vtext2 {
-	float:right;
-	width: 241px;
-    transform: rotate(-90.0deg);
-    position: absolute;
-    right: -70px;
-    top:172px;
-    font-size: 11px;
-    text-align: justify;
-    padding: 3px;
-    border: 1px solid black;
-    border-top: none !important;
-}
 
-.sign{
-	border: none!important;
-    right: -110px;
-    font-weight: bold;
-}
 	table .spancol{
-		width:8%;
+		width:10%;
 			}
 			.line {
 				border-left-style:dashed;
@@ -96,4 +70,22 @@ line-height:24px;
 		.datatbl tr:last-child > td, th{
 		border-bottom:0;
 	}
-	
+		.imgtag{
+		vertical-align: top;
+		font-size:9px;
+		}
+		img{
+			padding-top: 10px;
+		}
+		.footerrow{
+			border-bottom:1px solid black;
+		}
+.declaration {
+	border-left: 0;
+    font-size: 11px;
+    text-align: justify;
+    width: 294px;
+    line-height: 1;
+    vertical-align: top;
+    padding: 6px 19px;
+}

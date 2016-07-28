@@ -15,7 +15,7 @@ body {
 }
 .wrapper{
 	   width: 900px;
-    border: 1px solid black;
+   /*  border: 1px solid black; */
     margin-left: 10px;
     margin-top: 10px;
     float: left;
@@ -34,8 +34,8 @@ position:relative;
 	th{
 		text-transform:uppercase;
 		border-top:1px solid black !important;
+		padding:0 10px;
 	}
-	.lowercase{text-transform:none!important;}
 	tbody tr {
 		height:30px;
 	}
@@ -44,8 +44,49 @@ position:relative;
 line-height:24px;
 	}
 		.datatbl{
-		    margin-top: -6px;
+		    margin-top: -5px;
 	}
+
+	table .spancol{
+		width:10%;
+			}
+			
+	table .totals{
+		text-align:right;
+		padding-right:10px;
+		    border-top: none !important;
+	}
+	 .mastertable{
+		    margin-top: -1px;
+	}
+	.mastertable .approval{
+		    vertical-align: bottom;
+	}
+	.mastertable .firstrow th{
+		    padding-top: 25px;
+	}
+		.datatbl tr:last-child > td, th{
+		border-bottom:0;
+	}
+		.imgtag{
+		vertical-align: top;
+		font-size:9px;
+		}
+		img{
+			padding-top: 10px;
+		}
+		.footerrow{
+			border-bottom:1px solid black;
+		}
+.declaration {
+	border-left: 0;
+    font-size: 11px;
+    text-align: justify;
+    width: 294px;
+    line-height: 1;
+    vertical-align: top;
+    padding: 6px 19px;
+}
 .vtext{
 	transform: rotate(-90.0deg);
     position: absolute;
@@ -67,33 +108,8 @@ line-height:24px;
     border: 1px solid black;
     border-top: none !important;
 }
-
 .sign{
 	border: none!important;
     right: -110px;
     font-weight: bold;
 }
-	table .spancol{
-		width:8%;
-			}
-			.line {
-				border-left-style:dashed;
-			}
-	table .totals{
-		text-align:right;
-		padding-right:10px;
-		    border-top: none !important;
-	}
-	 .mastertable{
-		    margin-top: -1px;
-	}
-	.mastertable .approval{
-		    vertical-align: bottom;
-	}
-	.mastertable .firstrow th{
-		    padding-top: 25px;
-	}
-		.datatbl tr:last-child > td, th{
-		border-bottom:0;
-	}
-	
