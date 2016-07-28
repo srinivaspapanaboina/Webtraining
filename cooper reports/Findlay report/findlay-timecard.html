@@ -4,7 +4,125 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <style>
+    @charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	}
+
+body {
+    font-family: Arial, Helvetica, verdana;
+    font-size: 12px;
+	
+    }
+.clearfix{
+	clear:both;
+}
+.wrapper{
+	   width: 900px;
+   /*  border: 1px solid black; */
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    height: 370px;
+position:relative;
+   }
+.timestamp{
+	width: 88%;
+	    margin-left: 4%;
+}
+	table{
+		width:100%;
+		border-collapse:collapse;
+		margin-bottom:5px;
+			}
+	th{
+		text-transform:uppercase;
+		border-top:1px solid black !important;
+		padding:0 2px;
+	}
+	tbody tr {
+		height:30px;
+	}
+	td ,th{
+		border:1px solid black;
+line-height:24px;
+	}
+		.datatbl{
+		    margin-top: -5px;
+	}
+
+	table .spancol{
+		width:10%;
+			}
+			
+	table .totals{
+		text-align:right;
+		padding-right:10px;
+		    border-top: none !important;
+	}
+	 .mastertable{
+		    margin-top: -1px;
+	}
+	.mastertable .approval{
+		    vertical-align: bottom;
+	}
+	.mastertable .firstrow th{
+		    padding-top: 25px;
+	}
+		.datatbl tr:last-child > td, th{
+		border-bottom:0;
+	}
+		.imgtag{
+		vertical-align: top;
+		font-size:9px;
+		}
+		img{
+			padding-top: 10px;
+		}
+		.totals {
+			border-bottom:1px solid black !important;
+				}
+.declaration {
+	border-left: 0;
+    font-size: 11px;
+    text-align: justify;
+    width: 294px;
+    line-height: 1;
+    vertical-align: top;
+    padding: 6px 19px;
+}
+.vtext{
+	transform: rotate(-90.0deg);
+    position: absolute;
+    left: -87px;
+    top: 155px;
+    font-size: 16px;
+    padding: 0 0 42px 0px;
+	}
+.vtext2 {
+	float:right;
+	width: 241px;
+    transform: rotate(-90.0deg);
+    position: absolute;
+    right: -70px;
+    top:172px;
+    font-size: 11px;
+    text-align: justify;
+    padding: 3px;
+    border: 1px solid black;
+    border-top: none !important;
+}
+.sign{
+	border: none!important;
+    right: -110px;
+    font-weight: bold;
+}
+    
+    
+    </style>
 </head>
 
 <body>
@@ -35,14 +153,14 @@
                         <th rowspan="2">Quantity</th>
                         <th rowspan="2" style="width:70px;">Rate</th>
                         <th colspan="4" class="spancol">Hours</th>
-                        <th rowspan="2" colspan="2" style="width:11%;">Amount</th>
+                        <th rowspan="2" colspan="2" style="width:80px;">Amount</th>
                         <th rowspan="2" colspan="2">Corrections</th>
                         <th rowspan="2">Dept</th>
-                        <th rowspan="2">Description of Work</th>
+                        <th rowspan="2" style="width: 179px;">Description of Work</th>
                     </tr>
                     <tr>
                         <th colspan="2" class="spancol">Earned</th>
-                        <th colspan="2" class="spancol">Actual</th>
+                        <th colspan="2" class="spancol" style="width:80px;">Actual</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -183,8 +301,8 @@
                     </tr>
 
                     <tr>
-                        <th colspan="4" class="totals"><span class="imgtag">Do Not Fold or Soil</span><img src="img/logo.png" alt="" height=50 width=100></img>
-                        </th>
+                        <td colspan="4" rowspan="2" class="totals"><span class="imgtag">Do Not Fold or Soil</span><img src="img/logo.png" alt=""  width=80></img>
+                        </td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -192,11 +310,10 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr class="footerrow">
-                        <td colspan="4" style="border-top:0;"></td>
-                        <td colspan="2" style="text-align:center;"><strong>Total Hours</strong></td>
-                        <td colspan="2" style="text-align:center;"><strong>Total Amount</strong></td>
-                        <td colspan="2" style="text-align:center;"><strong>Total Amount</strong></td>
+                    <tr>
+                        <td colspan="2"  class="totals"><strong>Total Hours</strong></td>
+                        <td colspan="2"  class="totals"><strong>Total Amount</strong></td>
+                        <td colspan="2"  class="totals"><strong>Total Amount</strong></td>
                     </tr>
                 </tbody>
             </table>
