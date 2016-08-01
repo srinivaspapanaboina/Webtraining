@@ -55,7 +55,7 @@ line-height:24px;
 	}
 
 	table .spancol{
-		width:10%;
+		width:8%;
 			}
 			
 	table .totals{
@@ -63,24 +63,27 @@ line-height:24px;
 		padding-right:10px;
 		    border-top: none !important;
 	}
+	.dotline {
+	border-left:2px dashed #000;
+	padding-right: 1px;
+	}
 	 .mastertable{
 		    margin-top: -1px;
 	}
 	.mastertable .approval{
 		    vertical-align: bottom;
 	}
-	.mastertable .firstrow th{
-		    padding-top: 25px;
-	}
+	
 		.datatbl tr:last-child > td, th{
 		border-bottom:0;
 	}
 		.imgtag{
 		vertical-align: top;
 		font-size:9px;
+		margin-right: 20px;
 		}
 		img{
-			padding-top: 10px;
+			padding-top: 2px;
 		}
 		.totals {
 			border-bottom:1px solid black !important;
@@ -131,15 +134,15 @@ line-height:24px;
             <table class="mastertable">
                 <thead>
                     <tr class="firstrow">
-                        <th>Mo</th>
-                        <th>Day</th>
-                        <th>Yr</th>
-                        <th>Dept</th>
-                        <th>clock No</th>
-                        <th>Shift</th>
-                        <th>Employee Name</th>
-                        <th class="approval">Foreman's Approval</th>
-                        <th>Factory Time Card</th>
+                        <th><label>09</label><br/>Mo</th>
+                        <th><label>09</label><br/>Day</th>
+                        <th><label>09</label><br/>Yr</th>
+                        <th><label>108</label><br/>Dept</th>
+                        <th><label>65959</label><br/>clock</th>
+                        <th><label>D</label><br/>Shift</th>
+                        <th style="width:290px;"><label style="float:left; padding-left:3px;">D R FEASEL</label>&nbsp;&nbsp;&nbsp;<label  style="float:right; padding-left:20px; padding-right:10px;">5</label> <label style="float:right;">B03</label><br/>Employee Name</th>
+                        <th class="approval">Foreman's Approval&nbsp;&nbsp;&nbsp;<label>65959</label></th>
+                        <th style="line-height:1; width:1px;"><br/>Factory<br/>Time Card</th>
                     </tr>
                 </thead>
             </table>
@@ -148,14 +151,14 @@ line-height:24px;
 
                 <thead>
                     <tr>
-                        <th rowspan="2">Acct.</th>
+                        <th rowspan="2">Acct.No</th>
                         <th rowspan="2">Job.No</th>
                         <th rowspan="2">Quantity</th>
                         <th rowspan="2" style="width:70px;">Rate</th>
                         <th colspan="4" class="spancol">Hours</th>
-                        <th rowspan="2" colspan="2" style="width:80px;">Amount</th>
+                        <th rowspan="2" colspan="2">Amount</th>
                         <th rowspan="2" colspan="2">Corrections</th>
-                        <th rowspan="2">Dept</th>
+                        <th rowspan="2" style="width: 58px;">Dept</th>
                         <th rowspan="2" style="width: 179px;">Description of Work</th>
                     </tr>
                     <tr>
@@ -170,30 +173,13 @@ line-height:24px;
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="dotline"></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -204,13 +190,47 @@ line-height:24px;
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                       <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                       <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -221,30 +241,13 @@ line-height:24px;
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="dotline"></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -255,30 +258,13 @@ line-height:24px;
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="dotline"></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -289,30 +275,50 @@ line-height:24px;
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
+                        <td></td>
+                        <td class="dotline"></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
+						
                     </tr>
 
                     <tr>
                         <td colspan="4" rowspan="2" class="totals"><span class="imgtag">Do Not Fold or Soil</span><img src="img/logo.png" alt=""  width=80></img>
                         </td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
+                        <td class="dotline"></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="dotline"></td>
+						<td></td>
+						<td class="dotline"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"  class="totals"><strong>Total Hours</strong></td>
-                        <td colspan="2"  class="totals"><strong>Total Amount</strong></td>
+                        <td colspan="4"  class="totals" style="text-align:center;"><strong>Total Hours</strong></td>
+                        <td colspan="2"  class="totals" style="width:110px;"><strong>Total Amount</strong></td>
                         <td colspan="2"  class="totals"><strong>Total Amount</strong></td>
                     </tr>
                 </tbody>

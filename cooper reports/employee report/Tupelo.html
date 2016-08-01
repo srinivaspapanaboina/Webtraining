@@ -1,0 +1,216 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+   @charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, verdana;
+    font-size: 12px;
+    }
+.clearfix{
+	clear:both;
+}
+.wrapper{
+	    width: 900px;
+    border: 1px solid black;
+    margin-left: 10px;
+	margin-top:10px;
+    /* padding: 0 10px; */
+    float: none;
+    height: 335px;
+	
+}
+.datelbl {
+	float:right;
+		margin-top:14px;
+		margin-right:5px;
+}
+.datelbl input {
+	padding: 3px;
+    margin-left: 4px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.timesheet h3{
+	text-align: center;
+    font-size: 18px;
+    padding: 5px 0 0 0;
+}
+.timesheet .datelbl{
+	margin-top:0!important;
+}
+.wrapper ul {
+				float:left;
+		list-style-type:none;
+		margin: 1px 0 10px 0;
+		padding:0 3px;
+			}
+.wrapper  li {
+	 margin-bottom: 2px;
+	display:inline-block;
+	}
+	.wrapper label{
+		float:left;
+		font-size:13px;
+		display:block;
+		margin-top:14px;
+		margin-right:5px;
+	}
+	.wrapper  .longfield{
+		width: 230px;
+		padding:6px;
+		line-height:0;
+		border:none;
+		border-bottom:1px solid black;
+		
+	}
+	.wrapper .inputfield{
+		width:94px;
+		border:none;
+		padding:6px;
+		line-height:0;
+		border-bottom:1px solid black;
+	}
+	table{
+		width:100%;
+		border-collapse:collapse;
+		margin-bottom:5px;
+			}
+	th{
+		text-transform:uppercase;
+		border-top:2px solid black !important;
+	}
+	.lowercase{text-transform:none!important;}
+	tbody tr {
+		height:30px;
+	}
+	td ,th{
+		border:1px solid black;
+	}
+	tr :first-child{
+		border-left:none!important;
+	}
+	tr :last-child{
+		border-right:none!important;
+	}
+	.approval {
+		margin-left: 204px;
+		}
+	
+
+   
+   </style>
+</head>
+
+<body>
+    <div class="wrapper"> 
+    <div class="timesheet">
+        <h3>Employee Production Report</h3>
+   <div class="datelbl"><label for="date">Date</label><label class="inputfield">29.07.2016</label></div>
+        <ul>
+        <li><label for="name">Name</label><label class="longfield">xxxxxxxxxxxxxxxx</label></li>
+             <li><label for="emp">Emp.#</label><label class="inputfield">xxxxxxxxxx</label></li>
+             <li><label for="dept">Dept.</label><label class="inputfield">xxxxxxxx</label></li>
+             <li><label for="job">Job Level</label><label class="inputfield">xxxxxxxx</label></li>
+             <li><label for="work">Work Crew</label><label class="inputfield">xxxxxxxx</label></li>
+                </ul>
+        <table class="table clearfix">
+            <thead>
+            <tr>
+                <th rowspan="2">Dept</th>
+                <th rowspan="2">Account</th>
+                <th rowspan="2">Spec</th>
+                <th rowspan="2">Changed <br/>to Spec</th>
+                <th rowspan="2">Mach.#</th>
+                <th rowspan="2">Description of Work</th>
+                <th colspan="2">Time</th>
+                <th rowspan="2">Production</th>
+                </tr>
+                <tr>
+                <th>Hrs.</th>
+                    <th>10<sup class="lowercase">ths</sup></th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+            <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+            <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+            <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+            <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+            <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            
+            </tbody>
+        
+        
+        
+        </table>
+    
+        </div>
+       
+    <ul>
+    <li><label for="empsign">Employee Signature</label><label class="longfield">xxxxxxxxxxx</label></li>
+        <li class="approval"><label for="approval">Approval</label><label class="longfield">xxxxxxxxxxxxxxxx</label></li>
+    </ul>
+         </div>
+</body>
+
+</html>
