@@ -70,12 +70,18 @@
         .dropdown {
             display: none;
             background: #fff;
+            border:1px solid #ccc;
         }
 
         .dropdown li {
             line-height: 20px;
             width: 150px;
-            border: 1px solid #ccc;
+            border:none;
+/*            border: 1px solid #ccc;*/
+            border-bottom:1px solid #ccc;
+        }
+        .dropdown li:last-child{
+            border-bottom: none;
         }
 
         .dropdown li a {
@@ -86,12 +92,16 @@
         .dropdown li:hover {
             background: #cdcdcd;
         }
+        .dropdown li:hover a{
+            color:#000!important;
+
+        }
 
         .dropdown li .fa {
             padding: 0 10px 0 0;
         }
 
-        .nav ul li:hover .dropdown {
+        .menu  li:hover .dropdown {
             display: block;
             position: absolute;
             top: 50px;
@@ -175,6 +185,22 @@
             font-size: 15px;
             width: 42px;
         }
+
+        .sidebar .submenu {
+            display: block;
+            background: #000000;
+            position: relative;
+           width: 216px;
+            left: -9px;
+            top:10px;
+            border:none;
+/*            display: none;*/
+        }
+        .submenu a {
+            margin-left: 40px;
+        }
+
+
         /*Footer CSS*/
 
         footer {
@@ -238,7 +264,14 @@
             <li><a href="#"><i class="fa fa-inbox"></i>Widgets</a></li>
             <li><a href="#"><i class="fa fa-th"></i>Tables</a></li>
             <li><a href="#"><i class="fa fa-arrows"></i>Full width</a></li>
-            <li><a href="#"><i class="fa fa-list"></i>Forms</a></li>
+            <li><a href="#"><i class="fa fa-list"></i>Forms</a>
+            <ul class="submenu">
+                <li><a href="#">Basic Form</a></li>
+                <li><a href="#">Form with Validation</a></li>
+                <li><a href="#">Form with Wizard</a></li>
+                </ul>
+
+            </li>
             <li><a href="#"><i class="fa fa-tint"></i>Buttons &amp; icons</a></li>
             <li><a href="#"><i class="fa fa-pencil"></i>Elements</a></li>
             <li><a href="#"><i class="fa fa-file"></i>Addons</a></li>
