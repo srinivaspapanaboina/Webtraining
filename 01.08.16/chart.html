@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 12px;
+        }
+        /* -------- Header Block CSS -------------------*/
+
+        .header {
+            background: #1f262d;
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            /*            overflow: hidden;*/
+        }
+
+        .header .logo {
+            background: url(./img/logo.png) no-repeat 0px 20px;
+            background-size: 197px 40px;
+            padding: 10px;
+            height: 65px;
+            left: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav {
+            width: 100%;
+        }
+
+        .nav .menu {
+            list-style-type: none;
+            top: 5px;
+            left: 217px;
+            position: absolute;
+            border-right: 1px solid #2e363f;
+            border-left: 1px solid #000;
+            line-height: 27px;
+            width: auto;
+        }
+
+        .menu li {
+            display: block;
+            float: left;
+            position: relative;
+            padding: 10px 5px;
+            border-right: 1px solid #2e363f;
+            border-left: 1px solid #000;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 0 5px;
+        }
+
+        .dropdown {
+            display: none;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .dropdown li {
+            line-height: 20px;
+            width: 150px;
+            border: none;
+            /*            border: 1px solid #ccc;*/
+            border-bottom: 1px solid #ccc;
+        }
+
+        .dropdown li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown li a {
+            color: #666;
+            padding: 10px;
+        }
+
+        .dropdown li:hover {
+            background: #cdcdcd;
+        }
+
+        .dropdown li:hover a {
+            color: #000!important;
+        }
+
+        .dropdown li .fa {
+            padding: 0 10px 0 0;
+        }
+
+        .menu li:hover .dropdown {
+            display: block;
+            position: absolute;
+            top: 50px;
+            z-index: 9999;
+        }
+
+        .dropdown li:first-child > a:after {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: -6px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid #cdcdcd;
+        }
+
+        .nav .fa {
+            margin-right: 2px;
+        }
+
+        .fa {
+            padding: 0 3px;
+            color: #888;
+        }
+
+        .search {
+            top: 12px;
+            right: 0px;
+            position: absolute;
+        }
+
+        .search input[type=text] {
+            padding: 7px;
+            border: none;
+        }
+
+        .search button {
+            position: relative;
+            right: 35px;
+            background: #28b779;
+            padding: 7px;
+            border: none;
+        }
+
+        .fa-search {
+            color: #fff;
+        }
+        /*------- Header Css Ending here ------*/
+        /* -------- Sidebar CSS -----*/
+
+        .sidebar {
+            float: left;
+            background: #1f262d;
+            width: 220px;
+            height: 542px;
+            top: 80px;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            display: block;
+        }
+
+        .sidebar li {
+            padding: 10px;
+            display: block;
+            border-top: 1px solid #3f3f3f;
+            border-bottom: 1px solid black;
+        }
+
+        .sidebar li a {
+            text-decoration: none;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .sidebar .fa {
+            padding: 0 10px;
+            font-size: 15px;
+            width: 42px;
+        }
+
+        .sidebar .submenu {
+            display: block;
+            background: #000000;
+            position: relative;
+            width: 216px;
+            left: -9px;
+            top: 10px;
+            border: none;
+            /*            display: none;*/
+        }
+
+        .submenu a {
+            margin-left: 40px;
+        }
+        /*        -------- Sidebar Ending --------*/
+
+        .mainwrapper {
+            width: 83.9%;
+            top: 55px;
+            left: 220px;
+            position: relative;
+            height: 500px;
+            padding: 1px 10px 10px 10px;
+            background: whitesmoke;
+        }
+        /*       --------- Breadcrumb CSS Began --------*/
+
+        .breadcrumb {
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 5px;
+            position: relative;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #777;
+        }
+
+        .breadcrumb .fa {
+            padding: 0 3px;
+        }
+
+        .breadcrumb .fa-chevron-right {
+            padding-left: 6px;
+        }
+
+        .breadcrumb a:last-child .fa-chevron-right {
+            display: none;
+        }
+        /*       --------- Breadcrumb Ending --------*/
+        /*       --------- Maincontent CSS Began --------*/
+
+        .maincontent {
+            background: #fff;
+            position: relative;
+        }
+
+        .maincontent:before {
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 4px;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-right: 6px solid #fff;
+        }
+
+        .widget-icons {
+            width: 100%;
+            list-style-type: none;
+        }
+
+        .widget-icons li {
+            width: 170px;
+            padding: 8px 15px;
+            text-align: center;
+            background: #27a9e3;
+            float: left;
+            margin: 0 10px 10px 0;
+        }
+
+        .widget-icons h3 {
+            color: #fff !important;
+        }
+
+        .widget-icons .fa {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .widgeticon-lg {
+            width: 350px!important;
+        }
+        /*        ------ Chart Site Analytics Began --------*/
+
+        .maincontent .widgetbox {
+            width: 100%;
+            clear: both;
+        }
+
+        .maincontent .widgetheading {
+            background: #ebe9e9;
+            border: 1px solid #cdcdcd;
+        }
+
+        .maincontent h3 {
+            padding: 10px;
+            color: #555;
+        }
+
+        .maincontent .widgetbox .fa-signal {
+            padding: 10px 10px 6px 5px;
+            border-right: 1px solid #b6b2b2;
+            float: left;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .widgetbox .widgetcontent {
+            border: 1px solid #cdcdcd;
+            height: 300px;
+            padding: 30px;
+            background: #fff;
+        }
+
+        .widgetcontent .chart {
+            width: 75%;
+            border: 1px solid #cdcdcd;
+            height: 238px;
+            float: left;
+        }
+
+        .xAxis .ticklable {
+            font-size: 13px;
+            float: left;
+            top: 315px;
+            position: absolute;
+            text-align: center;
+            width: 25px;
+            padding: 2px 5px;
+        }
+
+        .yAxis .ticklable {
+            font-size: 13px;
+            position: relative;
+            text-align: right;
+            left: -30px;
+            width: 25px;
+            padding: 2px 5px;
+        }
+
+        .smallwidget {
+            float: left;
+            left: 35px;
+            position: relative;
+            width: 25%;
+        }
+
+        .smallwidget li {
+            width: 100px;
+            text-align: center;
+            padding: 3px;
+            list-style: none;
+            line-height: 20px;
+            background: #888;
+            color: #fff;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+
+        .smallwidget .fa {
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .smallwidget li:hover {
+            cursor: pointer;
+            background: rgb(49, 48, 48);
+        }
+        /*Footer CSS*/
+
+        .footer {
+            width: 100%;
+            height: 30px;
+            bottom: 0;
+            position: fixed;
+            background: #1f262d;
+        }
+
+        .footer .fcontent {
+            color: #888;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--    header began-->
+    <div class="header">
+        <h1 class="logo"></h1>
+    </div>
+    <!-- header close-->
+    <!--Top Header menu-->
+    <div class="nav">
+        <ul class="menu">
+            <li><a href="#"><i class="fa fa-user"></i> Welcome User<i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+                    <li><a href="#"><i class="fa fa-check-square-o"></i>My Tasks</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i>Log Out</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-envelope-o"></i> Messages<i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#"><i class="fa fa-plus"></i>New message</a></li>
+                    <li><a href="#"><i class="fa fa-inbox"></i>Inbox</a></li>
+                    <li><a href="#"><i class="fa fa-arrow-up"></i>Outbox</a></li>
+                    <li><a href="#"><i class="fa fa-trash-o"></i>Trash</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fa fa-key"></i>Logout</a></li>
+        </ul>
+    </div>
+    <!--Top Header Menu Ending-->
+    <!--Top Search-->
+    <div class="search">
+        <input type="text" placeholder="Search here...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <!--Top Search Ending-->
+    <!--Header Ending-->
+    <div class="sidebar">
+        <ul>
+            <li><a href="home.html"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-signal"></i>Charts &amp; graphics</a></li>
+            <li><a href="#"><i class="fa fa-inbox"></i>Widgets</a></li>
+            <li><a href="#"><i class="fa fa-th"></i>Tables</a></li>
+            <li><a href="#"><i class="fa fa-arrows"></i>Full width</a></li>
+            <li><a href="#"><i class="fa fa-list"></i>Forms</a>
+                <ul class="submenu">
+                    <li><a href="#">Basic Form</a></li>
+                    <li><a href="#">Form with Validation</a></li>
+                    <li><a href="#">Form with Wizard</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#"><i class="fa fa-tint"></i>Buttons &amp; icons</a></li>
+            <li><a href="#"><i class="fa fa-pencil"></i>Elements</a></li>
+            <li><a href="#"><i class="fa fa-file"></i>Addons</a></li>
+            <li><a href="#"><i class="fa fa-info"></i>Error</a></li>
+        </ul>
+    </div>
+    <!--    Sidebar ending-->
+
+    <div class="mainwrapper">
+        <!--        ----Breadcrumb-------->
+        <div class="breadcrumb">
+            <a href="home.html"><i class="fa fa-home"></i>Home<i class="fa fa-chevron-right"></i></a>
+            <a href="#"><i class="fa fa-signal"></i>Charts&amp;graphs<i class="fa fa-chevron-right"></i></a>
+        </div>
+        <!--        ----------Breadcrum Ending---------->
+
+        <!--    --- Main content Began ------->
+        <div class="maincontent">
+            <ul class="widget-icons">
+                <li><i class="fa fa-tachometer"></i>
+                    <h3>My Dashboard</h3> </li>
+                <li style="background:#28b779;" class="widgeticon-lg"><i class="fa fa-signal"></i>
+                    <h3>Charts</h3> </li>
+                <li style="background:#ffb848;"><i class="fa fa-inbox"></i>
+                    <h3>Widgets</h3> </li>
+                <li style="background:#da542e;"><i class="fa fa-th"></i>
+                    <h3>Tables</h3> </li>
+                <li style="background:#2255a4;"><i class="fa fa-arrows"></i>
+                    <h3>Full width</h3> </li>
+                <li style="background:#da542e;" class="widgeticon-lg"><i class="fa fa-list"></i>
+                    <h3>Forms</h3> </li>
+                <li style="background:#2255a4;"><i class="fa fa-tint"></i>
+                    <h3>Buttons</h3> </li>
+                <li style="background:#27a9e3;"><i class="fa fa-pencil"></i>
+                    <h3>Elements</h3> </li>
+                <li style="background:#28b779;"><i class="fa fa-calendar"></i>
+                    <h3>Calendar</h3> </li>
+                <li style="background:#f74d4d;"><i class="fa fa-info"></i>
+                    <h3>Error</h3> </li>
+            </ul>
+            <div class="widgetbox">
+                <div class="widgetheading">
+                    <i class="fa fa-signal"></i>
+                    <h3>Site Analytics</h3>
+                </div>
+                <div class="widgetcontent">
+                    <div class="chart" style="background: rgba(255, 255, 0, 0.1);">
+                        <!--
+                        <div class="ticklabels">
+                            <div class="xAxis">
+                                <div class="ticklable" style="left:22px;">0</div>
+                                <div class="ticklable" style="left:156px;">2</div>
+                                <div class="ticklable" style="left:289px;">4</div>
+                                <div class="ticklable" style="left:424px;">6</div>
+                                <div class="ticklable" style="left:550px;">8</div>
+                                <div class="ticklable" style="left:663px;">10</div>
+                                <div class="ticklable" style="left:770px;">12</div>
+                            </div>
+                            <div class="yAxis">
+                                <div class="ticklable">1.5</div>
+                                <div class="ticklable" style="top:18px;">1.0</div>
+                                <div class="ticklable" style="top:35px;">0.5</div>
+                                <div class="ticklable" style="top:55px;">0.0</div>
+                                <div class="ticklable" style="top:70px;">-0.5</div>
+                                <div class="ticklable" style="top:85px;">-1.0</div>
+                                <div class="ticklable" style="top:100px;">-1.5</div>
+                            </div>
+                        </div>
+-->
+                    </div>
+
+                    <div class="smallwidget">
+                        <ul>
+                            <li><i class="fa fa-user"></i>
+                                <h2>2540</h2>
+                                <p>Total Users</p>
+                            </li>
+                            <li><i class="fa fa-plus"></i>
+                                <h2>120</h2>
+                                <p>New Users</p>
+                            </li>
+                            <li><i class="fa fa-shopping-cart"></i>
+                                <h2>656</h2>
+                                <p>Total Shop</p>
+                            </li>
+                            <li><i class="fa fa-tag"></i>
+                                <h2>9540</h2>
+                                <p>Total Orders</p>
+                            </li>
+                            <li><i class="fa fa-repeat"></i>
+                                <h2>10</h2>
+                                <p>Pending Orders</p>
+                            </li>
+                            <li><i class="fa fa-globe"></i>
+                                <h2>8540</h2>
+                                <p>Online Orders</p>
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="fcontent">2013 © Matrix Admin. Brought to you by Themedesigner.in</div>
+    </div>
+</body>
+
+</html>
