@@ -405,6 +405,48 @@
             padding: 10px 0;
             font-size: 12px;
         }
+
+/*        ********************** Media Querys *****************/
+        @media (max-width:1024px) {
+            .widgetbox .chart {
+                width:70% !important;
+            }
+            .widgetbox .smallwidget {
+                width:30% !important;
+                left:7px;
+            }
+            .widgetbox .smallwidget li {
+                width:98px;
+                margin: 0 7px 7px 0;
+            }
+        }
+
+        @media (max-width:768px){
+            .mainwrapper{
+                height:200vh !important;
+            }
+            .search {
+                    margin-right: -120px;
+            }
+            .search input {
+                    width: 160px;
+            }
+            .widgetbox .chart {
+                float:none;
+                width:100% !important;
+            }
+            .widgetbox .smallwidget {
+                width:100% !important;
+                margin-top:40px;
+               left:0!important;
+                   right:0!important;
+                position: absolute;
+            }
+            .smallwidget li {
+                width:95px !important;
+            }
+        }
+
     </style>
 </head>
 
