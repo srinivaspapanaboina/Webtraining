@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <style>
         * {
             padding: 0;
@@ -61,10 +62,13 @@
         }
 
         .menu li a {
-            color: #fff;
+            color: #888;
             text-decoration: none;
             font-size: 14px;
             padding: 0 5px;
+        }
+        .menu li:hover > a {
+            color:#fff;
         }
 
         .dropdown {
@@ -195,15 +199,19 @@
             display: block;
             background: #000000;
             position: relative;
-            width: 216px;
-            left: -9px;
+            width: 220px;
             top: 10px;
             border: none;
             /*            display: none;*/
         }
-
         .submenu a {
-            margin-left: 40px;
+            width:100%;
+            padding:10px;
+            display: inline-block;
+
+        }
+        .submenu li:last-child{
+            margin-bottom:12px;
         }
         /*        -------- Sidebar Ending --------*/
 
@@ -212,7 +220,7 @@
             top: 55px;
             left: 220px;
             position: relative;
-            height: 500px;
+            height: 700px;
             padding: 1px 10px 10px 10px;
             background: whitesmoke;
         }
@@ -441,8 +449,8 @@
             <li><a href="widgets.html"><i class="fa fa-inbox"></i>Widgets</a></li>
             <li><a href="tables.html"><i class="fa fa-th"></i>Tables</a></li>
             <li><a href="#"><i class="fa fa-arrows"></i>Full width</a></li>
-            <li><a href="#"><i class="fa fa-list"></i>Forms</a>
-                <ul class="submenu">
+            <li class="forms"><a href="#"><i class="fa fa-list"></i>Forms</a>
+                <ul class="submenu" id="submenu" style="display:none;">
                     <li><a href="#">Basic Form</a></li>
                     <li><a href="#">Form with Validation</a></li>
                     <li><a href="#">Form with Wizard</a></li>
@@ -561,6 +569,22 @@
     <div class="footer">
         <div class="fcontent">2013 © Matrix Admin. Brought to you by Themedesigner.in</div>
     </div>
+    <script>
+//       var form=document.getElementsByClassName("forms")[0];
+//        var subform=document.getElementsByClassName("submenu")[0];
+//        form.onclick =function(){
+//
+//            subform.style.display="block";
+//
+//        }
+        $(document).ready(function(){
+            $(".forms").click(function(){
+            $(".forms .submenu").show;
+            $(this).parent().find("ul").toggle('fast');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
