@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        * {
+            * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
@@ -17,7 +17,6 @@
 
         body {
             font-family: Arial, Helvetica;
-                background: seagreen;
         }
 
         .logo {
@@ -25,14 +24,93 @@
             background-size: 136px 47px;
             margin-right: 50px;
             width: 200px;
-            float:left;
+            float: left;
         }
+
+        .jumbotron {
+            background: #694f92;
+            color: #fff;
+        }
+
+        .jumbotron p {
+            font-size: 18px;
+        }
+
+        #about .about {
+            background: url(./img/about.png) no-repeat center;
+            width: 100%;
+            height: 217px;
+            margin-right: 1px;
+        }
+
+        #about .aboutprofile {
+            background: url(./img/profile.png) no-repeat center;
+            width: 100%;
+            height: 300px;
+        }
+
+        #services .fa {
+            font-size: 50px;
+            border: 1px solid rosybrown;
+            padding: 20px;
+        }
+
+        #services .fa:hover {
+            border-radius: 100%;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        footer {
+            width: 100%;
+            background: #4f9273;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            height: 40px;
+        }
+
+        .footercontent {
+            text-align: center;
+            padding: 10px;
+        }
+
+        #contact {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width:320px) {
+            #about .about,
+            .aboutprofile {
+                width: 100%;
+                background-size: 300px 150px;
+                background-position: 4px 5px;
+            }
+            #about .aboutprofile {
+                width: 100%;
+                background-size: 300px 150px;
+                background-position: 4px 5px;
+            }
     </style>
 </head>
 
 <body>
     <!-- Navbar Began-->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -45,55 +123,193 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Navbar ending --->
 
-<!-- Home Began -->
-   <div id="home" >
-<div class="container">
-<div class="row">
-  <div class="col-sm-8  col-sm-offset-2">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
+    <!-- Home Began -->
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="./img/list1.jpg" alt="Image">
+    <div id="home">
+        <div class="jumbotron text-center">
+            <h1>Gati</h1>
+            <p>Gati-Kintetsu Express Private Limited (Gati-KWE) is a joint venture company between Gati – India’s pioneer in Express Distribution and Supply Chain Solutions and Kintetsu World Express – Japan’s leading logistics provider. An intrinsic network that spans the length and breadth of India Gati-KWE has a reach of more than 99% of the districts in India. </p>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8  col-sm-offset-2">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
 
-        <div class="item">
-          <img src="./img/list2.jpg" alt="Image">
-        </div>
-          <div class="item">
-          <img src="./img/list3.jpg" alt="Image">
-        </div>
-      </div>
+                        <!--slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="./img/list1.jpg" alt="Image">
+                            </div>
 
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
+                            <div class="item">
+                                <img src="./img/list2.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="./img/list3.jpg" alt="Image">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
     </div>
     <!--- Home End-->
 
+    <!-- About Began -->
+    <div id="about">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="navbar-brand about"></a>
+                </div>
+
+                <div class="col-md-12">
+                    <h1>About Us</h1>
+                    <div class="container text-justify">
+                        <div class="row">
+                            <p>Gati, founded in 1989, is India’s pioneer in Express Distribution and supply chain solutions, with a strong presence in Asia Pacific region and SAARC countries, along with an extensive network across India providing timely deliveries to 19000 pincodes, covering 667 out of 671 districts in India.Gati’s integrated and IT backed multi modal network of air, road and rail coupled with pan india warehousing facilities across india, allows us to provide customized supply chain solutions to customers across industries.</p>
+                            <p>Gati, founded in 1989, is India’s pioneer in Express Distribution and supply chain solutions, with a strong presence in Asia Pacific region and SAARC countries, along with an extensive network across India providing timely deliveries to 19000 pincodes, covering 667 out of 671 districts in India.Gati’s integrated and IT backed multi modal network of air, road and rail coupled with pan india warehousing facilities across india, allows us to provide customized supply chain solutions to customers across industries.</p>
+                            <a class="navbar-brand aboutprofile"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <!--About Ending -->
+
+    <!--Serices Began -->
+    <div id="services">
+        <div class="container">
+            <div class="row main-top-margin text-center">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <h1>Services</h1>
+                </div>
+            </div>
+            <hr />
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <i class="fa fa-product-hunt red"></i>
+                    <h3>Premium Services</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-comments orange"></i>
+                    <h3>Express Services</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-train green"></i>
+                    <h3>Rail Services </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-signal purple"></i>
+                    <h3>Special Services </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </div>
+    <!---Serice ending -->
+
+    <!---Contact Began -->
+    <div id="contact">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <h1>Contact Details</h1>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="col-md-6  ">
+                        <h3> My Work Location</h3>
+                        <p>
+                            Gati KWE - Logistics Solutions
+                            <br /> Plot No.20,
+                            <br /> Survey No.12,
+                            <br /> Kondapur,
+                            <br /> Hyderabad, Telangana 500084.
+                            <br />
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Subscribe</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-success">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footercontent">&#64; Copyrights 2016</div>
+
+    </footer>
 </body>
 
 </html>
