@@ -46,7 +46,10 @@
 
                 if (username_length < 5 || username_length > 20) {
 
-                    $("#error_name").html("Should be between 5-20 Characters");
+                    $("#error_name").html("Should be between <em> 5-20</em> <strong>Characters</strong>");
+
+
+
                     $("#error_name").show();
                     error_name = true;
                 } else {
@@ -62,7 +65,7 @@
 
                 var password_length = $("#form_password").val().length;
                 if (password_length < 8) {
-                    $("#error_pwd").html("At least 8 Characters");
+                    $("#error_pwd").text("At least 8 Characters");
                     $("#error_pwd").show();
                     error_pwd = true;
                 } else {
