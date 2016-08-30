@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            //            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 12px;
+            background-color: #F2F6F9;
+        }
+
+        .row1 {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .row2 {
+            background-color: #fff;
+            height: 420px;
+        }
+
+        .row3 {
+            background-color: #fff;
+            padding: 15px;
+        }
+
+        .container {
+            margin-bottom: 50px;
+        }
+
+        .row1 h5 {
+            color: grey;
+            ;
+        }
+
+        .dives li {
+            padding: 15px 2px;
+            font-size: 15px;
+        }
+
+        .fa-circle {
+            padding: 5px;
+            font-size: 8px;
+        }
+
+        .row1 button {
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+
+        .row1 button span {
+            padding-right: 5px;
+        }
+
+        .row1 .menu li {
+            color: grey;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        .row1 .menu li:hover {
+            color: #000;
+            border-bottom: 2px solid skyblue;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        .row2 .glyphicon-star {
+            font-size: 22px;
+            letter-spacing: -9px;
+        }
+
+        .row2 .textrep {
+            font-size: 15px;
+        }
+
+        .left {
+            float: left;
+            clear: both;
+            color: grey;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .right {
+            float: right;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .row2 .btn {
+            border: 1px solid #2196F3 !important;
+            border-radius: 12px !important;
+            background: #fff !important;
+            color: #2196F3;
+            margin: 0 auto;
+            /*            margin-top: -55px;*/
+        }
+
+        .row-header {
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+
+        .progress {
+            height: 14px;
+        }
+
+        .row3 .fa {
+            border-radius: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 30px;
+            margin-top: 17px;
+        }
+
+        .row3 h4 {
+            color: grey;
+        }
+
+        .row4,
+        .row5 .glyphicon {
+            font-size: 50px;
+        }
+
+        .row4 .no {
+            font-size: 20px;
+            padding: 12px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+        }
+
+        .row4 .fa {
+            padding-right: 15px;
+        }
+
+        .watercondition-box,
+        .weather-box {
+            border: 1px solid #eee;
+            margin-right: 10px;
+            background: #fff;
+            padding: 20px;
+        }
+
+        .watercondition-box {
+            height: 298px;
+        }
+
+        .weather-box {
+           height: 323px;
+        }
+
+        .usedgear-box,
+        .days-box {
+            border: 1px solid #eee;
+            background: #fff;
+        }
+
+        .days-box,
+        .usedgear-box {
+/*            width: 31%;*/
+        }
+
+        .usedgear-box {
+            padding: 30px;
+        }
+
+        .temp-box {
+            line-height: 2;
+        }
+
+        .attribute-box {
+            padding: 25px;
+        }
+
+        .row4 hr {
+            width: 100%;
+            height: 1px;
+        }
+
+        .row5 hr {
+            width: 100%;
+            height: 1px;
+        }
+
+        .color {
+            color: #2196F3;
+        }
+
+        .row5 span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .row6 .box {
+            border: 1px solid #ccc;
+            height: 300px;
+            background: #fff;
+            margin-right: 18px;
+/*            width: 567px;*/
+        }
+
+        .row7 .box-col-3 {
+            background: #fff;
+            height: 300px;
+            margin-right: 25px;
+            padding: 34px;
+/*            width: 365px;*/
+        }
+
+        .row7 .btn {
+            border: 1px solid #2196F3 !important;
+            border-radius: 12px !important;
+            background: #fff !important;
+            color: #2196F3;
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+
+        .row7 .glyphicon {
+            font-size: 63px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 100%;
+            background: black;
+            color: #fff;
+        }
+
+        .row8 p {
+            font-size: 18px;
+        }
+        .row8 .greystar {
+            color: grey;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .row8 .btn {
+            border: 1px solid #2196F3 !important;
+            border-radius: 12px !important;
+            background: #fff !important;
+            color: #2196F3;
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+
+        .row8 .rating {
+            font-size: 33px;
+        }
+
+        .rating-box {
+                padding: 17px;
+            border: 1px solid #ccc;
+            background: #fff;
+/*            width: 356px;*/
+        }
+
+        .rating-box .bstar {
+            color: #000;
+            letter-spacing: -11px;
+        }
+
+        .summarybox {
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            background: #fff;
+        }
+
+        .row8 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <div class="col-md-12">
+            <div class="row1">
+                <h5>DIVE SITE</h5>
+                <h3>BIG GIGER</h3>
+                <h5>Laguna Beach, CA</h5>
+                <ul class="list-inline dives">
+                    <li>112 DIVES</li>
+                    <li><i class="fa fa-circle" aria-hidden="true"></i>48 DIVERS</li>
+                    <li><i class="fa fa-circle" aria-hidden="true"></i>23 BOOKMARKS</li>
+                </ul>
+                <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-bookmark"></span>ADD BOOKMARK</button>
+
+                <ul class="list-inline menu">
+                    <li>OVERVIEW</li>
+                    <li>ACTIVITY</li>
+                    <li>MEDIA</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row2">
+            <div class="row">
+                <div class="col-md-3 attribute-box">
+                    <h4>Rating</h4>
+                    <ul class="list-inline">
+                        <li><span class="glyphicon glyphicon-star"></span></li>
+                        <li><span class="glyphicon glyphicon-star"></span></li>
+                        <li><span class="glyphicon glyphicon-star"></span></li>
+                        <li><span class="glyphicon glyphicon-star"></span></li>
+                        <li><span class="glyphicon glyphicon-star grey"></span></li>
+                        <li><span class="grey textrep"> 203 </span></li>
+                    </ul>
+                    <div>
+                        <hr>
+                        <h4 class="row-header">Attributes</h4>
+                        <ul class="list-inline">
+                            <li class="left">Salinity</li>
+                            <li class="right">Fresh</li>
+                            <li class="left">Water Body</li>
+                            <li class="right">Ocean</li>
+                            <li class="left">Bottom</li>
+                            <li class="right">Coral Reef</li>
+                            <li class="left">Access</li>
+                            <li class="right">Boat</li>
+                            <li class="left">Max Depth</li>
+                            <li class="right">112 ft</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <img class="img-responsive" src="img\map.png" alt="Map" width="850" height="345">
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <button type="button" class="btn"> RATE DIVE SITE</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- row2 ending -->
+
+    <div class="container">
+
+        <div class="col-md-12">
+            <h4 class="row-header">Common Sightings</h4>
+            <div class="row3">
+                <div class="row">
+
+                    <div class="col-md-1">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <h4>Turtle</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%">
+                            </div><span>108</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <h4>Lobster</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%">
+                            </div><span>96</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <h4>Seahorse</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%">
+                            </div><span>45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <h4>Octopus</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%">
+                            </div><span>108</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <h4>Shark</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%">
+                            </div><span>108</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---End row3 -->
+
+
+    <div class="container">
+        <h4 class="row-header">Current Weather</h4>
+        <div class="row4">
+            <div class="row">
+                <div class="col-md-8 weather-box">
+                    <div class="col-md-7">
+                        <h4 class="row-header">Surface Conditions</h4>
+                        <h6>Partly Cloudy</h6>
+                        <ul class="list-inline">
+                            <li><span class="glyphicon glyphicon-cloud"> </span></li>
+                            <li><span class="no color">76<sup>o</sup></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 temp-box">
+                        <ul class="list-inline">
+                            <li class="left">Temp.High</li>
+                            <li class="right">82<sup>o</sup>F</li>
+                            <li class="left">Temp.Low</li>
+                            <li class="right">74<sup>o</sup>F</li>
+                            <li class="left">Wind</li>
+                            <li class="right">SE 4 mph</li>
+                            <li class="left">UV Index</li>
+                            <li class="right">0</li>
+                            <li class="left">Humidity</li>
+                            <li class="right">76%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 days-box">
+                    <h4 class="row-header">5-Day Forecast</h4>
+                    <ul class="list-inline">
+                        <li class="left">Friday</li>
+                        <li class="right"><i class="fa fa-sun-o" aria-hidden="true"></i>81<sup>o</sup></li>
+                        <hr>
+                        <li class="left">Saturday</li>
+                        <li class="right"><i class="fa fa-sun-o" aria-hidden="true"></i>82<sup>o</sup></li>
+                        <hr>
+                        <li class="left">Sunday</li>
+                        <li class="right"><i class="fa fa-sun-o" aria-hidden="true"></i>82<sup>o</sup></li>
+                        <hr>
+                        <li class="left">Monday</li>
+                        <li class="right"><i class="fa fa-sun-o" aria-hidden="true"></i>82<sup>o</sup></li>
+                        <hr>
+                        <li class="left">Tuesday</li>
+                        <li class="right"><i class="fa fa-sun-o" aria-hidden="true"></i>82<sup>o</sup></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row5">
+            <div class="row">
+                <div class="col-md-8 watercondition-box">
+                    <div class="col-md-7">
+                        <h4 class="row-header">Water Conditions</h4>
+                        <h6>Partly Cloudy</h6>
+                        <ul class="list-inline">
+                            <li><span class="glyphicon glyphicon-cloud"> </span></li>
+                            <li><span class="no color">52<sup>o</sup></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4" style="line-height:2; height:222px;">
+                        <ul class="list-inline">
+                            <li class="left">High Tide</li>
+                            <li class="right">2.59 pm</li>
+                            <li class="left">Low Tide</li>
+                            <li class="right">7.56 am</li>
+                            <li class="left">Surf</li>
+                            <li class="right">2ft</li>
+                            <li class="left">Current</li>
+                            <li class="right">Light</li>
+                            <li class="left">Surge</li>
+                            <li class="right">Light</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 usedgear-box">
+                    <h4 class="row-header">Most Used Gear</h4>
+
+                    <div class="row">
+                        <div>
+                            <span>FULL SUIT 3MM</span>
+                            <span class="glyphicon glyphicon-knight right"></span>
+                        </div>
+                        <span>76%</span>
+
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div>
+                            <span>ENRICHED AIR</span>
+                            <span class="glyphicon glyphicon-grain right"></span>
+                        </div>
+                        <span>64%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End row 5 -->
+
+
+    <div class="container">
+        <div class="row6">
+            <h4 class="row-header">Dive Site Averages</h4>
+            <div class="row">
+                <div class="col-md-6 box">
+                    <h4 class="row-header">Average Water Temp</h4>
+                </div>
+
+                <div class="col-md-5 box box-margin">
+                    <h4 class="row-header">Average Visibility</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of row 6 -->
+
+
+    <div class="container">
+        <div class="row7">
+            <h4 class="row-header">Near Dive Shops</h4>
+            <div class="center">
+            <div class="row text-center shops-box">
+                <div class="col-md-3 box-col-3">
+                    <div><span class="glyphicon glyphicon-grain"></span></div>
+                    <h4>Beach Cities Scuba Center</h4>
+                    <h5>Laguna Beach, CA</h5>
+                    <button type="button" class="btn">VIEW PAGE</button>
+                </div>
+
+                <div class="col-md-3 box-col-3">
+                    <div><span class="glyphicon glyphicon-grain"></span></div>
+                    <h4>West Coast Scuba</h4>
+                    <h5>Laguna Beach, CA</h5>
+                    <button type="button" class="btn">VIEW PAGE</button>
+                </div>
+                <div class="col-md-3 box-col-3">
+                    <div><span class="glyphicon glyphicon-grain"></span></div>
+                    <h4>Social Dive Club</h4>
+                    <h5>Laguna Beach, CA</h5>
+                    <button type="button" class="btn">VIEW PAGE</button>
+                </div>
+            </div>
+                </div>
+        </div>
+    </div>
+    <!-- End of row 7 -->
+
+    <div class="container">
+        <h4 class="row-header">Ratings</h4>
+        <div class="row8">
+            <div class="row">
+                <div class="col-md-8 summarybox">
+                    <h4>Summary</h4>
+                    <p>5<span class="glyphicon glyphicon-star greystar"></span></p>
+                    <p>4<span class="glyphicon glyphicon-star greystar"></span></p>
+                    <p>3<span class="glyphicon glyphicon-star greystar"></span></p>
+                    <p>2<span class="glyphicon glyphicon-star greystar"></span></p>
+                    <p>1<span class="glyphicon glyphicon-star greystar"></span></p>
+                </div>
+
+                <div class="col-md-3 text-center rating-box">
+                    <p class="rating">4.3/<span>5</span></p>
+                    <span class="glyphicon glyphicon-star greystar bstar"></span>
+                    <span class="glyphicon glyphicon-star greystar bstar"></span>
+                    <span class="glyphicon glyphicon-star greystar bstar"></span>
+                    <span class="glyphicon glyphicon-star greystar bstar"></span>
+                    <span class="glyphicon glyphicon-star greystar"></span>
+                    <p>203 reviews</p>
+                    <button type="button" class="btn">RATE DIVE SITE</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
