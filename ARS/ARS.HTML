@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 12px;
+        }
+
+        .logo {
+            background: url(img/air-india-logo.png) no-repeat 5px 5px;
+            width: 150px;
+            height: 50px;
+            background-size: 136px 43px;
+            float: left;
+        }
+
+        .nav {
+            background: #FFCC00;
+            height: 63px;
+        }
+
+        .nav p {
+            float: right;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        .nav span {
+            padding: 0 1px;
+            letter-spacing: 1px;
+            font-size: 17px;
+        }
+
+        .nav h2 {
+            display: inline-block;
+            color: red;
+            font-size: 30px;
+            padding: 16px;
+            margin-left: 200px;
+        }
+
+        .nav h2:hover {
+            color: #fff;
+        }
+
+        .usericon {
+            background: #fff url(img/usericon.png) no-repeat 1px 10px;
+            float: right;
+            background-size: 36px 29px;
+            width: 40px;
+            height: 40px;
+            margin: 11px 9px 0 -14px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+        }
+
+        .section input[type=radio],
+        input[type=checkbox] {
+            margin: 10px 7px;
+        }
+
+        .section label {
+            display: inline-block;
+            padding-top: 19px;
+            font-size: 16px
+        }
+
+        .section ul {
+            width: 800px;
+            border: 1px solid black;
+        }
+
+        .section ul li {
+/*            width: 50%;*/
+            padding: 6px;
+            float: left;
+            list-style-type: none;
+        }
+        .section ul .smallbox-input{
+            width:25%;
+        }
+        .section input[type=text] {
+            padding: 10px;
+               width: 340px;
+            font-size: 18px;
+        }
+
+        .route{
+                font-size: 18px;
+              padding: 4px;
+            color:#087fdc;
+        }
+        .section input[type=date]{
+                padding: 10px;
+        }
+        .lbhead{
+            padding: 4px;
+             color:#087fdc;
+        }
+        .returndt{
+            margin-left:-25px;
+        }
+        .section select{
+                width: 150px;
+    height: 43px;
+    margin-left: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo"></div>
+                <h2>Airlines Reservation System</h2>
+                <span class="usericon"></span>
+                <p><span> Signin <span>/</span></span><span>Sign up</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <h4>Book Domestic & International Flight</h4>
+            <input type="radio" value="round trip">
+            <label>Round Trip</label>
+            <input type="radio" value="One Way">
+            <label>One Way</label>
+            <input type="radio" value="Multi City">
+            <label>Multi City</label>
+            <input type="checkbox" value="flight hotel">
+            <label>Flight + Hotel</label>
+            <div class="formcontrols">
+                <ul>
+                <li><label for="from" class="route">From</label><br><input type="text" id="from"></li>
+                     <li><label for="to"  class="route">To</label><br><input type="text" id="to"></li>
+                    <li class="smallbox-input"><label for="depart" class="lbhead">Depart</label><br><input type="date" id="depart"></li>
+                     <li smallbox-input><label for="return" class="lbhead">Return</label><br><input type="date" id="return" class="returndt"></li>
+
+                    <li class="smallbox-input"><label for="traveller" class="lbhead">Travellers</label><br><select id="traveller"><option >--Select--</option></select></li>
+                     <li smallbox-input><label for="class" class="lbhead">Class</label><br><select id="traveller"><option >--Select--</option></select></li>
+
+                    </ul>
+
+
+<!--
+                <ul>
+                    <label class="route-from">From</label><li><input type="text" value="">
+                    </li>
+                    <li>
+                        <label class="route-to">To</label>
+                        <input type="text" value="">
+                    </li>
+                    <li><label for="depart">Depart</label><br><input type="date" id="depart"></li>
+                    <li><label for="return">Return</label><br><input type="date" id="return"></li>
+                    <li><label for="travellers">Travellers</label><br><select id="depart" ></select></li>
+                    <li><label for="class">Class</label><br><select id="class"></select></li>
+
+
+                </ul>
+-->
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
