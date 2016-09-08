@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 12px;
+            background-color: #f5f5f5;
+        }
+
+        .col-md-1,
+        .col-md-2,
+        .c0l-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12 {
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+
+        .circle {
+            background-color: #c06;
+            height:90px;
+            -moz-border-radius: 75px;
+            -webkit-border-radius: 75px;
+            width: 90px;
+            margin-top: 23px;
+        }
+
+        .commander {
+            line-height: 0.7;
+               width: 150px;
+        }
+
+        .commander h5 {
+            font-weight: bold;
+        }
+
+        .skyblue {
+            background: #00aeef;
+        }
+
+        .blue {
+            background: #354fa0;
+        }
+
+        .magenta {
+            background: #cd469b;
+        }
+
+        .green {
+            background: #2bb44a;
+        }
+
+        .orange {
+            background: #f39326;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .yellow {
+            background: #f3ec2b
+        }
+
+        .txtwhite {
+            color: #fff;
+        }
+
+        .txtgreen {
+            color: green;
+            background: #fff;
+        }
+
+        .btn-group .btn {
+            border: 1px solid green;
+            cursor: pointer;
+            /*            border-left: none !important;*/
+        }
+
+        .btn-group:last-child {
+            border-left: 1px solid green;
+        }
+
+        .btn {
+            width: 70px;
+        }
+
+        .fixedbar {
+            position: fixed;
+            height: 100%;
+
+            top: 0;
+            right: 0;
+            width: 250px;
+            padding: 18px;
+            background: #fff;
+            box-shadow: 1px 1px 6px 4px #ccc;
+        }
+
+        .stop,
+        .start {
+            width: 108px;
+        }
+
+        .table {
+            background: #ddd;
+        }
+
+        .table tr,
+        td {
+            border: 1px solid #efefef;
+        }
+
+        .glyphicon-stop,
+        .glyphicon-play,
+        .glyphicon-time {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .btnred,
+        .btngreen {
+            height: 35px;
+            width: 114px;
+        }
+
+        .btn-lg-alaram {
+            width: 240px;
+            margin-top: 5px;
+            background: #717171
+
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 34px;
+/*            margin-top: 10px;*/
+            margin-left: 10px;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 6px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .grey {
+            background: #ddd;
+        }
+
+        .row {
+            margin-bottom: 5px;
+        }
+
+        .fixedbar h5 {
+            padding-left: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row row1">
+                <div class="box">
+                    <div class="col-md-3">
+                        <h3>Northern Corn Pivot</h3>
+                        <div class="col-md-5">
+                            <div class="circle skyblue"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="commander">
+                                <h5>CommanderVP</h5>
+                                <p>Serial Number:12232112</p>
+                                <p>Direction:Forward</p>
+                                <p>Angle:321.3<sup>o</sup></p>
+                                <p>Rate:1.00 in</p>
+                                <p>Pressure:23 psi</p>
+                                <p>SIS:60.0<sup>o</sup></p>
+                                <p>471 Volts</p>
+                                <p>30.00 Hrs/Rev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="col-md-3">
+                        <h3>Western Bean Pivot</h3>
+                        <div class="col-md-5">
+                            <div class="circle blue"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="commander">
+                                <h5>CommanderVP</h5>
+                                <p>Serial Number:12232112</p>
+                                <p>Direction:Forward</p>
+                                <p>Angle:321.3<sup>o</sup></p>
+                                <p>Rate:1.00 in</p>
+                                <p>Pressure:23 psi</p>
+                                <p>SIS:60.0<sup>o</sup></p>
+                                <p>471 Volts</p>
+                                <p>30.00 Hrs/Rev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="col-md-3">
+                        <h3>65 Bean Pivot</h3>
+                        <div class="col-md-5">
+                            <div class="circle magenta"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="commander">
+                                <h5>CommanderVP</h5>
+                                <p>Serial Number:12232112</p>
+                                <p>Direction:Forward</p>
+                                <p>Angle:321.3<sup>o</sup></p>
+                                <p>Rate:1.00 in</p>
+                                <p>Pressure:23 psi</p>
+                                <p>SIS:60.0<sup>o</sup></p>
+                                <p>471 Volts</p>
+                                <p>30.00 Hrs/Rev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row row2">
+                <div class="box">
+                    <div class="col-md-3">
+                        <h3>Western Corn Pivot 22</h3>
+                        <div class="col-md-5">
+                            <div class="circle red"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="commander">
+                                <h5>CommanderVP</h5>
+                                <p>Serial Number:12232112</p>
+                                <p>Direction:Forward</p>
+                                <p>Angle:321.3<sup>o</sup></p>
+                                <p>Rate:1.00 in</p>
+                                <p>Pressure:23 psi</p>
+                                <p>SIS:60.0<sup>o</sup></p>
+                                <p>471 Volts</p>
+                                <p>30.00 Hrs/Rev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="col-md-3">
+                        <h3>Western Corn Pivot</h3>
+                        <div class="col-md-5">
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="commander">
+                                <h5>CommanderVP</h5>
+                                <p>Serial Number:12232112</p>
+                                <p>Direction:Forward</p>
+                                <p>Angle:321.3<sup>o</sup></p>
+                                <p>Rate:1.00 in</p>
+                                <p>Pressure:23 psi</p>
+                                <p>SIS:60.0<sup>o</sup></p>
+                                <p>471 Volts</p>
+                                <p>30.00 Hrs/Rev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="col-md-3">
+                        <h3>East Corn Pivot</h3>
+                        <div class="col-md-5">
+                            <div class="circle orange"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="commander">
+                                <h5>CommanderVP</h5>
+                                <p>Serial Number:12232112</p>
+                                <p>Direction:Forward</p>
+                                <p>Angle:321.3<sup>o</sup></p>
+                                <p>Rate:1.00 in</p>
+                                <p>Pressure:23 psi</p>
+                                <p>SIS:60.0<sup>o</sup></p>
+                                <p>471 Volts</p>
+                                <p>30.00 Hrs/Rev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row row3">
+                <div class="box">
+                    <div class="col-md-3">
+                        <h3>Western Corn Pivot 22</h3>
+                        <div class="col-md-5">
+                            <div class="circle yellow"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="commander">
+                                <h5>CommanderVP</h5>
+                                <p>Serial Number:12232112</p>
+                                <p>Direction:Forward</p>
+                                <p>Angle:321.3<sup>o</sup></p>
+                                <p>Rate:1.00 in</p>
+                                <p>Pressure:23 psi</p>
+                                <p>SIS:60.0<sup>o</sup></p>
+                                <p>471 Volts</p>
+                                <p>30.00 Hrs/Rev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixedbar">
+            <div class="contrainer-fluid">
+                <div class="btn-group">
+                    <button type="button" class="btn green txtwhite">Device</button>
+                    <button type="button" class="btn txtgreen">Graphs</button>
+                    <button type="button" class="btn txtgreen">Info</button>
+                </div>
+                <div class="row right">
+                    <div class="col-md-1">
+                        <div class="circle skyblue"></div>
+                    </div>
+                    <div class="col-md-11">
+
+                        <!--<div class="stop">
+                            <p>Stop</p>
+                            <p>3.00PM-10/25/2015</p>
+                            </div>
+
+                        <div class="start">
+                            <p>Start</p>
+                            <p>8.00PM-10/26/2015</p>
+                             </div>-->
+                    </div>
+                </div>
+                <p style="text-align:center;">Last Reading:3.48 PM - 09/20/2015</p>
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>On</td>
+                                    <td>60</td>
+                                    <td>0 ipm</td>
+                                    <td><span class="glyphicon glyphicon-signal"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>FWD</td>
+                                    <td>32 psi</td>
+                                    <td>0.5"</td>
+                                    <td>470v</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="btn red btnred"><span class="glyphicon glyphicon-stop"></span></button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn green btngreen"><span class="glyphicon glyphicon-play"></span></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-lg-alaram"><span class="glyphicon glyphicon-time"></span></button>
+                    </div>
+                </div>
+                <div class="row grey">
+                    <div class="col-md-6">
+                        <h5>Wait for Pressure</h5>
+                    </div>
+                    <div class="col-md-6">
+
+                        <label class="switch">
+                            <input type="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="row">
+                <h5>Pump State</h5><br/>
+                  <div class="col-md-1">Dry</div>
+                    <div class="col-md-6">
+
+                        <label class="switch">
+                            <input type="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                     <div class="col-md-1">Wet</div>
+                </div>
+            <div class="row">
+                <h5>Aux 1</h5><br/>
+                  <div class="col-md-1">Off</div>
+                    <div class="col-md-6">
+
+                        <label class="switch">
+                            <input type="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                     <div class="col-md-1">On</div>
+                </div>
+                 <div class="row">
+                <h5>Aux 2</h5><br/>
+                  <div class="col-md-1">Off</div>
+                    <div class="col-md-6">
+
+                        <label class="switch">
+                            <input type="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                     <div class="col-md-1">On</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+</body>
+
+</html>
