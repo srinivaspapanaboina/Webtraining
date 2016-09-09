@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Example of Bootstrap 3 Nested Rows and Columns</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<style type="text/css">
-	/* Some custom styles to beautify this example */
-    .main-content{
-		min-height: 170px;
-        background: #dbdfe5;
-        margin-bottom: 30px;
-    }
-    .sidebar-content{
-        min-height: 150px;
-        margin-bottom: 30px;
-        background: #b4bac0;
-    }
-    .content {
-        min-height:100px;
-        background: #ddd;
-    }
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example of Bootstrap 3 Nested Rows and Columns</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+        /* Some custom styles to beautify this example */
+
+        .main-content {
+            min-height: 170px;
+            background: #dbdfe5;
+            margin-bottom: 30px;
+        }
+
+        .sidebar-content {
+            min-height: 150px;
+            margin-bottom: 30px;
+            background: #b4bac0;
+        }
+
+        .content {
+            min-height: 100px;
+            background: #ddd;
+        }
+
+        .circle {
+            background-color: #c06;
+            height: 90px;
+            -moz-border-radius: 75px;
+            -webkit-border-radius: 75px;
+            width: 90px;
+            margin-top: 23px;
+        }
+
+        .green {
+            background: green;
+            height: 150px;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .orange {
+            background: orange;
+            height: 150px;
+            padding: 10px;
+            color: #fff;
+        }
+
+        P:first-child {
+            font-size: 18px;
+        }
+        .progress{
+            height:8px !important;
+        }
+        .progress-md{
+            height:8px;
+            margin-bottom: 25px;
+        }
+    </style>
 </head>
+
 <body>
-	<!-- Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how the Bootstrap responsive grid system works. -->
-	<div class="container">
+    <!-- Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how the Bootstrap responsive grid system works. -->
+    <div class="container">
+        <!--
         <div class="row">
             <div class="col-md-8">
                 <div class="row">
@@ -44,7 +84,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <!--Nested rows within a column-->
+                Nested rows within a column
                 <div class="row">
                     <div class="col-md-12">
                         <div class="sidebar-content"></div>
@@ -58,5 +98,227 @@
             </div>
         </div>
     </div>
+    <p><a href="http://www.gmail.com" traget="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+-->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media-left">
+                            <p class="circle"></p>
+                        </div>
+                        <div class="media-right">
+                            <p>Welcome fjfja fjasf</p>
+                            <p>fas fjgsdgsdgsdg</p>
+                            <p>fasfj aksflj safkasj</p>
+                            <p>fasfh af s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media-left">
+                            <p class="circle"></p>
+                        </div>
+                        <div class="media-right">
+                            <p>Welcome fjfja fjasf</p>
+                            <p>fas fjgsdgsdgsdg</p>
+                            <p>fasfj aksflj safkasj</p>
+                            <p>fasfh af s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media-left">
+                            <p class="circle"></p>
+                        </div>
+                        <div class="media-right">
+                            <p>Welcome fjfja fjasf</p>
+                            <p>fas fjgsdgsdgsdg</p>
+                            <p>fasfj aksflj safkasj</p>
+                            <p>fasfh af s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media-left">
+                            <p class="circle"></p>
+                        </div>
+                        <div class="media-right">
+                            <p>Welcome fjfja fjasf</p>
+                            <p>fas fjgsdgsdgsdg</p>
+                            <p>fasfj aksflj safkasj</p>
+                            <p>fasfh af s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media-left">
+                            <p class="circle"></p>
+                        </div>
+                        <div class="media-right">
+                            <p>Welcome fjfja fjasf</p>
+                            <p>fas fjgsdgsdgsdg</p>
+                            <p>fasfj aksflj safkasj</p>
+                            <p>fasfh af s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media-left">
+                            <p class="circle"></p>
+                        </div>
+                        <div class="media-right">
+                            <p>Welcome fjfja fjasf</p>
+                            <p>fas fjgsdgsdgsdg</p>
+                            <p>fasfj aksflj safkasj</p>
+                            <p>fasfh af s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media-left">
+                            <p class="circle"></p>
+                        </div>
+                        <div class="media-right">
+                            <p>Welcome fjfja fjasf</p>
+                            <p>fas fjgsdgsdgsdg</p>
+                            <p>fasfj aksflj safkasj</p>
+                            <p>fasfh af s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media-left">
+                            <p class="circle"></p>
+                        </div>
+                        <div class="media-right">
+                            <p>Welcome fjfja fjasf</p>
+                            <p>fas fjgsdgsdgsdg</p>
+                            <p>fasfj aksflj safkasj</p>
+                            <p>fasfh af s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="green">
+                                <p><i class="glyphicon glyphicon-camera" style="font-size:15px; padding:5px;"></i>HDD Usage</p>
+                                <p>Free Space<span class="pull-right">132Gb</span></p>
+                                <p>Used Space<span class="pull-right">1.45Gb</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="green">
+                                <p><i class="glyphicon glyphicon-facetime-video" style="font-size:15px; padding:5px;"></i>Earning</p>
+                                <p>Today<span class="pull-right">$674</span></p>
+                                <p>Last 7 Day<span class="pull-right">$1,332</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="orange">
+                        <p><i class="glyphicon glyphicon-gift" style="font-size:15px; padding:5px;"></i>Sales</p>
+                        <p>Today<span class="pull-right">$764</span></p>
+                        <p>Last 7 Day <span class="pull-right">$1,332</span></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="orange">
+                                <p><i class="glyphicon glyphicon-gift" style="font-size:15px; padding:5px;"></i>Sales</p>
+                                <p>Today<span class="pull-right">$764</span></p>
+                                <p>Last 7 Day <span class="pull-right">$1,332</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="orange">
+                                <p><i class="glyphicon glyphicon-tasks" style="font-size:15px; padding:5px;"></i>Task Progress</p>
+                                <p>Today<span class="pull-right">$764</span></p>
+                                <p>Last 7 Day <span class="pull-right">$1,332</span></p>
+
+                            <div class="row" style="margin-bottom:5px;">
+                                <div class="col-md-12">
+                                    <p>Progress <span class="pull-right">15%</span></p>
+                                    <div class="progress progress-md" >
+                                        <div style="width:15%;" class="progress-bar">
+                                            <span class="sr-only">15%</span>
+                                        </div>
+                                    </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
