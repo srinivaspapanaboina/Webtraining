@@ -35,7 +35,7 @@
 
         .circle {
             background-color: #c06;
-            height:90px;
+            height: 90px;
             -moz-border-radius: 75px;
             -webkit-border-radius: 75px;
             width: 90px;
@@ -44,7 +44,7 @@
 
         .commander {
             line-height: 0.7;
-               width: 150px;
+            width: 150px;
         }
 
         .commander h5 {
@@ -105,7 +105,6 @@
         .fixedbar {
             position: fixed;
             height: 100%;
-
             top: 0;
             right: 0;
             width: 250px;
@@ -144,8 +143,8 @@
         .btn-lg-alaram {
             width: 240px;
             margin-top: 5px;
+            margin-bottom: 5px;
             background: #717171
-
         }
 
         .switch {
@@ -153,7 +152,6 @@
             display: inline-block;
             width: 100px;
             height: 34px;
-/*            margin-top: 10px;*/
             margin-left: 10px;
         }
 
@@ -212,13 +210,43 @@
             background: #ddd;
         }
 
-        .row {
-            margin-bottom: 5px;
-        }
 
         .fixedbar h5 {
             padding-left: 6px;
         }
+
+        .onlbl {
+            margin-left: 12px;
+        }
+
+        .aux1 {
+            margin-top: -10px;
+        }
+
+        .aux2 {
+            margin-top: -6px;
+        }
+
+        .dry{
+/*            width: 80px;*/
+            margin-right: 8px;
+            margin-top: -8px;
+        }
+       .sis {
+            width: 80px;
+            margin-right: 8px;
+            margin-top: -8px;
+        }
+        hr{
+            margin-top:0;
+            margin-bottom:5px!important;
+            border:0;
+            border-top:2px solid #eee;
+        }
+        .pressure{
+            margin-top:10px;
+        }
+
     </style>
 </head>
 
@@ -385,31 +413,32 @@
             </div>
         </div>
         <div class="fixedbar">
-            <div class="contrainer-fluid">
-                <div class="btn-group">
+            <div class="contrainer">
+                <div class="btn-group" style="margin-top:-10px;">
                     <button type="button" class="btn green txtwhite">Device</button>
                     <button type="button" class="btn txtgreen">Graphs</button>
                     <button type="button" class="btn txtgreen">Info</button>
                 </div>
-                <div class="row right">
+                <div class="row right" style="margin-top:-20px;">
                     <div class="col-md-1">
                         <div class="circle skyblue"></div>
                     </div>
-                    <div class="col-md-11">
+                    <div class="col-md-offset-4 col-md-7" style="line-height:0.9; margin-top:30px;background-color:#e2e2e2; padding:5px">
 
-                        <!--<div class="stop">
+                        <span class="stop">
                             <p>Stop</p>
                             <p>3.00PM-10/25/2015</p>
-                            </div>
+                            <hr>
+                            </span>
 
-                        <div class="start">
+                        <span class="start">
                             <p>Start</p>
                             <p>8.00PM-10/26/2015</p>
-                             </div>-->
+                             </span>
                     </div>
                 </div>
                 <p style="text-align:center;">Last Reading:3.48 PM - 09/20/2015</p>
-                <div class="row">
+                <div class="row" style="margin-top:-10px;">
                     <div class="table-responsive">
                         <table class="table">
                             <tbody>
@@ -417,7 +446,7 @@
                                     <td>On</td>
                                     <td>60</td>
                                     <td>0 ipm</td>
-                                    <td><span class="glyphicon glyphicon-signal"></span></td>
+                                    <td><span class="glyphicon glyphicon-signal" style="font-size:20px;"></span></td>
                                 </tr>
                                 <tr>
                                     <td>FWD</td>
@@ -429,7 +458,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-top:-15px;">
                     <div class="col-md-6">
                         <button class="btn red btnred"><span class="glyphicon glyphicon-stop"></span></button>
                     </div>
@@ -444,52 +473,77 @@
                 </div>
                 <div class="row grey">
                     <div class="col-md-6">
-                        <h5>Wait for Pressure</h5>
+                        <h5 style="padding-top:10px;">Wait for Pressure</h5>
                     </div>
                     <div class="col-md-6">
 
-                        <label class="switch">
+                        <label class="switch pressure">
                             <input type="checkbox">
                             <div class="slider round"></div>
                         </label>
 
                     </div>
                 </div>
-                <div class="row">
-                <h5>Pump State</h5><br/>
-                  <div class="col-md-1">Dry</div>
+                 <label style="margin-left: 60px; margin-top:10px; padding:0;">Pump State</label>
+                <div class="row text-center" style="margin-left:20px;">
+
+                    <br/>
+                    <div class="col-md-1">Dry</div>
                     <div class="col-md-6">
 
-                        <label class="switch">
+                        <label class="switch dry">
                             <input type="checkbox">
                             <div class="slider round"></div>
                         </label>
                     </div>
-                     <div class="col-md-1">Wet</div>
+                    <div class="col-md-1" style="margin-left:10px;">Wet</div>
                 </div>
-            <div class="row">
-                <h5>Aux 1</h5><br/>
-                  <div class="col-md-1">Off</div>
+                <label class="aux1lbl text-center" style="margin-bottom:10px;">Aux1 </labell>
+                    <br/>
+                    <div class="row text-center" style="margin-top:10px; margin-left:25px;">
+                        <div class="col-md-1">Off</div>
+                        <div class="col-md-6">
+
+                            <label class="switch aux1">
+                                <input type="checkbox">
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
+                        <div class="col-md-1 onlbl">On</div>
+                    </div>
+                    <label class="aux2lbl text-center" style="margin-bottom:10px;">Aux 2</labell>
+                        <br/>
+                        <div class="row text-center" style="margin-top:10px; margin-left:25px;">
+                            <div class="col-md-1">Off</div>
+                            <div class="col-md-6">
+
+                                <label class="switch aux2">
+                                    <input type="checkbox">
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <div class="col-md-1 onlbl">On</div>
+                        </div>
+
+
+                <div class="row" style="background:#e2e2e2; width:245px">
+                    <span style="float:left; padding-left:5px;">SIS</span><br/>
+                    <div class="col-md-2">
+                    <span class="glyphicon glyphicon-transfer" style="font-size:20px;"></span>
+                    </div>
+                    <div class="col-md-4">
+                    <span style="background-color:#fff; padding:10px;">190<sup>o</sup></span>
+                    </div>
                     <div class="col-md-6">
 
-                        <label class="switch">
-                            <input type="checkbox">
-                            <div class="slider round"></div>
-                        </label>
-                    </div>
-                     <div class="col-md-1">On</div>
-                </div>
-                 <div class="row">
-                <h5>Aux 2</h5><br/>
-                  <div class="col-md-1">Off</div>
-                    <div class="col-md-6">
+                                <label class="switch sis">
+                                    <input type="checkbox">
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
 
-                        <label class="switch">
-                            <input type="checkbox">
-                            <div class="slider round"></div>
-                        </label>
-                    </div>
-                     <div class="col-md-1">On</div>
+
+
                 </div>
 
             </div>
