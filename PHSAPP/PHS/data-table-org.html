@@ -127,7 +127,6 @@
       </div>
 
       <!-- /row -->
-<!--
 	   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -142,85 +141,10 @@
                     <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</button>
                   </div>
                 </div>
-                 /.modal-content
-              </div>
-               /.modal-dialog
-            </div>
--->
-         <div class="modal fade bs-example-modal-lg" id="addTechnologies" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title" id="myLargeModalLabel">Update Project</h4>
-                  </div>
-                  <div class="modal-body text-center">
-                       <h4 style="margin-top:10px;"><span>*</span><b>All Fields Are Mandatory</b></h4><br/>
-                    <div class="form-horizontal">
-                    <div class="form-group">
-                    <label class="control-label col-md-4" for="name">Name:<span>*</span></label>
-                        <div class="col-md-6">
-                        <input type="text" class="form-control" id="name">
-                        </div>
-                    </div>
-                        <div class="form-group">
-                    <label class="control-label col-md-4" for="position">Position:                   <span>*</span></label>
-                        <div class="col-md-6">
-                        <input type="text" class="form-control" id="position">
-                        </div>
-                    </div>
-                         <div class="form-group">
-                    <label class="control-label col-md-4" for="office">Office:                   <span>*</span></label>
-                        <div class="col-md-6">
-                        <input type="text" class="form-control" id="office">
-                        </div>
-                    </div>
-                         <div class="form-group">
-                    <label class="control-label col-md-4" for="age">Age:<span>*</span></label>
-                        <div class="col-md-6">
-                        <input type="text" class="form-control" id="age">
-                        </div>
-                    </div>
-                         <div class="form-group">
-                    <label class="control-label col-md-4" for="startdate">Start Date:                   <span>*</span></label>
-                        <div class="col-md-6">
-                        <input type="date" class="form-control" id="startdate">
-                        </div>
-                    </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-default modal-footer-btn">Submit</button>
-                      <button type="button" class="btn btn-default modal-footer-btn">Reset</button>
-                        <button type="button" class="btn btn-default modal-footer-btn" data-dismiss="modal">Cancel</button>
-                  </div>
-                </div>
                 <!-- /.modal-content -->
               </div>
               <!-- /.modal-dialog -->
             </div>
-
-        <!-- Delete Modal window -->
-        <div class="modal fade" id="deleteTechnologies" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Delete Technologies</h4>
-        </div>
-
-        <div class="modal-body text-center">
-            <h4 style="margin-top:10px;"><b>Are You Sure you want to Delete?</b></h4><br/>
-        </div>
-        <div class="modal-footer">
-             <button type="button" class="btn btn-default modal-footer-btn">OK</button>
-          <button type="button" class="btn btn-default modal-footer-btn" data-dismiss="modal">Cancel</button>
-        </div>
-      </div>
-    </div>
-        </div>
-
       <div class="row">
         <div class="col-sm-12">
           <div class="white-box fadeInRight animated">
@@ -256,7 +180,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -265,7 +189,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -274,7 +198,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -283,7 +207,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -292,7 +216,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -301,7 +225,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -310,7 +234,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -319,7 +243,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -328,7 +252,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -337,7 +261,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -346,7 +270,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -355,7 +279,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -364,7 +288,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -373,7 +297,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -382,7 +306,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -391,7 +315,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -400,7 +324,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -409,7 +333,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -418,7 +342,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -427,7 +351,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -436,7 +360,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -445,7 +369,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -454,7 +378,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -463,7 +387,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -472,7 +396,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -481,7 +405,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -490,7 +414,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -499,7 +423,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -508,7 +432,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -517,7 +441,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -526,7 +450,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -535,7 +459,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -544,7 +468,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -553,7 +477,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -562,7 +486,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -571,7 +495,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -580,7 +504,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -589,7 +513,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -598,7 +522,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -607,7 +531,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -616,7 +540,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -625,7 +549,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -634,7 +558,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -643,7 +567,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -652,7 +576,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -661,7 +585,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -670,7 +594,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -679,7 +603,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -688,7 +612,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -697,7 +621,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -706,7 +630,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -715,7 +639,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -724,7 +648,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -733,7 +657,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -742,7 +666,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -751,7 +675,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -760,7 +684,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -769,7 +693,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -778,7 +702,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -787,7 +711,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -796,7 +720,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -805,7 +729,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -814,7 +738,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -823,7 +747,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -832,7 +756,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -841,7 +765,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -850,7 +774,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -859,7 +783,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -868,7 +792,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -877,7 +801,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -886,7 +810,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -895,7 +819,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -904,7 +828,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -913,7 +837,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -922,7 +846,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -931,7 +855,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -940,7 +864,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -949,7 +873,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -958,7 +882,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -967,7 +891,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -976,7 +900,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -985,7 +909,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -994,7 +918,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -1003,7 +927,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -1012,7 +936,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -1021,7 +945,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -1030,7 +954,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -1039,7 +963,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -1048,7 +972,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -1057,7 +981,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -1066,7 +990,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -1075,7 +999,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -1084,7 +1008,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -1093,7 +1017,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -1102,7 +1026,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -1111,7 +1035,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -1120,7 +1044,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -1129,7 +1053,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -1138,7 +1062,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -1147,7 +1071,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -1156,7 +1080,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -1165,7 +1089,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -1174,7 +1098,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -1183,7 +1107,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -1192,7 +1116,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -1201,7 +1125,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -1210,7 +1134,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -1219,7 +1143,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -1228,7 +1152,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -1237,7 +1161,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -1246,7 +1170,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -1255,7 +1179,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -1264,7 +1188,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -1273,7 +1197,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -1282,7 +1206,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -1291,7 +1215,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -1300,7 +1224,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -1309,7 +1233,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -1318,7 +1242,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -1327,7 +1251,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -1336,7 +1260,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -1345,7 +1269,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -1354,7 +1278,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -1363,7 +1287,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -1372,7 +1296,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -1381,7 +1305,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -1390,7 +1314,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -1399,7 +1323,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -1408,7 +1332,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -1417,7 +1341,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -1426,7 +1350,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -1435,7 +1359,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -1444,7 +1368,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -1453,7 +1377,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -1462,7 +1386,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -1471,7 +1395,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -1480,7 +1404,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -1489,7 +1413,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -1497,8 +1421,8 @@
                   <td>Edinburgh</td>
                   <td>22</td>
                   <td>2012/03/29</td>
-                     <td><div class="label label-table label-success">Active</div></td>
-                  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+                  <td><div class="label label-table label-success">Active</div></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -1507,7 +1431,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -1516,7 +1440,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -1525,7 +1449,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -1534,7 +1458,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -1543,7 +1467,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -1552,7 +1476,7 @@
                   <td>61</td>
                   <td>2011/04/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Garrett Winters</td>
@@ -1561,7 +1485,7 @@
                   <td>63</td>
                   <td>2011/07/25</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Ashton Cox</td>
@@ -1570,7 +1494,7 @@
                   <td>66</td>
                   <td>2009/01/12</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Cedric Kelly</td>
@@ -1579,7 +1503,7 @@
                   <td>22</td>
                   <td>2012/03/29</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				 <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Airi Satou</td>
@@ -1588,7 +1512,7 @@
                   <td>33</td>
                   <td>2008/11/28</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Brielle Williamson</td>
@@ -1597,7 +1521,7 @@
                   <td>61</td>
                   <td>2012/12/02</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Herrod Chandler</td>
@@ -1606,7 +1530,7 @@
                   <td>59</td>
                   <td>2012/08/06</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Rhona Davidson</td>
@@ -1615,7 +1539,7 @@
                   <td>55</td>
                   <td>2010/10/14</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
                 <tr>
                   <td>Colleen Hurst</td>
@@ -1624,7 +1548,7 @@
                   <td>39</td>
                   <td>2009/09/15</td>
                   <td><div class="label label-table label-success">Active</div></td>
-				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteTechnologies"> <i class="fa fa-close text-danger"></i> </a></td>
+				  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target=".bs-example-modal-lg" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a> <a data-original-title="Delete" data-toggle="tooltip" href="#"> <i class="fa fa-close text-danger"></i> </a> </td>
                 </tr>
 
               </tbody>
