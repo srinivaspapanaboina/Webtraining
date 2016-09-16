@@ -27,9 +27,9 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
     <style>
-      
-    
-    
+
+
+
     </style>
 </head>
 <body class="fix-sidebar">
@@ -52,9 +52,9 @@
         </li>
       </ul>
         <ul class="nav navbar-top-links navbar-right pull-right">
-        
-        
-        
+
+
+
         <!-- /.dropdown -->
         <li class="dropdown"> <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <i class=" icon-user"></i><b class="hidden-xs">User</b><i class="icon-options-vertical"></i> </a>
           <ul class="dropdown-menu dropdown-user animated flipInY">
@@ -65,9 +65,9 @@
           <!-- /.dropdown-user -->
         </li>
         <!-- .Megamenu -->
-        
+
         <!-- /.Megamenu -->
-        
+
         <!-- /.dropdown -->
       </ul>
     </div>
@@ -88,7 +88,7 @@
             <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
             </span> </div>
           <!-- /input-group -->
-        </li>   
+        </li>
         <li class=""> <a href="morris-chart.html" class="waves-effect"> <i class="icon-chart" style="margin-right:12px"></i><span class="hide-menu">Dashboard</span></a>
         </li>
         <li class=""><a href="data-table.html" class="waves-effect active"> <i class="icon-notebook" style="margin-right:12px"></i><span class="hide-menu">Manage Projects</span></a>
@@ -108,14 +108,14 @@
             <li><a href="userAdmin.html">User Admin</a></li>
 			<li><a href="projectAdmin.html">Project Admin</a></li>
             <li><a href="codeAdmin.html">Code Value Admin</a></li>
-            <li><a href="#">Audit Column Admin</a></li>
-            <li><a href="#">PHS Pending Report</a></li>
-            <li><a href="#">PHS NC Report</a></li>
-            <li><a href="#">Upload Projects</a></li>
+            <li><a href="auditAdmin.html">Audit Column Admin</a></li>
+            <li><a href="phspending.html">PHS Pending Report</a></li>
+            <li><a href="phsNC.html">PHS NC Report</a></li>
+            <li><a href="uploadProject.html">Upload Projects</a></li>
             <li><a href="#">Download Linked Projects</a></li>
-            <li><a href="#">PHS Record Insert Tab</a></li>           
+            <li><a href="phsrecordjob.html">PHS Record Insert Tab</a></li>
           </ul>
-        </li> 
+        </li>
       </ul>
     </div><div class="slimScrollBar" style="width: 0px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 851px; background: rgb(220, 220, 220);"></div><div class="slimScrollRail" style="width: 0px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
   </div>
@@ -125,39 +125,64 @@
     <div class="container-fluid">
       <div class="row bg-title">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-          <h4 class="page-title">Code Value Admin</h4>
+          <h4 class="page-title">Audit Columns Admin</h4>
+            <form>
+    <label class="radio-inline">
+      <input type="radio" name="audit" id="pci" value="pci">PCI
+    </label>
+    <label class="radio-inline" style="padding-left:50px;">
+      <input type="radio" name="audit" id="eci" value="eci">ECI
+    </label>
+  </form>
         </div>
-       
+
         <!-- /.col-lg-12 -->
       </div>
 
       <!-- /row -->
-	   <div class="modal fade bs-example-modal-lg" id="updateTechnologies" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+<!--PCI DATA SCREEN-->
+	   <div class="modal fade bs-example-modal-lg" id="addPCIAudit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title" id="myLargeModalLabel">Update Technologies</h4>
+                    <h4 class="modal-title" id="myLargeModalLabel">Add PCI Audit Column</h4>
                   </div>
                   <div class="modal-body text-center">
-                       <h4 style="margin-top:10px;"><span>*</span><b>All Fields Are Mandatory</b></h4><br/>
+                       <h4 style="margin-top:10px;"><span>*</span><b>Fields Are Mandatory</b></h4><br/>
                     <div class="form-horizontal">
                     <div class="form-group">
-                    <label class="control-label col-md-4" for="codelabel">Code Label:<span>*</span></label>
+                    <label class="control-label col-md-4" for="phase">Phase:<span>*</span></label>
                         <div class="col-md-6">
-                        <input type="text" class="form-control" id="codelabel">
+                        <input type="text" class="form-control" id="phase">
                         </div>
                     </div>
                         <div class="form-group">
-                    <label class="control-label col-md-4" for="codevalues">Code Values:                   <span>*</span></label>
+                    <label class="control-label col-md-4" for="activity">Activity:                   </label>
                         <div class="col-md-6">
-                        <input type="text" class="form-control" id="codevalues">
+                        <input type="text" class="form-control" id="activity">
+                        </div>
+                    </div>
+                        <div class="form-group">
+                    <label class="control-label col-md-4" for="control">Control:                   <span>*</span></label>
+                        <div class="col-md-6">
+                        <input type="text" class="form-control" id="control">
+                        </div>
+                    </div>
+                        <div class="form-group">
+                    <label class="control-label col-md-4" for="status">Status:                   <span>*</span></label>
+                        <div class="col-md-6">
+                            <select class="form-control" id="status">
+                            <option>Optional</option>
+                                <option>Required</option>
+
+                            </select>
                         </div>
                     </div>
                     </div>
                   </div>
                   <div class="modal-footer">
-                      <button type="button" class="btn btn-default modal-footer-btn">Update</button>
+                      <button type="button" class="btn btn-default modal-footer-btn">Submit</button>
                       <button type="button" class="btn btn-default modal-footer-btn">Reset</button>
                         <button type="button" class="btn btn-default modal-footer-btn" data-dismiss="modal">Cancel</button>
                   </div>
@@ -166,17 +191,17 @@
               </div>
               <!-- /.modal-dialog -->
             </div>
-        
+
         <!-- Delete Modal window -->
-        <div class="modal fade" id="deleteProject" role="dialog">
+        <div class="modal fade" id="deletePCIaudit" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Delete Technologies</h4>
+          <h4 class="modal-title">Delete PCI Audit Columns</h4>
         </div>
-          
+
         <div class="modal-body text-center">
             <h4 style="margin-top:10px;"><b>Are You Sure you want to Delete?</b></h4><br/>
         </div>
@@ -186,23 +211,19 @@
         </div>
       </div>
     </div>
-            
-            
-            
-            
-            
   </div>
-        
-      <div class="row">
+
+      <div class="row" id="pcidatagrid" style="display:none;">
         <div class="col-sm-12">
           <div class="white-box fadeInRight animated">
-            
+
             <div class="table-responsive">
             <table id="myTable" class="table table-striped">
               <thead>
                 <tr>
-                  <th>Code Label</th>
-                  <th>Code Value</th>
+                  <th>Phase</th>
+                  <th>Activity</th>
+                    <th>Control</th>
                     <th>Action</th>
                 </tr>
               </thead>
@@ -210,37 +231,162 @@
                 <tr>
                   <td><input type="text" class="form-control input-sm"></td>
                   <td><input type="text" class="form-control input-sm"></td>
-                  <td></td>
+                    <td><input type="text" class="form-control input-sm"></td>
+                    <td></td>
+
                 </tr>
 				 <tr>
-                  <td>PHS Frequency</td>
-                  <td>1</td>
+                  <td>Closure</td>
+                  <td>Management</td>
+                     <td>Off-boarding</td>
                   <td><div class="label label-table label-success">Active</div></td>
-                  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#updateTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteProject"> <i class="fa fa-close text-danger"></i> </a></td>
+                  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addPCIAudit" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deletePCIaudit"> <i class="fa fa-close text-danger"></i> </a></td>
                 </tr>
               <tr>
-                  <td>PHS Frequency</td>
-                  <td>2</td>
+                  <td>Closure</td>
+                  <td>Release</td>
+                     <td>Sprint Retrospection</td>
                   <td><div class="label label-table label-success">Active</div></td>
-                  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#updateTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteProject"> <i class="fa fa-close text-danger"></i> </a></td>
+                   <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addPCIAudit" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deletePCIaudit"> <i class="fa fa-close text-danger"></i> </a></td>
                 </tr>
-          <tr>
-                  <td>Project Methodology</td>
-                  <td>Agile Scrum</td>
+           <tr>
+                  <td>Execution</td>
+                  <td>Management</td>
+                     <td>Project Goals</td>
                   <td><div class="label label-table label-success">Active</div></td>
-                  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#updateTechnologies" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteProject"> <i class="fa fa-close text-danger"></i> </a></td>
+                   <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addPCIAudit" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deletePCIaudit"> <i class="fa fa-close text-danger"></i> </a></td>
                 </tr>
               </tbody>
             </table>
             </div>
           </div>
         </div>
-        
-        
       </div>
+<!--END PCI SCREEN-->
+
+
+<!--ECI DATA SCREEN-->
+	   <div class="modal fade bs-example-modal-lg" id="addECIAudit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myLargeModalLabel">Add ECI Audit Column</h4>
+                  </div>
+                  <div class="modal-body text-center">
+                       <h4 style="margin-top:10px;"><span>*</span><b>All Fields Are Mandatory</b></h4><br/>
+                    <div class="form-horizontal">
+                    <div class="form-group">
+                    <label class="control-label col-md-4" for="gate">Gate:<span>*</span></label>
+                        <div class="col-md-6">
+                        <input type="text" class="form-control" id="gate">
+                        </div>
+                    </div>
+                        <div class="form-group">
+                    <label class="control-label col-md-4" for="control">Control:<span>*</span>                   </label>
+                        <div class="col-md-6">
+                        <input type="text" class="form-control" id="control">
+                        </div>
+                    </div>
+                        <div class="form-group">
+                    <label class="control-label col-md-4" for="status">Status:                   <span>*</span></label>
+                        <div class="col-md-6">
+                            <select class="form-control" id="status">
+                            <option>Optional</option>
+                                <option>Required</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default modal-footer-btn">Submit</button>
+                      <button type="button" class="btn btn-default modal-footer-btn">Reset</button>
+                        <button type="button" class="btn btn-default modal-footer-btn" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+
+        <!-- Delete Modal window -->
+        <div class="modal fade" id="deleteECIaudit" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Delete ECI Audit Columns</h4>
+        </div>
+
+        <div class="modal-body text-center">
+            <h4 style="margin-top:10px;"><b>Are You Sure you want to Delete?</b></h4><br/>
+        </div>
+        <div class="modal-footer">
+             <button type="button" class="btn btn-default modal-footer-btn">OK</button>
+          <button type="button" class="btn btn-default modal-footer-btn" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="row" id="ecidatagrid" style="display:none;">
+        <div class="col-sm-12">
+          <div class="white-box fadeInRight animated">
+
+            <div class="table-responsive">
+            <table id="myTable" class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Gate</th>
+                  <th>Control</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" class="form-control input-sm"></td>
+                  <td><input type="text" class="form-control input-sm"></td>
+                    <td><input type="text" class="form-control input-sm"></td>
+                    <td></td>
+
+                </tr>
+				 <tr>
+                  <td>Building Management</td>
+                  <td>Build Backup/Recovery</td>
+                     <td>Required</td>
+                  <td><div class="label label-table label-success">Active</div></td>
+                  <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addECIAudit" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteECIaudit"> <i class="fa fa-close text-danger"></i> </a></td>
+                </tr>
+              <tr>
+                  <td>Building Management</td>
+                  <td>Building Management Standards</td>
+                     <td>Required</td>
+                  <td><div class="label label-table label-success">Active</div></td>
+                   <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addECIAudit" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteECIaudit"> <i class="fa fa-close text-danger"></i> </a></td>
+                </tr>
+           <tr>
+                  <td>Building Management</td>
+                  <td>Code Analysis</td>
+                     <td>Required</td>
+                  <td><div class="label label-table label-success">Active</div></td>
+                   <td class="text-nowrap"><a data-original-title="Edit" data-toggle="modal" data-target="#addECIAudit" /> <i class="fa fa-pencil text-inverse m-r-10"></i> </a><a data-original-title="Delete" data-toggle="modal" data-target="#deleteECIaudit"> <i class="fa fa-close text-danger"></i> </a></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--END PCI SCREEN-->
+
+
+
       <!-- /.row -->
       <!-- .right-sidebar -->
-     
+
       <!-- /.right-sidebar -->
     </div>
     <!-- /.container-fluid -->
@@ -317,6 +463,22 @@
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
     });
+
+    // Show or hide PCI & ECI
+    $(document).ready(function(){
+
+        $('input[type="radio"]').click(function(){
+            if($(this).attr("value")=="pci"){
+                $("#pcidatagrid").show();
+                $("#ecidatagrid").hide();
+            }
+            if($(this).attr("value")=="eci"){
+                $("#ecidatagrid").show();
+                $("#pcidatagrid").hide();
+            }
+                });
+    });
+
   </script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>

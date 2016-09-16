@@ -14917,9 +14917,17 @@ table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
     width: 100%;
   }
 }
-  #updateUser span,
+
+/* Custom css */
+/* ---Modal Window-CSS---*/
+#updateUser span,
 #addProject span,
-#updateTechnologies span {color:red; }
+#updateTechnologies span ,
+#addTechnologies span,
+#addPCIAudit span,
+#addECIAudit span,
+.phspdrep span,
+.phsnc span {color:red; }
   .modal-header{
 	    background: #082538;
 		height:60px;
@@ -14941,5 +14949,71 @@ table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
 .modal-footer-btn:hover{
 	border:1px solid #082538 !important;
 	color:#000!important;
+	background-color:#fff!important;
 
 }
+.modal .form-group{
+	    margin-bottom: 15px !important;
+}
+/*--End Modal Window CSS --*/
+
+/*-- PHS Pending & PHS NC Report  CSS --*/
+.csticonbtn{
+	background: #2877ac!important;
+    color: #fff!important;
+    padding: 5px 10px 5px 5px;
+    border: none;
+}
+.cstbtn{
+	background: #2877ac!important;
+    color: #fff!important;
+    padding: 5px 22px 5px 22px;
+    border: none;
+}
+.phspdrep, .phsnc {
+	margin-top:30px;
+}
+.phspdrep .form-control, .phsnc .form-control{
+	width:150px!important;
+}
+.phspdrep .form-group, .phsnc .form-group{
+	margin-right:4px!important;
+	    margin-left: 50px !important;
+}
+
+/* Media Quries */
+        @media (max-width:1024px){
+            .phspdrep{
+                float:left;
+               /* margin-left:128px!important; */
+			       margin-left: 35px!important;
+            }
+			.phsnc{
+				 float:left;
+				margin-left:0px !important;
+						}
+        }
+         @media (max-width:768px){
+			 .phsnc .form-control{
+				 width: 135px !important;
+			 }
+            .phspdrep, .phsnc{
+                float:none;
+                margin-left:0!important;
+            }
+			.phspdrep .form-group{
+		    margin-left: 10px !important;
+		        }
+.phsnc .form-group {
+    margin-left: 2px !important;
+	}
+         @media (max-width:425px){
+            .phspdrep, .phsnc{
+                float:none;
+                margin-left:0!important;
+            }
+             .phspdrep .form-control, .phsnc .form-control{
+                    width: 100% !important;
+             }
+        }
+		/* --End PHS Pending Report & PHSNC Report CSS --*/
