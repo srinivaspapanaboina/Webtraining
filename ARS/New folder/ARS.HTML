@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 12px;
+        }
+
+        .logo {
+            background: url(img/air-india-logo.png) no-repeat 5px 5px;
+            width: 150px;
+            height: 50px;
+            background-size: 136px 43px;
+            float: left;
+        }
+
+        .nav {
+            background: #FFCC00;
+            height: 63px;
+        }
+
+        .nav p {
+            float: right;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        .nav span {
+            padding: 0 1px;
+            letter-spacing: 1px;
+            font-size: 17px;
+        }
+
+        .nav h2 {
+            display: inline-block;
+            color: red;
+            font-size: 30px;
+            padding: 16px 0;
+            margin-left: 200px;
+        }
+
+        .nav h2:hover {
+            color: #fff;
+        }
+
+        .usericon {
+            background: #fff url(img/usericon.png) no-repeat 1px 10px;
+            float: right;
+            background-size: 36px 29px;
+            width: 40px;
+            height: 40px;
+            margin: 11px 9px 0 -14px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+        }
+
+        .col1 {
+            margin-left: 34px;
+            float: left;
+            margin-bottom: 12px;
+        }
+
+        .col2 {
+            float: left;
+            margin-bottom: 12px;
+        }
+
+        .section input[type=radio],
+        input[type=checkbox] {
+            margin: 10px 7px;
+        }
+
+        .section label {
+            display: inline-block;
+            padding-top: 19px;
+            font-size: 16px
+        }
+
+        .section {
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            background: #e8cb69;
+        }
+
+        .section .container {
+            position: relative;
+        }
+
+        .section h2 {
+            padding: 12px;
+            color: darkgreen;
+        }
+
+        .section .smallbox {
+            float: left;
+            margin-right: 41px;
+        }
+
+        .section input[type=text] {
+            padding: 10px;
+            width: 340px;
+            font-size: 18px;
+        }
+
+        .route {
+            font-size: 18px;
+            padding: 4px;
+            color: #087fdc;
+        }
+
+        .section input[type=date] {
+            padding: 10px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .lbhead {
+            padding: 4px;
+            color: #087fdc;
+        }
+
+        .returndt {
+            margin-left: -25px;
+        }
+
+        .section select {
+            width: 150px;
+            height: 43px;
+            padding: 1px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .fcontent button {
+            padding: 12px 10px;
+            width: 150px;
+            font-size: 16px;
+            color: #087fdc;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border: 1px solid #087fdc;
+            border-radius: 15px;
+            cursor: pointer;
+            background: #fff;
+            margin: 25px 0 8px 296px;
+        }
+
+        .fcontent button:hover {
+            background: #087fdc;
+            color: #fff;
+        }
+
+        .userselection {
+            margin-left: 25px;
+        }
+
+        .swapicon {
+            background: #087fdc url(img/swap.png) no-repeat 5px 6px;
+            background-size: 22px 22px;
+            position: absolute;
+            left: 379px;
+            top: 136px;
+            display: inline-block;
+            border-radius: 100%;
+            padding: 17px;
+        }
+
+        .popup {
+            position: absolute;
+            left: 411px;
+            top: 213px;
+            display: none;
+        }
+
+        .popup ul {
+            background: #fff;
+            position: absolute;
+            width: 250px;
+        }
+
+        .popup label {
+            font-size: 10px;
+            padding: 5px;
+        }
+
+        .popup span {
+            color: #888;
+        }
+
+        .popup select {
+            width: 52px !important;
+            height: 25px !important;
+            font-size: 12px !important;
+        }
+
+        .popup ul li {
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+        }
+
+        .close {
+            padding: 4px 6px;
+            position: absolute;
+            color: #000 !important;
+            cursor: pointer;
+            display: block;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo"></div>
+                <h2>Airlines Reservation System</h2>
+                <span class="usericon"></span>
+                <p><span> Signin <span>/</span></span><span>Sign up</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="userselection">
+                <h2>Book Domestic & International Flight</h2>
+                <input type="radio" value="round trip" id="roundtrip" name="trip">
+                <label for="roundtrip">Round Trip</label>
+                <input type="radio" value="One Way" id="oneway" name="trip">
+                <label for="oneway">One Way</label>
+                <input type="radio" value="Multi City" id="multicity" name="trip">
+                <label for="multicity">Multi City</label>
+                <input type="checkbox" value="flight hotel" id="hotel">
+                <label for="hotel">Flight + Hotel</label>
+            </div>
+            <div class="formcontrols">
+                <div class="col1">
+
+                    <p>
+                        <label for="from" class="route">From</label>
+                        <br>
+                        <input type="text" id="from">
+                    </p>
+                    <span class="swapicon"></span>
+
+                    <span class="smallbox"><label for="depart" class="lbhead">Depart</label><br><input type="date" id="depart"></span>
+                    <span class="smallbox"><label for="return" class="lbhead">Return</label><br><input type="date" id="return"></span>
+                </div>
+
+                <div class="col2">
+                    <p>
+                        <label for="to" class="route">To</label>
+                        <br>
+                        <input type="text" id="to">
+                    </p>
+                    <span class="smallbox">
+                        <label for="traveller" class="lbhead">Travellers</label>
+                        <br>
+                        <select id="traveller">
+                            <option></option>
+                        </select>
+                    </span>
+                    <span class="smallbox">
+                        <label for="class" class="lbhead">Class</label>
+                        <br>
+                        <select id="traveller" style="text-align:center">
+                             <option>Economy</option>
+                             <option>Business</option>
+                             <option>First Class</option>
+                             <option>Premium Economy</option>
+                            </select>
+                    </span>
+                </div>
+                <div style="clear:both;" class="fcontent userselection">
+                    <button type="button" value="search">Search</button>
+
+                </div>
+
+                <div class="popup" id="window" style="clear:both;">
+                    <ul>
+
+                        <li>
+                            <label for="adult">Adult(s)
+                                <br><span>(12+ yrs)</span></label>
+                            <br>
+                            <select id="adult">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="children">Children
+                                <br><span>(2-12 yrs)</span></label>
+                            <br>
+                            <select id="children">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="infants">Infants
+                                <br><span>(below 2 yrs)</span></label>
+                            <br>
+                            <select id="infants">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                            </select>
+                        </li>
+                        <span class="close" id="close">X</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+
+var popup = document.getElementById("window");
+        var traveller=document.getElementById("traveller");
+        traveller.onclick=function(){
+
+            popup.style.display="block";
+        }
+      var close=document.getElementById("close");
+        close.onclick=function(){
+            popup.style.display="none";
+        }
+
+
+
+    </script>
+</html>

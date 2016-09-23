@@ -24,19 +24,20 @@
         <div class="container">
             <div class="userselection">
                 <h2>Book Domestic & International Flight</h2>
-                <input type="radio" value="round trip" id="roundtrip" name="trip">
+                <input type="radio" value="round trip" id="roundtrip" name="trip" checked="checked">
                 <label for="roundtrip">Round Trip</label>
                 <input type="radio" value="One Way" id="oneway" name="trip">
                 <label for="oneway">One Way</label>
 
             </div>
+			<form>
             <div class="formcontrols">
                 <div class="col1">
 
                     <p>
                         <label for="from" class="route">From</label>
                         <br>
-                        <input type="text" id="from">
+                        <input type="text" id="from" value="" required />
                     </p>
                     <span class="swapicon"></span> <span class="smallbox"><label
 						for="depart" class="lbhead">Depart</label><br> <input
@@ -49,10 +50,10 @@
                     <p>
                         <label for="to" class="route">To</label>
                         <br>
-                        <input type="text" id="to">
+                        <input type="text" id="to" required>
                     </p>
                     <span class="smallbox"> <label for="traveller"
-						class="lbhead">Travellers</label> <br> <select id="traveller">
+						class="lbhead">Travellers</label> <br> <select id="traveller" ng-model="name.traveller">
 							<option>1</option>
 					</select>
 					</span> <span class="smallbox"> <label for="class" class="lbhead">Class</label>
@@ -76,7 +77,7 @@
                                 <br> <span>(12+
 									yrs)</span></label>
                             <br>
-                            <select id="adult" name="adult">
+                            <select id="adult" name="adult" ng-model="adult">
                                 <option active value=1 selected>1</option>
                                 <option value=2>2</option>
                                 <option value=3>3</option>
@@ -93,7 +94,7 @@
                                 <br> <span>(2-12
 									yrs)</span></label>
                             <br>
-                            <select id="children">
+                            <select id="children" ng-model="children">
                                 <option>0</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -111,7 +112,7 @@
                                 <br> <span>(below
 									2 yrs)</span></label>
                             <br>
-                            <select id="infants">
+                            <select id="infants" ng-model="infants">
                                 <option>0</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -128,6 +129,7 @@
                     </ul>
                 </div>
             </div>
+			</form>
         </div>
     </div>
 </body>

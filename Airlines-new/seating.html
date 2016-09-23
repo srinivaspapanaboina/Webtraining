@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background: skyblue;
+        }
+
+        .navbar h2 {
+            color: #fff;
+        }
+
+        .bluetxt {
+            color: deepskyblue;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .seats {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000;
+            background: #000;
+            position: absolute;
+            top: -5px;
+            right: -19px;
+        }
+
+        .orange {
+            border: 1px solid #ff8566;
+            background: #ff8566;
+        }
+
+        .yellow {
+            border: 1px solid #ffff66;
+            background: #ffff66;
+        }
+
+        .green {
+            border: 1px solid #99ffbb;
+            background: #99ffbb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <h2 class="text-center">Airlines Reservation System</h2>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <label class="bluetxt" data-toggle="modal" data-target="#newuser">Seat Selection</label>
+
+        <!-- Modal -->
+        <div class="modal fade" id="newuser" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header text-center" style="background: #0776a3;
+    color: #fff;">
+                        <button type="button" class="close" data-dismiss="modal" style="color:#fff; opacity:1!important;">&times;</button>
+                        <h4 class="modal-title">Please Select Seats Here</h4>
+                    </div>
+                    <div class="modal-body" style="padding:0 25px;">
+                        <p class="text-center">PLACE YOUR DYNAMIC CONTENT HERE</p>
+                        <p class="text-center">PLACE YOUR DYNAMIC CONTENT HERE</p>
+                         <p class="text-center">PLACE YOUR DYNAMIC CONTENT HERE</p>
+                         <p class="text-center">PLACE YOUR DYNAMIC CONTENT HERE</p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-horizontal">
+                            <div class="row col-md-12">
+                                <label class="col-md-4">Booked Seats:<span class="seats orange"></span></label>
+                                <label class="col-md-4">Available Seats:<span class="seats yellow"></span></label>
+                                <label class="col-md-4"> Selected Seats:<span class="seats green"></span></label>
+                            </div>
+                            <div class="row col-md-12 text-center">
+                            <button type="button" class="btn btn-info">Proceed</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

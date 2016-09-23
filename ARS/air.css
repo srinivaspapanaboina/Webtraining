@@ -1,0 +1,229 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 16px;
+            background: url(image.jpg) no-repeat;
+        }
+
+        .logo {
+            background: url(img/air-india-logo.png) no-repeat 5px 5px;
+            width: 150px;
+            height: 50px;
+            background-size: 136px 43px;
+            float: left;
+        }
+
+        .nav {
+            background: black;
+            height: 63px;
+        }
+
+        .nav p {
+            float: right;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        .nav span {
+            padding: 0 1px;
+            letter-spacing: 1px;
+            font-size: 17px;
+            color: white;
+        }
+
+        .nav h2 {
+            display: inline-block;
+            color: #cdcdcd;
+            font-size: 30px;
+            padding: 16px 0;
+            margin-left: 280px;
+        }
+
+        .nav h2:hover {
+            color: #b0f1fd;
+        }
+
+        .usericon {
+            background: #fff url(img/usericon.png) no-repeat 1px 10px;
+            float: right;
+            background-size: 36px 29px;
+            width: 40px;
+            height: 40px;
+            margin: 11px 9px 0 -14px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+        }
+
+        .col1 {
+            margin-left: 34px;
+            float: left;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .col2 {
+            float: left;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        input[type=text] {
+            border-radius: 30px;
+        }
+
+        .section input[type=radio],
+        input[type=checkbox] {
+            margin: 10px 7px;
+        }
+
+        .section label {
+            display: inline-block;
+            padding-top: 19px;
+            font-size: 16px;
+        }
+
+        .section {
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            background: linear-gradient(to bottom, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 36%, rgba(40, 52, 59, 1) 52%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .section .container {
+            position: relative;
+        }
+
+        .section h2 {
+            font-size: x-large;
+            padding: 12px;
+            color: #020202;
+        }
+
+        .section .smallbox {
+            float: left;
+            margin-right: 41px;
+        }
+
+        .section input[type=text] {
+            padding: 10px;
+            width: 340px;
+            font-size: 18px;
+        }
+
+        .route {
+            font-size: 18px;
+            padding: 4px;
+            color: #ffffff;
+        }
+
+        .section input[type=date] {
+            padding: 10px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .lbhead {
+            padding: 4px;
+            color: #ffffff;
+        }
+
+        .returndt {
+            margin-left: -25px;
+        }
+
+        .section select {
+            width: 150px;
+            height: 43px;
+            padding: 1px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .fcontent button {
+            padding: 12px 10px;
+            width: 150px;
+            font-size: 16px;
+            color: #020202;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border: 1px solid #020202;
+            border-radius: 15px;
+            cursor: pointer;
+            background: #fff;
+            margin: 25px 0 8px 296px;
+        }
+
+        .fcontent button:hover {
+            background: #020202;
+            color: #fff;
+        }
+
+        .userselection {
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .swapicon {
+            background: #ffffff url(img/swap.png) no-repeat 5px 6px;
+            background-size: 22px 22px;
+            position: absolute;
+            left: 379px;
+            top: 136px;
+            display: inline-block;
+            border-radius: 100%;
+            padding: 17px;
+        }
+
+        .popup {
+            position: absolute;
+            left: 413px;
+            top: 213px;
+            display: none;
+            z-index: 9999;
+        }
+
+        .popup ul {
+            background: #fff;
+            position: absolute;
+            width: 280px;
+        }
+
+        .popup label {
+            font-size: 10px;
+            padding: 5px;
+        }
+
+        .popup span {
+            color: #888;
+        }
+
+        .popup select {
+            width: 52px !important;
+            height: 25px !important;
+            font-size: 12px !important;
+        }
+
+        .popup ul li {
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .close {
+            padding: 4px 6px;
+            position: absolute;
+            color: #000 !important;
+            cursor: pointer;
+            display: block;
+            right: 0;
+        }

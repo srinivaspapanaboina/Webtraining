@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background: skyblue;
+        }
+
+        .fromtxt,
+        .totxt {
+            width: 295px !important;
+            padding: 18px;
+            margin-right: 8px;
+        }
+
+        .totxt {
+            margin-left: 25px;
+        }
+
+        input[type="date"] {
+            width: 148px!important;
+        }
+
+        form {
+            margin padding: 10px;
+        }
+
+        .popup {
+            position: absolute;
+            left: 657px;
+            top: 302px;
+            display: none;
+        }
+
+        .popup ul {
+            background: #fff;
+            position: absolute;
+            width: 300px;
+            border: 2px dotted blueviolet;
+        }
+
+        .popup label {
+            font-size: 10px;
+            padding: 5px;
+        }
+
+        .popup span {
+            color: #888;
+        }
+
+        .popup select {
+            width: 52px !important;
+            height: 25px !important;
+            font-size: 12px !important;
+        }
+
+        .popup ul li {
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+        }
+
+        .close {
+            padding: 4px 6px;
+            position: absolute;
+            color: #000 !important;
+            cursor: pointer;
+            display: block;
+            right: 0;
+            font-size: 15px !important;
+        }
+
+        .swapicon {
+            background: #087fdc url(img/swap.png) no-repeat 5px 6px;
+            background-size: 22px 22px;
+            position: absolute;
+            left: 379px;
+            top: 91px;
+            display: inline-block;
+            border-radius: 100%;
+            padding: 17px;
+        }
+
+        @media (min-width:1024px) {
+            .totxt {
+                margin-left: 16px;
+            }
+            .swapicon {
+                position: absolute;
+                top: 91px;
+                left: 366px !important;
+            }
+        }
+
+        @media(min-width:1440px) {
+            .swapicon {
+                position: absolute;
+                top: 91px;
+                left: 378px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h2 class="text-center">Airlines Reservation System</h2> </div>
+    </nav>
+    <div class="container">
+        <div class="wrapper">
+            <form class="form-inline col-md-offset-2 col-md-9" style="border: 1px solid #ccc;
+    margin-top: 10%;
+    background: #ccc;
+    border-radius: 2%;
+    font-size: 17px;">
+                <div class="row col-md-offset-1">
+                    <div class="form-group">
+                        <h4>Book Domestic & International Flight</h4>
+                         <label class="radio-inline" for="oneway">
+                            <input type="radio" name="trip" value="One Way" id="oneway" checked="checked">One Way </label>
+                        <label class="radio-inline" for="roundtrip">
+                            <input type="radio" name="trip" value="Round Trip" id="roundtrip">Round Trip </label>
+
+                    </div>
+                </div>
+                <div class="row col-md-offset-1">
+                    <div class="form-group">
+                        <label for="from" class="control-label">From</label>
+                        <br/>
+                        <input type="text" class="form-control fromtxt" id="from" required> </div>
+                    <div class="form-group"> <span class="swapicon"></span> </div>
+                    <div class="form-group">
+                        <label for="to" class="control-label">To</label>
+                        <br/>
+                        <input type="text" class="form-control  totxt" id="to" required > </div>
+                </div>
+                <br/>
+                <div class="row col-md-offset-1">
+                    <div class="form-group">
+                        <label for="depart" class="control-label">Depart</label>
+                        <br/>
+                        <input type="date" class="form-control" id="depart" required> </div>
+                    <div class="form-group">
+                        <label for="return" class="control-label">Return</label>
+                        <br/>
+                        <input type="date" class="form-control" id="return"> </div>
+                    <div class="form-group" style="margin-left:28px;">
+                        <label for="travellers" class="control-label">Travellers</label>
+                        <br/>
+                        <select class="form-control" id="traveller" style="width:125px!important;" required>
+                            <option>1</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="class" class="control-label">Class</label>
+                        <br/>
+                        <select class="form-control" id="class" required>
+                            <option>Economy</option>
+                            <option>Business</option>
+                            <option>First Class</option>
+                            <option>Premium Economy</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="row text-center">
+                        <button type="submit" class="btn btn-primary" style="width:150px; font-size:20px; margin-bottom:5px;">Search</button>
+                    </div>
+                </div>
+            </form>
+            <div class="popup" id="window" style="clear:both;">
+                <ul>
+                    <li>
+                        <label for="adult">Adult(s)
+                            <br> <span>(12+
+									yrs)</span></label>
+                        <br>
+                        <select id="adult" name="adult" ng-model="adult">
+                            <option active value=1 selected>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="children">Children
+                            <br> <span>(2-12
+									yrs)</span></label>
+                        <br>
+                        <select id="children" ng-model="children">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="infants">Infants
+                            <br> <span>(below
+									2 yrs)</span></label>
+                        <br>
+                        <select id="infants" ng-model="infants">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select>
+                    </li> <span class="close" id="close">X</span> </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var popup = document.getElementById("window");
+        var traveller = document.getElementById("traveller");
+        var tclass = document.getElementById("class");
+        traveller.onclick = function () {
+            popup.style.display = "block";
+            //        traveller.style.display = "none";
+            traveller.style.visibility = "hidden";
+            tclass.disabled = true;
+        }
+        var close = document.getElementById("close");
+        close.onclick = function () {
+            var traveller = document.getElementById("traveller");
+            var adults = document.getElementById("adult").value;
+            var children = document.getElementById("children").value;
+            var infants = document.getElementById("infants").value;
+            var totalTravellers = parseInt(adults) + parseInt(children) + parseInt(infants);
+            popup.style.display = "none";
+            traveller.style.visibility = "visible";
+            tclass.disabled = false;
+            document.getElementById("traveller").options[0].innerHTML = totalTravellers;
+        }
+    </script>
+</body>
+
+</html>
